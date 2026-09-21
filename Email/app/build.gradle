@@ -1,0 +1,199 @@
+// Módulo único que produz com.android.email.apk
+//
+// Este build reproduz em Gradle a árvore de fontes que o Android.mk original
+// definia para o target `Email`, SEM fundir fisicamente Email/ e
+// UnifiedEmail/ em uma pasta só (ver ARQUITETURA.md para o raciocínio
+// completo por trás de cada sourceSet abaixo).
+
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "com.android.email"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.android.email"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 7008110
+        versionName = "AOSP-Revived-1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Sem sharedUserId, sem platform certificate, sem privilégio de sistema.
+        // O app é instalável como app normal em qualquer dispositivo Android 14+.
+    }
+
+    signingConfigs {
+        // Debug: keystore padrão do AGP (gerado automaticamente).
+        // Release: configure sua própria keystore antes de assemble Release.
+        // NÃO reutilize certificado de plataforma — ver SECURITY.md #8.
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix = ""
+            isDebuggable = true
+        }
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard.flags"
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    // ---------------------------------------------------------------------
+    // SOURCE SETS — mapeamento 1:1 do Email/Android.mk original:
+    //
+    //   LOCAL_SRC_FILES := $(call all-java-files-under, ../UnifiedEmail/src)
+    //   LOCAL_SRC_FILES += $(call all-java-files-under, src/com/android)
+    //   LOCAL_SRC_FILES += $(call all-java-files-under, provider_src/com/android)
+    //   LOCAL_SRC_FILES += $(call all-java-files-under, src/com/beetstra)
+    //
+    //   LOCAL_RESOURCE_DIR := res  ../UnifiedEmail/res
+    //   LOCAL_ASSET_DIR    := ../UnifiedEmail/assets   (só UnifiedEmail, por
+    //                          limitação do build AOSP original com múltiplos
+    //                          asset dirs — preservamos a mesma decisão)
+    //
+    // NOTA: UnifiedEmail/unified_src NÃO é referenciado por nenhum Android.mk
+    // relevante ao target Email — é um shim de desenvolvimento descartável
+    // (confirmado pelo próprio UnifiedEmail/unified_src/README). Fica de fora.
+    // ---------------------------------------------------------------------
+    sourceSets {
+        main {
+            manifest.srcFile("src/main/AndroidManifest.xml")
+
+            java.srcDirs(
+                "../UnifiedEmail/src",                 // com.android.mail.*, org.apache.james.mime4j.*, etc
+                "../Email/src/com/android",             // com.android.email.* (UI, activities)
+                "../Email/provider_src/com/android",    // com.android.email.provider.*
+                "../Email/src/com/beetstra"             // com.beetstra.* (quoted-printable / utilidades)
+            )
+
+            // emailcommon é logicamente uma static library separada no
+            // Android.mk (com.android.emailcommon, com BUILD_STATIC_JAVA_LIBRARY),
+            // mas como este projeto produz um único APK, incorporamos o
+            // source diretamente como mais um sourceSet Java em vez de um
+            // módulo Gradle separado — evita um segundo artefato desnecessário.
+            java.srcDir("../Email/emailcommon/src/com/android/emailcommon")
+
+            // Os 3 arquivos específicos + org/ que o emailcommon/Android.mk
+            // importa de dentro de UnifiedEmail/src já estão cobertos acima
+            // (java.srcDirs inclui ../UnifiedEmail/src inteiro, que contém
+            // com/android/mail/utils/{LogTag,LogUtils}.java,
+            // com/android/mail/providers/UIProvider.java, src/org/** e
+            // com/android/emailcommon/** de dentro de UnifiedEmail/src).
+
+            res.srcDirs(
+                "../Email/res",
+                "../Email/emailcommon/res",
+                "../UnifiedEmail/res"
+            )
+
+            assets.srcDirs("../UnifiedEmail/assets")
+
+            aidl.srcDirs("../Email/emailcommon/src/com/android/emailcommon")
+        }
+    }
+
+    aaptOptions {
+        // Equivalente ao LOCAL_AAPT_FLAGS do Android.mk original:
+        //   --auto-add-overlay
+        //   --extra-packages com.android.mail:com.android.email:com.android.emailcommon
+        // O AGP moderno resolve overlays de resource automaticamente pelos
+        // sourceSets; os pacotes extras (para R classes compartilhadas entre
+        // com.android.mail / com.android.email / com.android.emailcommon)
+        // são resolvidos via android.nonTransitiveRClass=false por módulo se
+        // necessário — ver NOTAS_MIGRACAO.md caso apareçam R não resolvidos.
+    }
+
+    lint {
+        // Lint fica LIGADO. Não desativamos lint para "conseguir compilar"
+        // (regra explícita do projeto). Erros de lint devem ser corrigidos
+        // ou suprimidos pontualmente com justificativa, nunca globalmente.
+        abortOnError = false
+        checkReleaseBuilds = true
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/LICENSE*"
+            excludes += "META-INF/NOTICE*"
+        }
+    }
+}
+
+dependencies {
+    // ------------------------------------------------------------------
+    // Mapeamento das LOCAL_STATIC_ANDROID_LIBRARIES / LOCAL_STATIC_JAVA_LIBRARIES
+    // do Android.mk original para equivalentes AndroidX modernos e Maven:
+    // ------------------------------------------------------------------
+
+    // androidx.core_core, androidx.media_media, androidx.fragment_fragment,
+    // androidx.appcompat_appcompat, androidx.gridlayout_gridlayout
+    implementation("androidx.core:core:1.13.1")
+    implementation("androidx.media:media:1.7.0")
+    implementation("androidx.fragment:fragment:1.8.4")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
+
+    // androidx.legacy_legacy-support-core-utils / core-ui / v13
+    // (substituídos pelos módulos androidx.legacy modernos — ainda publicados
+    // para compatibilidade; se algo depender de API removida, ver
+    // NOTAS_MIGRACAO.md item "legacy-support")
+    implementation("androidx.legacy:legacy-support-core-utils:1.0.0")
+    implementation("androidx.legacy:legacy-support-core-ui:1.0.0")
+    implementation("androidx.legacy:legacy-support-v13:1.0.0")
+
+    // androidx.annotation_annotation
+    implementation("androidx.annotation:annotation:1.8.2")
+
+    // guava
+    implementation("com.google.guava:guava:33.3.1-android")
+
+    // owasp-html-sanitizer — usado pelo sanitizador de HTML de e-mail
+    // (ver SECURITY.md política de HTML). NÃO remover: é a principal defesa
+    // contra HTML malicioso em mensagens recebidas.
+    implementation("com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20240325.1")
+
+    // androidx.test para instrumentação (tests/ do AOSP original)
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test:rules:1.6.1")
+
+    // ------------------------------------------------------------------
+    // PENDENTES — módulos AOSP frameworks/opt/* sem artefato Maven publicado.
+    // Não existem no repositório Saulo5810p/Email nem no Maven Central.
+    // Precisam ser vendorizados (código-fonte trazido para dentro do
+    // projeto) a partir do AOSP upstream. Ver VENDORIZAR.md para a lista
+    // exata de classes, o pacote de origem e o link Gitiles de cada uma.
+    // Enquanto não forem trazidos, o build FALHA ao compilar as classes que
+    // os importam (não criamos stubs vazios fingindo que funcionam).
+    //
+    //   libchips                 -> com.android.ex.chips.*        (3 classes)
+    //   libphotoviewer_appcompat -> com.android.ex.photo.*        (10 classes)
+    //   android-opt-bitmap       -> com.android.bitmap.*          (6 classes)
+    //   android-common           -> com.android.common.*          (3 classes)
+    //   android-opt-datetimepicker -> não usado (0 imports encontrados
+    //                                  no source atual — pode ser removido
+    //                                  da lista de dependências)
+    // ------------------------------------------------------------------
+
+    // org.apache.http.legacy — o Android.mk usa LOCAL_JAVA_LIBRARIES (não
+    // static), ou seja dependia do módulo de compatibilidade do próprio
+    // framework Android. Em app normal moderno (minSdk 21+) essa API não
+    // está mais disponível: seção 11 do briefing pede a remoção ativa dessa
+    // dependência. Ver AUDITORIA_REDE.md para o inventário de todo uso de
+    // org.apache.http.* no código e o plano de migração para
+    // HttpURLConnection/OkHttp.
+}

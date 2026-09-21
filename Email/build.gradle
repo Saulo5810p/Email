@@ -1,0 +1,6 @@
+// Build raiz — apenas declara o plugin AGP na versão fixada.
+// NÃO mude a versão do AGP/Gradle silenciosamente (ver TOOLCHAIN.md).
+
+plugins {
+    id("com.android.application") version "8.7.3" apply false
+}

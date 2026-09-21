@@ -1,0 +1,23 @@
+// AOSP Email revivido — com.android.email
+// Projeto único, um módulo Gradle "app" que reproduz o target `Email` do
+// Android.mk original: fonte de Email/ + UnifiedEmail/ + emailcommon
+// integrados via sourceSets, sem fundir fisicamente as árvores.
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "AOSPEmailRevived"
+include(":app")

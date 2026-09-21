@@ -1,0 +1,23 @@
+# SECURITY_AUDIT.md
+
+| ID | Severidade | Arquivo | Problema | Correção | Motivo | Status |
+|---|---|---|---|---|---|---|
+| SEC-001 | HIGH | `AndroidManifest.xml` | `permission READ_ATTACHMENT` com `protectionLevel="dangerous"`, comentário `STOPSHIP` no próprio código original admitindo proteção inadequada | Alterado para `protectionLevel="signature"` | `dangerous` concede acesso amplo e permanente a anexos privados para qualquer app que solicite a permissão; `signature` restringe a apps assinados com a mesma chave | CORRIGIDO |
+| SEC-002 | HIGH | `AndroidManifest.xml` | `android:usesCleartextTraffic="true"` no `<application>` | Alterado para `false` + `network_security_config.xml` criado com `cleartextTrafficPermitted="false"` sem exceções | Cleartext global permite downgrade de qualquer conexão HTTP acidental do app | CORRIGIDO |
+| SEC-003 | MEDIUM | `AndroidManifest.xml` (provider `EmailConversationProvider`) | `exported="true"` sem permissão, com `grant-uri-permission pathPattern=".*"` | Alterado para `exported="false"` | Nenhum consumidor externo legítimo identificado; provider interno da própria UI | CORRIGIDO |
+| SEC-004 | MEDIUM | `AndroidManifest.xml` | `<uses-permission android:name="android.permission.USE_CREDENTIALS"/>` | Removida | Permissão descontinuada desde API 22, sem efeito em API 21+, presença desnecessária | CORRIGIDO |
+| SEC-005 | MEDIUM | `emailcommon/utility/SSLUtils.java` (`SameCertificateCheckingTrustManager`) | Modo `insecure=true` faz apenas TOFU de chave pública, sem validação de hostname/cadeia | Nenhuma alteração de código nesta entrega; documentado como comportamento opt-in esperado | Uso legítimo para servidores self-signed configurados explicitamente pelo usuário por conta — mudar o comportamento sem entender o fluxo de UI associado arriscaria quebrar um caso de uso intencional | REVIEW REQUIRED |
+| SEC-006 | MEDIUM | `provider_src/.../OAuthAuthenticator.java` | Usa `org.apache.http.legacy` (`DefaultHttpClient`), dependência de framework removida em Android moderno (API 28+) | Não migrado nesta entrega; plano documentado em `AUDITORIA_REDE.md` | Migração para `HttpURLConnection` é mudança de código não trivial que precisa de teste funcional contra o endpoint OAuth real — melhor feita após primeiro build funcional (M11) | REVIEW REQUIRED |
+| SEC-007 | LOW | `emailcommon/utility/EmailClientConnectionManager.java`, `SSLSocketFactory.java` (variante Apache) | Dependem de `org.apache.http.legacy` | Não migrado nesta entrega | Mesmo motivo de SEC-006 — usados apenas pelo mesmo fluxo OAuth | REVIEW REQUIRED |
+| SEC-008 | INFO | `app/build.gradle` | Dependência `android-opt-datetimepicker` do `Android.mk` original não tem nenhum uso real no código (`grep` não encontrou imports) | Removida da lista de dependências | Reduz superfície de dependência sem qualquer perda funcional | CORRIGIDO |
+| SEC-009 | HIGH | Sanitização de HTML de e-mail (WebView) | Auditoria de `javascript:`/`data:`/`file:`/`content:`/`intent:`/`android-app:` em URLs de e-mail renderizado ainda não realizada nesta entrega | — | Requer leitura completa dos arquivos de renderização de mensagem (`MessageViewFragment` / WebView setup) ainda não feita | REVIEW REQUIRED |
+| SEC-010 | HIGH | Providers — queries com `selection`/`sortOrder` | Auditoria de SQL injection em `EmailProvider` ainda não realizada nesta entrega | — | Requer leitura completa do `EmailProvider.java` (arquivo extenso) ainda não feita | REVIEW REQUIRED |
+| SEC-011 | MEDIUM | Manipulação de anexos | Auditoria de path traversal (`../`, `canonicalPath`) em nomes de anexo fornecidos pelo remetente ainda não realizada nesta entrega | — | Requer leitura completa do código de attachment download/save ainda não feita | REVIEW REQUIRED |
+| SEC-012 | INFO | `WidgetProvider.java`, `Account.java`, `CountingOutputStream.java`, `Mailbox.java` | Nomes de arquivo duplicados entre `Email/` e `UnifiedEmail/src`, risco aparente de conflito de build | Confirmado: pacotes Java diferentes em cada caso (ex.: `com.android.email.provider.WidgetProvider` vs `com.android.mail.widget.WidgetProvider`) — não é colisão real | Falso positivo verificado por inspeção de pacote, não apenas nome de arquivo | REVIEW REQUIRED (verificar de novo após vendorização completa, para garantir que nenhuma classe nova introduzida colida) |
+
+## Legenda de severidade
+
+`CRITICAL` > `HIGH` > `MEDIUM` > `LOW` > `INFO`. Nenhum finding `CRITICAL`
+identificado nesta rodada de auditoria (parcial — ver itens `REVIEW
+REQUIRED` acima, que cobrem as áreas de maior risco ainda não auditadas:
+WebView/HTML e SQL injection em providers).
