@@ -1,8 +1,19 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.email.app-mergeDebugResources-27:/values-v17/values-v17.xml",
+            "outputFile": "com.android.email.app-mergeDebugResources-24:/values-v17/values-v17.xml",
             "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/Email/vendor/chips/build/intermediates/packaged_res/debug/packageDebugResources/values-v17/values-v17.xml",
+                    "from": {
+                        "startLines": "2,8,13,19,22,25",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,402,685,1072,1238,1404",
+                        "endLines": "7,12,18,21,24,27",
+                        "endColumns": "12,12,12,12,12,12",
+                        "endOffsets": "397,680,1067,1233,1399,1565"
+                    }
+                },
                 {
                     "source": "/data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/54596ff6385f3a7b3e2285c431003fc2/transformed/appcompat-1.7.0/res/values-v17/values-v17.xml",
                     "from": {
@@ -12,6 +23,14 @@
                         "endLines": "4,8,11,14,17,21,24,28,32,36,39,42,45,49,52,56,60",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
                         "endOffsets": "223,451,609,759,931,1156,1326,1554,1778,2020,2191,2365,2534,2807,3007,3211,3540"
+                    },
+                    "to": {
+                        "startLines": "28,31,35,38,41,44,48,51,55,59,63,66,69,72,76,79,83",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1570,1743,1971,2129,2279,2451,2676,2846,3074,3298,3540,3711,3885,4054,4327,4527,4731",
+                        "endLines": "30,34,37,40,43,47,50,54,58,62,65,68,71,75,78,82,86",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1738,1966,2124,2274,2446,2671,2841,3069,3293,3535,3706,3880,4049,4322,4522,4726,5055"
                     }
                 }
             ]

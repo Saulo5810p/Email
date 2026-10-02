@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="compose_modes">
+    <item msgid="9000553538766397816">"Cavablayın"</item>
+    <item msgid="2767793214788399009">"Hamıya cavab"</item>
+    <item msgid="2758162027982270607">"Yönləndirin"</item>
+  </string-array>
+    <string-array name="prefEntries_autoAdvance">
+    <item msgid="1505450878799459652">"Yeni"</item>
+    <item msgid="8000986144872247139">"Köhnə"</item>
+    <item msgid="8015001161633421314">"Söhbət siyahısı"</item>
+  </string-array>
+    <string-array name="prefEntries_removal_action">
+    <item msgid="7381624742404593351">"Arxiv"</item>
+    <item msgid="2567465476369142505">"Sil"</item>
+  </string-array>
+    <string-array name="prefEntries_snapHeader">
+    <item msgid="6906986566816683587">"Həmişə göstər"</item>
+    <item msgid="113299655708990672">"Yalnız portret rejimində göstər"</item>
+    <item msgid="4403750311175924065">"Göstərmə"</item>
+  </string-array>
+    <string-array name="prefSummaries_autoAdvance">
+    <item msgid="8221665977497655719">"Silinəndən sonra yeni söhbəti göstər"</item>
+    <item msgid="1721869262893378141">"Silinəndən sonra köhnə söhbəti göstər"</item>
+    <item msgid="880913657385630195">"Silinəndən sonra söhbət siyahısı göstər"</item>
+  </string-array>
+    <string-array name="prefSummaries_removal_action_summary">
+    <item msgid="4080896545573973751">"Arxiv"</item>
+    <item msgid="6088164268501960435">"Sil"</item>
+  </string-array>
+    <string-array name="prefSummaries_snapHeader">
+    <item msgid="43373293784193461">"Həmişə mesaj əməliyyatlarını ekranın yuxarısında göstər"</item>
+    <item msgid="1765271305989996747">"Yalnız portret rejiminə keçən zaman mesaj əməliyyatlarını ekranın yuxarısında göstər"</item>
+    <item msgid="6311113076575333488">"Mesaj başlığından kənarda mesaj əməliyyatlarını göstərmə"</item>
+  </string-array>
+    <string-array name="sync_status">
+    <item msgid="4600303222943450797">"Uğur"</item>
+    <item msgid="2835492307658712596">"Bağlantı yoxdur"</item>
+    <item msgid="5932644761344898987">"Daxil ola bilmədi"</item>
+    <item msgid="7335227237106118306">"Təhlükəsizlik xətası"</item>
+    <item msgid="8148525741623865182">"Sinxronlaşa bilmədi"</item>
+    <item msgid="8026148967150231130">"Daxili Xəta"</item>
+    <item msgid="5442620760791553027">"Server Xətası"</item>
+  </string-array>
+    <plurals name="actionbar_unread_messages">
+    <item msgid="3863201473731766006" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> oxunmamış"</item>
+  </plurals>
+    <plurals name="confirm_archive_conversation">
+    <item msgid="9105551557653306945" quantity="one">"Bu söhbət arxivləşdirilsin?"</item>
+    <item msgid="2001972798185641108" quantity="other">"Bu <ns1:g id="COUNT">%1$d</ns1:g> söhbət arxivləşdirilsin?"</item>
+  </plurals>
+    <plurals name="confirm_delete_conversation">
+    <item msgid="7605755011865575440" quantity="one">"Bu söhbət silinsin?"</item>
+    <item msgid="1585660381208712562" quantity="other">"Bu <ns1:g id="COUNT">%1$d</ns1:g> söhbət silinsin?"</item>
+  </plurals>
+    <plurals name="confirm_discard_drafts_conversation">
+    <item msgid="2030421499893210789" quantity="one">"Bu məktub kənar edilsin?"</item>
+    <item msgid="782234447471532005" quantity="other">"Bu <ns1:g id="COUNT">%1$d</ns1:g> mesaj atılsın?"</item>
+  </plurals>
+    <plurals name="conversation_archived">
+    <item msgid="4859172326053399351" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> arxivləndi"</item>
+    <item msgid="8520761617935818623" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> arxivləndi"</item>
+  </plurals>
+    <plurals name="conversation_deleted">
+    <item msgid="4819167474123685161" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> silindi"</item>
+    <item msgid="6287534453625638257" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> silindi"</item>
+  </plurals>
+    <plurals name="conversation_folder_changed">
+    <item msgid="7787126147584620603" quantity="one">"Qovluq dəyişildi"</item>
+    <item msgid="6307772984911017972" quantity="other">"Qovluq dəyişildi"</item>
+  </plurals>
+    <plurals name="conversation_muted">
+    <item msgid="3622533556738049499" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> susduruldu"</item>
+    <item msgid="4559007262578295280" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> susduruldu"</item>
+  </plurals>
+    <plurals name="conversation_not_important">
+    <item msgid="7432667428974709669" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> önəmsiz olaraq işarələndi"</item>
+    <item msgid="4823331037057239763" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> önəmsiz olaraq işarələndi"</item>
+  </plurals>
+    <plurals name="conversation_not_spam">
+    <item msgid="3680479171846552641" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> qeyri-spam olaraq bildirildi"</item>
+    <item msgid="6351739502184556635" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> qeyri-spam olaraq bildirildi"</item>
+  </plurals>
+    <plurals name="conversation_phished">
+    <item msgid="3511804715065046338" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> fişinq olaraq bildirildi"</item>
+    <item msgid="8400382886585779414" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> fişinq olaraq bildirildi"</item>
+  </plurals>
+    <plurals name="conversation_spammed">
+    <item msgid="1749550834135461470" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> spam olaraq bildirildi"</item>
+    <item msgid="664292592683692920" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> spam olaraq bildirildi"</item>
+  </plurals>
+    <plurals name="conversation_unstarred">
+    <item msgid="1701235480675303125" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> söhbətin ulduzu silinir"</item>
+    <item msgid="1154441830432477256" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> söhbətin ulduzu silinir"</item>
+  </plurals>
+    <plurals name="draft">
+    <item msgid="6717535677167943402" quantity="one">"Qaralama"</item>
+    <item msgid="1335781147509740039" quantity="other">"Qaralamalar"</item>
+  </plurals>
+    <plurals name="empty_folder_dialog_message">
+    <item msgid="3315412388217832914" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> mesaj həmişəlik silinəcək."</item>
+    <item msgid="263840304486020101" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> mesaj həmişəlik silinəcək."</item>
+  </plurals>
+    <plurals name="new_incoming_messages">
+    <item msgid="1532079301006372605" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> yeni mesaj"</item>
+    <item msgid="4085982174357328926" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> yeni mesaj"</item>
+  </plurals>
+    <plurals name="new_messages">
+    <item msgid="3446656407520493241" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> yeni mesaj"</item>
+    <item msgid="3531683811183204615" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> yeni mesaj"</item>
+  </plurals>
+    <plurals name="num_attachments">
+    <item msgid="5494465717267988888" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> qoşma"</item>
+    <item msgid="5422167728480739361" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> qoşma"</item>
+  </plurals>
+    <plurals name="num_messages">
+    <item msgid="8071234386915191851" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> mesaj"</item>
+    <item msgid="962415099931188360" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> mesaj"</item>
+  </plurals>
+    <plurals name="show_messages_read">
+    <item msgid="8094857552036574099" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> köhnə mesajı genişləndir"</item>
+  </plurals>
+    <plurals name="super_collapsed_block_accessibility_announcement">
+    <item msgid="2016326586162784420" quantity="other">"<ns1:g id="COUNT">%1$d</ns1:g> köhnə mesaj genişləndi"</item>
+  </plurals>
+    <string msgid="6747351773934787126" name="account_duplicate_dlg_message_fmt">"Siz artıq \"<ns1:g id="DUPLICATE">%s</ns1:g>\" hesabı üçün bu istifadəçi adını istifadə edirsiniz."</string>
+    <string msgid="3768813340753269695" name="account_duplicate_dlg_title">"Hesabın dublikatını çıxarın"</string>
+    <string msgid="4107093049191103780" name="account_security_dialog_content_fmt">"<ns1:g id="ACCOUNT">%s</ns1:g> təhlükəsizlik ayarlarınızı güncəlləməyi tələb edir."</string>
+    <string msgid="7003032393805438164" name="account_security_dialog_title">"Təhlükəsizlik güncəllənməsi"</string>
+    <string msgid="2527501853520160827" name="account_security_policy_explanation_fmt">"<ns1:g id="SERVER">%s</ns1:g> serveri Android cihazınızın bəzi təhlükəsizlik özəlliklərini uzaqdan kontrol etmək üçün icazə istəyir."</string>
+    <string msgid="6072273231606918870" name="account_security_title">"Cihaz təhlükəsizliyi"</string>
+    <string msgid="589969653965674604" name="account_settings_action">"Hesab ayarları"</string>
+    <string msgid="3552681465680701047" name="account_settings_background_attachments_label">"Qoşmaları endirin"</string>
+    <string msgid="8801504001229061032" name="account_settings_background_attachments_summary">"Wi-Fi vasitəsilə sonuncu mesajlara qoşmaları avtomatik endir"</string>
+    <string msgid="6400715160238559711" name="account_settings_data_usage">"Data istifadəsi"</string>
+    <string msgid="2073736045984411004" name="account_settings_description_label">"Hesab adı"</string>
+    <string msgid="6105791335935883199" name="account_settings_edit_quick_responses_label">"Qısa cavablar"</string>
+    <string msgid="5406599402930290682" name="account_settings_edit_quick_responses_summary">"E-məktub yazan zaman tez-tez daxil etdiyiniz mətnə düzəliş edin"</string>
+    <string msgid="7005050362066086119" name="account_settings_enforced_label">"Məcburi siyasət"</string>
+    <string msgid="1668581504445370253" name="account_settings_enforced_summary">"Heç biri"</string>
+    <string msgid="4232590695889111419" name="account_settings_exit_server_settings">"Yadda saxlanmamış bütün dəyişiklik ləğv edilsin?"</string>
+    <string msgid="3793314460723296874" name="account_settings_incoming_label">"Gələnlər ayarları"</string>
+    <string msgid="7521181981008371492" name="account_settings_incoming_summary">"İstifadəçi adı, parol və digər gələn server ayarları"</string>
+    <string msgid="4107847714594035131" name="account_settings_mail_check_frequency_label">"Sinxronlaşma tezliyi"</string>
+    <string msgid="8230436030850457988" name="account_settings_name_label">"Adınız"</string>
+    <string msgid="2842952349214972116" name="account_settings_notifications">"Bildiriş ayarları"</string>
+    <string msgid="8621226576645167987" name="account_settings_notify_label">"E-poçt bildirişləri"</string>
+    <string msgid="88560545461159120" name="account_settings_notify_summary">"E-məktub gələn zaman bildiriş göndər"</string>
+    <string msgid="4997504719643828381" name="account_settings_outgoing_label">"Gedən ayarlar"</string>
+    <string msgid="1884202151340479161" name="account_settings_outgoing_summary">"İstifadəçi adı, parol və digər gedən server ayarları"</string>
+    <string msgid="5972183883466873359" name="account_settings_policies">"Təhlükəsizlik siyasəti"</string>
+    <string msgid="8605492340808650923" name="account_settings_retry_label">"Sinxronlaşdırmağa cəhd edin"</string>
+    <string msgid="2598065993718592906" name="account_settings_retry_summary">"Bu hesabı sinxronlaşdırmaq üçün buraya basın"</string>
+    <string msgid="2238523918221865167" name="account_settings_ringtone">"Zəng səsi seç"</string>
+    <string msgid="3386185135392642067" name="account_settings_servers">"Server ayarları"</string>
+    <string msgid="4733776978291376161" name="account_settings_summary">"Sinx tezliyi, bildirişlər və sair"</string>
+    <string msgid="3172491863244160828" name="account_settings_sync_calendar_enable">"Təqvimi sinxronlaşdır"</string>
+    <string msgid="411960248618953311" name="account_settings_sync_calendar_summary">"Bu hesab üçün təqvim tədbirini sinxronlaşdırın"</string>
+    <string msgid="2642448079273767521" name="account_settings_sync_contacts_enable">"Kontaktları sinxronlaşdırın"</string>
+    <string msgid="1716022682035150630" name="account_settings_sync_contacts_summary">"Bu hesab üçün olan kontaktları sinxronlaşdırın"</string>
+    <string msgid="7135765408226471860" name="account_settings_sync_email_enable">"E-poçtu sinxronlaşdır"</string>
+    <string msgid="71710510041953351" name="account_settings_sync_email_summary">"E-poçtu bu hesab üçün sinxronlaşdırın"</string>
+    <string msgid="7286722617178322465" name="account_settings_unsupported_label">"Dəstəklənməyən siyasətlər"</string>
+    <string msgid="1980825746966562221" name="account_settings_unsupported_summary">"Heç biri"</string>
+    <string msgid="1434091698882290052" name="account_setup_ab_headline">"Hesab növünü təsdiqləyin"</string>
+    <string msgid="6223657094843768202" name="account_setup_ab_instructions_format">"Siz <ns1:g id="EMAIL">%1$s</ns1:g> e-poçtunu <ns1:g id="USERPROTOCOL">%2$s</ns1:g> istifadə edən olaraq qeyd etdiniz, lakin hesab <ns1:g id="PROVIDERPROTOCOL">%3$s</ns1:g> istifadə edə bilər."</string>
+    <string msgid="3375795537675351389" name="account_setup_account_type_headline">"Hesab növü"</string>
+    <string msgid="968088954656738617" name="account_setup_account_type_instructions">"Bu hansı növ hesabdır?"</string>
+    <string msgid="4075075565221436715" name="account_setup_autodiscover_dlg_authfail_message">"İstifadəçi adının, parolun və hesab ayarlarının düzgün olduğunu təsdiqləyin."</string>
+    <string msgid="7551559109838593189" name="account_setup_autodiscover_dlg_authfail_title">"Hesab quraşdırması ilə bağlı problem"</string>
+    <string msgid="8701406783555749929" name="account_setup_basics_email_label">"E-poçt ünvanı"</string>
+    <string msgid="8468280216822264643" name="account_setup_basics_headline">"E-poçt hesabı"</string>
+    <string msgid="7690861839383362085" name="account_setup_basics_manual_setup_action">"Əl ilə quraşdırma"</string>
+    <string msgid="784962388753706730" name="account_setup_basics_password_label">"PAROL"</string>
+    <string msgid="5050895656741229172" name="account_setup_basics_title">"Hesab quraşdırma"</string>
+    <string msgid="9196418179524308411" name="account_setup_check_settings_check_incoming_msg">"Server xidmətləri təsdiq olunur…"</string>
+    <string msgid="9062019904409225329" name="account_setup_check_settings_check_outgoing_msg">"Smtp ayarları təsdiq edilir..."</string>
+    <string msgid="9103280616618316032" name="account_setup_check_settings_retr_info_msg">"Hesab məlumatı əldə edilir…"</string>
+    <string msgid="2898648422471181490" name="account_setup_creating_account_msg">"Hesab yaradılır…"</string>
+    <string msgid="8756785660598838350" name="account_setup_exchange_certificate_title">"KLİENT SERTİFİKATI"</string>
+    <string msgid="2306603503497194905" name="account_setup_exchange_device_id_label">"MOBİL CİHAZ ID\'Sİ"</string>
+    <string msgid="3569712401698909695" name="account_setup_exchange_no_certificate">"Heç biri"</string>
+    <string msgid="1222387802827919583" name="account_setup_exchange_remove_certificate">"Sil"</string>
+    <string msgid="264748505181695915" name="account_setup_exchange_select_certificate">"Seç"</string>
+    <string msgid="6513687497912094538" name="account_setup_exchange_use_certificate">"Klient sertifikatı istifadə edin"</string>
+    <string msgid="2051742796367919026" name="account_setup_failed_access_denied">"Bu serverlə sinxronlaşmağa icazəniz yoxdur. Ətraflı məlumat üçün server administratoru ilə əlaqə saxlayın."</string>
+    <string msgid="2684010997018901707" name="account_setup_failed_auth_required">"Autentifikasiya metodları server tərəfindən dəstəklənmir."</string>
+    <string msgid="4574461885959029072" name="account_setup_failed_certificate_inaccessible">"Sertifikat etibarsızdır və ya girişsizdir."</string>
+    <string msgid="4607859382193244795" name="account_setup_failed_certificate_required">"Klient sertifikatı tələb olunur. Klient sertifikatı olan serverə qoşulmaq istəyirsiniz?"</string>
+    <string msgid="430054384233036305" name="account_setup_failed_check_credentials_message">"Server xəta ilə cavab verdi. İstifadəçi adınızı və parolu yoxlayaraq, yenidən cəhd edin."</string>
+    <string msgid="5608549872868036352" name="account_setup_failed_dlg_auth_message">"İstifadəçi adı və ya parol yanlışdır."</string>
+    <string msgid="4725950885859654809" name="account_setup_failed_dlg_certificate_message">"Serverə təhlükəsiz qoşula bilməz."</string>
+    <string msgid="3451681985727559303" name="account_setup_failed_dlg_certificate_message_fmt">"Serverə təhlükəsiz qoşula bilməz.\n(<ns1:g id="ERROR">%s</ns1:g>)"</string>
+    <string msgid="8155332642922842729" name="account_setup_failed_dlg_edit_details_action">"Detallara düzəliş edin"</string>
+    <string msgid="1180197172141077524" name="account_setup_failed_dlg_server_message">"Serverə qoşulmaq olmur."</string>
+    <string msgid="3889441611138037320" name="account_setup_failed_dlg_server_message_fmt">"Serverə qoşula bilmir.\n(<ns1:g id="ERROR">%s</ns1:g>)"</string>
+    <string msgid="7923577224474005464" name="account_setup_failed_dlg_title">"Qurtarmaq olmur."</string>
+    <string msgid="3862689923436539909" name="account_setup_failed_ioerror">"Serverə bağlantını aça bilmədi."</string>
+    <string msgid="4973054582044010375" name="account_setup_failed_protocol_unsupported">"Siz yanlış server ünvanı və ya E-poçtun dəstəkləmədiyi protokol versiyasını tələb edən server yazmısınız."</string>
+    <string msgid="1627240499907011040" name="account_setup_failed_security">"Təhlükəsizlik xətasına görə server bağlantısı açıla bilmədi."</string>
+    <string msgid="4619685657253094627" name="account_setup_failed_security_policies_unsupported">"Bu server Android cihazınızın dəstəkləmədiyi təhlükəsizlik özəlliklərini tələb edir, həmçinin: <ns1:g id="ERROR">%s</ns1:g>"</string>
+    <string msgid="1902309158359287958" name="account_setup_failed_tls_required">"TLS tələb olunur, lakin server tərəfindən dəstəklənmir."</string>
+    <string msgid="8677018382715596606" name="account_setup_incoming_delete_policy_delete_label">"Gələnlər Qutusundan sildiyim zaman"</string>
+    <string msgid="2341742235654301690" name="account_setup_incoming_delete_policy_label">"E-poçtu serverdən sil"</string>
+    <string msgid="5777530843489961009" name="account_setup_incoming_delete_policy_never_label">"Heç vaxt"</string>
+    <string msgid="6232828824446177639" name="account_setup_incoming_headline">"Gələn server ayarları"</string>
+    <string msgid="206747922689229932" name="account_setup_incoming_imap_path_prefix_hint">"İstəyə görə"</string>
+    <string msgid="3531290378620033218" name="account_setup_incoming_imap_path_prefix_label">"IMAP cığır prefiksi"</string>
+    <string msgid="4806105500058512876" name="account_setup_incoming_password_label">"PAROL"</string>
+    <string msgid="402562424498833560" name="account_setup_incoming_port_label">"PORT:"</string>
+    <string msgid="8360505617331971663" name="account_setup_incoming_security_label">"GÜVƏNLİK NÖVÜ"</string>
+    <string msgid="2461510827337484818" name="account_setup_incoming_security_none_label">"Heç biri"</string>
+    <string msgid="5169133414545009342" name="account_setup_incoming_security_ssl_label">"SSL/TLS"</string>
+    <string msgid="2834386066577239560" name="account_setup_incoming_security_ssl_trust_certificates_label">"SSL/TLS (Bütün sertifikatları qəbul et)"</string>
+    <string msgid="3892291833944170882" name="account_setup_incoming_security_tls_label">"STARTTLS"</string>
+    <string msgid="2281920902104029077" name="account_setup_incoming_security_tls_trust_certificates_label">"STARTTLS (bütün sertifikatları qəbul et)"</string>
+    <string msgid="5409694850973258387" name="account_setup_incoming_server_label">"SERVER"</string>
+    <string msgid="2609699829997945895" name="account_setup_incoming_username_label">"İSTİFADƏÇİ ADI"</string>
+    <string msgid="3487538709712378441" name="account_setup_names_account_name_label">"Hesab adı verin (istəyə görə)"</string>
+    <string msgid="2031978210683887370" name="account_setup_names_headline">"Hesabınız quraşdırıldı və e-məktub yoldadır!"</string>
+    <string msgid="4298006111315033499" name="account_setup_names_user_name_label">"Adınız (gedən mesajlarda göstərilir)"</string>
+    <string msgid="4085327585082867216" name="account_setup_options_background_attachments_label">"Wi-Fi qoşulan zaman qoşmaları avtomatik endir"</string>
+    <string msgid="4810292194395251968" name="account_setup_options_headline">"Hesab seçənəkləri"</string>
+    <string msgid="8787901333816702849" name="account_setup_options_mail_check_frequency_10min">"Hər 10 dəqiqə"</string>
+    <string msgid="7127640170766018765" name="account_setup_options_mail_check_frequency_15min">"Hər 15 dəqiqə"</string>
+    <string msgid="107706566853925273" name="account_setup_options_mail_check_frequency_1hour">"Hər saat"</string>
+    <string msgid="4223562871143897449" name="account_setup_options_mail_check_frequency_30min">"Hər 30 dəqiqə"</string>
+    <string msgid="8929785860545198867" name="account_setup_options_mail_check_frequency_5min">"Hər 5 dəqiqə"</string>
+    <string msgid="7253305392938373553" name="account_setup_options_mail_check_frequency_label">"Sinx tezliyi:"</string>
+    <string msgid="2937664246354067829" name="account_setup_options_mail_check_frequency_never">"Heç vaxt"</string>
+    <string msgid="5511415696925307797" name="account_setup_options_mail_check_frequency_push">"Avtomatik (Bas)"</string>
+    <string msgid="7930883294844418428" name="account_setup_options_mail_window_1day">"Son gün"</string>
+    <string msgid="3228265299330513816" name="account_setup_options_mail_window_1month">"Keçən ay"</string>
+    <string msgid="5230695719358085318" name="account_setup_options_mail_window_1week">"Keçən həftə"</string>
+    <string msgid="1144271277694832921" name="account_setup_options_mail_window_2weeks">"Son iki həftə"</string>
+    <string msgid="3435093562391555730" name="account_setup_options_mail_window_3days">"Son üç gün"</string>
+    <string msgid="4794683936065721438" name="account_setup_options_mail_window_all">"Hamısı"</string>
+    <string msgid="7407981634952005775" name="account_setup_options_mail_window_auto">"Avtomatik"</string>
+    <string msgid="5518038139722596598" name="account_setup_options_mail_window_default">"Hesab defoltu istifadə edin"</string>
+    <string msgid="4737241149297585368" name="account_setup_options_mail_window_label">"E-məktubları buradan sinx:"</string>
+    <string msgid="3101529443722198112" name="account_setup_options_notify_label">"E-məktub gələn zaman mənə xəbər ver"</string>
+    <string msgid="303441956432308807" name="account_setup_options_sync_calendar_label">"Bu hesabdan təqvimi sinxronlaşdırın"</string>
+    <string msgid="5029046373980454714" name="account_setup_options_sync_contacts_label">"Bu hesabdan kontaktları sinxronlaşdırın"</string>
+    <string msgid="468957966555663131" name="account_setup_options_sync_email_label">"Bu hesabdan e-poçtu sinxronlaşdırın"</string>
+    <string msgid="6638171491109658047" name="account_setup_outgoing_headline">"Gedən server ayarları"</string>
+    <string msgid="3735952013505812378" name="account_setup_outgoing_port_label">"PORT:"</string>
+    <string msgid="5405196721947884033" name="account_setup_outgoing_require_login_label">"Daxil olmağı tələb edin"</string>
+    <string msgid="6473177134731615282" name="account_setup_outgoing_security_label">"GÜVƏNLİK NÖVÜ"</string>
+    <string msgid="3460163861711242681" name="account_setup_outgoing_smtp_server_label">"SMTP SERVERİ:"</string>
+    <string msgid="8844680398828891772" name="account_setup_outgoing_username_label">"İSTİFADƏÇİ ADI"</string>
+    <string msgid="5930042642982830233" name="account_setup_password_subheading">"Parol"</string>
+    <string msgid="9029471168291631932" name="account_setup_security_policies_required_fmt">"<ns1:g id="SERVER">%s</ns1:g> serveri Android cihazınızın özəlliklərini uzaqdan idarə etmək üçün icazə verməyinizi tələb edir. Bu hesabı quraşdırmağı bitirmək istəyirsiniz mi?"</string>
+    <string msgid="667943309546419435" name="account_setup_security_required_title">"Uzaqdan təhlükəsizlik idarəçiliyi"</string>
+    <string msgid="3659744829670065777" name="account_setup_username_password_toast">"Etibarlı e-poçt ünvanı və parol yazın."</string>
+    <string msgid="5720018952998097061" name="account_sync_off">"Hesab sinxronizasiyası deaktivdir. Hesab ayarlarını &lt;a href=\'http://www.example.com\'>daxilində aktivləşdirin.&lt;/a>"</string>
+    <string msgid="8848194305692897677" name="account_waiting_for_folders_msg">"Qovluq siyahısı yüklənir…"</string>
+    <string msgid="7230367425520242593" name="accounts_welcome">"Sadəcə bir neçə addımda hesabınızı quraşdıra bilərsiniz."</string>
+    <string msgid="8375243281001234750" name="activity_folder_selection">"Qovluq seçin"</string>
+    <string msgid="7489813868539767701" name="activity_mailbox_selection">"Hesab seçin"</string>
+    <string msgid="8966077432517613292" name="activity_preferences">"Ayarlar"</string>
+    <string msgid="5905863370226612377" name="add_account">"Hesab əlavə edin"</string>
+    <string msgid="382998197798081729" name="add_authentication_label">"İdentifikasiya əlavə et"</string>
+    <string msgid="963745641238037813" name="add_bcc_label">"Nüsxəni gizli alan əlavə edin"</string>
+    <string msgid="2249679001141195213" name="add_cc_label">"Nüsxəni alan/Nüsxəni gizli alan əlavə edin"</string>
+    <string msgid="2604880054248593993" name="add_file_attachment">"Fayl qoşun"</string>
+    <string msgid="3285338046038610902" name="add_label">"Qovluq əlavə edin"</string>
+    <string msgid="7163589794940909528" name="add_photo_attachment">"Şəkil qoşun"</string>
+    <string msgid="3275117671153616270" name="add_star">"Ulduz əlavə edin"</string>
+    <string msgid="2098008376913966177" name="address_display_format">"<ns1:g id="NAME">%1$s</ns1:g> <ns1:g id="EMAIL">%2$s</ns1:g>"</string>
+    <string msgid="8108294635074750048" name="address_display_format_with_via_domain">"<ns1:g id="VIA_DOMAIN">%3$s</ns1:g> vasitəsilə <ns1:g id="NAME">%1$s</ns1:g> <ns1:g id="EMAIL">%2$s</ns1:g>"</string>
+    <string msgid="9023770187629170967" name="all_folders_heading">"Bütün qovluqlar"</string>
+    <string msgid="556087529413707819" name="always_show_images">"Həmişə bu göndəricidən şəkillər göstər"</string>
+    <string msgid="3763157294047555051" name="always_show_images_toast">"Bu göndəricidən olan şəkillər avtomatik göstəriləcək."</string>
+    <string msgid="2206468539066258195" name="app_name">"E-poçt"</string>
+    <string msgid="5978663590021719939" name="archive">"Arxiv"</string>
+    <string msgid="6283673603512713022" name="archived">"Arxivlənmiş"</string>
+    <string msgid="2110108876623152162" name="attachment_application_msword">"Sənəd"</string>
+    <string msgid="4207340200944655970" name="attachment_application_pdf">"PDF"</string>
+    <string msgid="5585781311136609103" name="attachment_application_vnd_ms_excel">"Cədvəl"</string>
+    <string msgid="425353008963359230" name="attachment_application_vnd_ms_powerpoint">"Təqdimat"</string>
+    <string msgid="7097658089301809284" name="attachment_audio">"Audio"</string>
+    <string msgid="6375306026208274564" name="attachment_image">"Təsvir"</string>
+    <string msgid="2274397783497640486" name="attachment_permission_denied">"Qoşmaya icazə verilmədi."</string>
+    <string msgid="3485853714965922173" name="attachment_text">"Mətn"</string>
+    <string msgid="3360536730101083926" name="attachment_unknown">"<ns1:g id="ATTACHMENTEXTENSION">%s</ns1:g> Fayl"</string>
+    <string msgid="7119476472603939848" name="attachment_video">"Video"</string>
+    <string msgid="914463525214987772" name="authentication_label">"İDENTİFİKASİYA"</string>
+    <string msgid="3691189864057581214" name="auto_sync_off">"Avto sinxronizasiya deaktivdir. Aktiv etmək üçün toxunun."</string>
+    <string msgid="3979372269373936750" name="badge_and_subject">"<ns1:g id="ID_1">%1$s</ns1:g> <ns1:g id="ID_2">%2$s</ns1:g>"</string>
+    <string msgid="519303553518479171" name="bcc">"Nüsxəni gizli alan"</string>
+    <string msgid="1834716758549842454" name="bcc_header_for_recipient_summary">"nüsxəni gizli alan: "</string>
+    <string msgid="1482186590756218269" name="bcc_heading">"Nüsxəni gizli alan"</string>
+    <string msgid="6478994981747057817" name="body_hint">"E-məktub yazın"</string>
+    <string msgid="651011686747499628" name="bytes">"<ns1:g id="COUNT">%s</ns1:g> B"</string>
+    <string msgid="4831678293149626190" name="cancel">"Ləğv et"</string>
+    <string msgid="4155490583610926755" name="cant_move_or_change_labels">"Seçim çox fəaliyyət içərdiyi üçün daşına bilməz."</string>
+    <string msgid="8768828862207919684" name="cc">"Nüsxəni alan"</string>
+    <string msgid="2928584226469388899" name="cc_attribution">"Nüsxəni alan: <ns1:g id="CC">%1$s</ns1:g>&lt;br>"</string>
+    <string msgid="5603892257866345823" name="cc_heading">"Nüsxəni alan:"</string>
+    <string msgid="9174464298613273814" name="change_folders_selection_dialog_title">"Qovluqları dəyiş"</string>
+    <string msgid="3615852118397055361" name="change_sync_settings">"Sinx ayarlarını dəyişin"</string>
+    <string msgid="3539537264873337959" name="choosertitle_sharevia">"Bunun vasitəsilə paylaş"</string>
+    <string msgid="765949970989448022" name="clear">"Təmizlə"</string>
+    <string msgid="4750930803913225689" name="clear_authentication_label">"İdentifikasiyanı təmizlə"</string>
+    <string msgid="3952553078559373729" name="clear_display_images_whitelist_dialog_message">"Daha əvvəldən icazə verilən göndərənlərdən sətiriçi şəkilləri göstərməyi dayandır."</string>
+    <string msgid="1942692501166848471" name="clear_display_images_whitelist_dialog_title">"Şəkil təsdiqləri təmizlənsin?"</string>
+    <string msgid="2012677202404471778" name="clear_display_images_whitelist_title">"Şəkil təsdiqlərini təmizlə"</string>
+    <string msgid="5202922561632407778" name="clear_history_dialog_message">"Əvvəllər yerinə yetirdiyiniz bütün axtarışlar silinəcək."</string>
+    <string msgid="3503603389704365385" name="clear_history_dialog_title">"Axtarış tarixçəsi təmizlənsin?"</string>
+    <string msgid="5536216295725760357" name="clear_history_title">"Axtarış tarixçəsini təmizləyin"</string>
+    <string msgid="2602861958391035523" name="compose">"Tərtib edin"</string>
+    <string msgid="5673376086133995913" name="compose_title">"Tərtib edin"</string>
+    <string msgid="5172680524418848519" name="confirm_discard_text">"Bu məktub kənar edilsin?"</string>
+    <string msgid="6764021931370809514" name="confirm_response">"Cavab göndərilir..."</string>
+    <string msgid="6211518590166222735" name="confirm_send_message">"Bu mesaj göndərilsin?"</string>
+    <string msgid="3329355318700201516" name="confirm_send_message_with_no_body">"Mesaj bölməsində heç bir mətn yoxdur."</string>
+    <string msgid="1442628074022609987" name="confirm_send_message_with_no_subject">"Mesaj mövzusunda mətn yoxdur."</string>
+    <string msgid="6484930184867405276" name="contact_info_string">"<ns1:g id="NAME">%1$s</ns1:g> üçün kontakt məlumatları göstər"</string>
+    <string msgid="6204228921864816351" name="contact_info_string_default">"Əlaqə məlumatlarını göstər"</string>
+    <string msgid="854320355052962069" name="content_description">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> <ns1:g id="SUBJECT">%3$s</ns1:g> haqqında, <ns1:g id="DATE">%5$s</ns1:g> tarixində <ns1:g id="SNIPPET">%4$s</ns1:g>, <ns1:g id="READSTATE">%6$s</ns1:g>"</string>
+    <string msgid="1634422834354116955" name="content_description_today">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> <ns1:g id="SUBJECT">%3$s</ns1:g> haqqında, <ns1:g id="TIME">%5$s</ns1:g> radəsində <ns1:g id="SNIPPET">%4$s</ns1:g>, <ns1:g id="READSTATE">%6$s</ns1:g>"</string>
+    <string msgid="860548626146933495" name="content_description_today_with_folders">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> haqqında <ns1:g id="SUBJECT">%3$s</ns1:g>, <ns1:g id="SNIPPET">%4$s</ns1:g> radəsində: <ns1:g id="TIME">%5$s</ns1:g>, <ns1:g id="READSTATE">%6$s</ns1:g>, etiketlər: <ns1:g id="FOLDERS">%7$s</ns1:g>"</string>
+    <string msgid="482368474097191879" name="content_description_with_folders">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> haqqında <ns1:g id="SUBJECT">%3$s</ns1:g>, <ns1:g id="SNIPPET">%4$s</ns1:g> tarixində: <ns1:g id="DATE">%5$s</ns1:g>, <ns1:g id="READSTATE">%6$s</ns1:g>, etiketlər: <ns1:g id="FOLDERS">%7$s</ns1:g>"</string>
+    <string msgid="2310064151427072475" name="contextmenu_add_contact">"Kontakt əlavə et"</string>
+    <string msgid="2584243784216385180" name="contextmenu_copy">"Kopyala"</string>
+    <string msgid="8659897702269320063" name="contextmenu_copylink">"URL linkini kopyalayın"</string>
+    <string msgid="8881095692316726628" name="contextmenu_dial_dot">"Nömrə yığın..."</string>
+    <string msgid="5118951927399465521" name="contextmenu_map">"Xəritə"</string>
+    <string msgid="6952228183947135362" name="contextmenu_openlink">"Brauzerdə açın"</string>
+    <string msgid="3834654593200105396" name="contextmenu_send_mail">"E-poçt göndərin"</string>
+    <string msgid="8670940060477758709" name="contextmenu_sharelink">"Linki paylaşın"</string>
+    <string msgid="5319737001771622657" name="contextmenu_sms_dot">"SMS..."</string>
+    <string msgid="1031172763893491000" name="contextmenu_view_image">"Şəklə baxın"</string>
+    <string msgid="6475872337373081683" name="conversation_folder_moved">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> qovluğuna köçürülüb"</string>
+    <string msgid="836483155429003787" name="conversation_photo_welcome_text">"O söhbəti seçmək üçün göndərici şəklinə toxunun."</string>
+    <string msgid="3121335168340432582" name="copyright">"©<ns1:g id="YEAR">%1$d</ns1:g> Google Inc."</string>
+    <string msgid="971422874488783312" name="copyright_information">"Müəlliflik məlumatı"</string>
+    <string msgid="6575946089819721958" name="create_action">"Yenisini yaradın"</string>
+    <string msgid="5794846334232367838" name="custom_date">"Fərdi"</string>
+    <string msgid="5042317430007736322" name="custom_from_account_label">"Məktubu bu şəkildə göndərin:"</string>
+    <string msgid="2952994746916149969" name="date_and_view_details">"<ns1:g id="DATE">%1$s</ns1:g> &lt;a href=\'http://www.example.com\'>View details&lt;/a>"</string>
+    <string msgid="4213063948406397168" name="date_heading">"Tarix:"</string>
+    <string msgid="4168417403884350040" name="date_message_received_print">"<ns1:g id="DAY_AND_DATE">%1$s</ns1:g> saat <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string msgid="1061426502665431412" name="date_none">"Heç biri"</string>
+    <string msgid="3251555782945051904" name="date_not_set">"Ayarlanmamış"</string>
+    <string msgid="1337476992195531309" name="debug_title">"Sazlama"</string>
+    <string msgid="6784262386780496958" name="delete">"Sil"</string>
+    <string msgid="7378013910782008375" name="deleted">"Silindi"</string>
+    <string msgid="4299378570982520839" name="device_admin_description">"Server xüsusiyyətli təhlükəsizlik siyasətinə imkan verir"</string>
+    <string msgid="3335272972461391415" name="device_admin_label">"E-poçt"</string>
+    <string msgid="6001542250505146252" name="disable_admin_warning">"XƏBƏRDARLIQ: Cihazınızı idarə etmək üçün e-poçt tətbiq səlahiyyətinin deaktiv olunması bunu tələb edən bütün e-poçt hesablarını siləcək. Buna e-poçt, kontaktlar, təqvim tədbirləri və digər data aiddir."</string>
+    <string msgid="4905982179911608430" name="discard">"İmtina et"</string>
+    <string msgid="5699760550972324746" name="discard_changes">"Dəyişikliklər ləğv edilsin?"</string>
+    <string msgid="5881484193628472105" name="discard_drafts">"Qaralamaları atın"</string>
+    <string msgid="7520780769812210279" name="discard_failed">"Silinmə alınmadı"</string>
+    <string msgid="5400049020835024519" name="dismiss_tip_hover_text">"İpucunu qapadın"</string>
+    <string msgid="344354738335270292" name="done">"Tamam"</string>
+    <string msgid="8195787340878328119" name="download_again">"Yenidən endirin"</string>
+    <string msgid="3878373998269062395" name="download_failed">"Endirmək olmadı. Yenidən cəhd etmək üçün toxunun."</string>
+    <string msgid="9122583199850209286" name="draft_count_format">" (<ns1:g id="COUNT">%1$s</ns1:g>)"</string>
+    <string msgid="7032951343184552800" name="draft_heading">"Qaralama"</string>
+    <string msgid="7370121943946205024" name="draft_to_heading">"Qaralama:"</string>
+    <string msgid="2065829742127544297" name="drawer_close">"Naviqasiya siyirtməsini bağla"</string>
+    <string msgid="2285557278907103851" name="drawer_open">"Naviqasiya siyirtməsini aç"</string>
+    <string msgid="3766219846644975778" name="drawer_title">"Naviqasiya"</string>
+    <string msgid="3048014284772648575" name="edit_quick_response_dialog">"Qısa cavab"</string>
+    <string msgid="64258748053106017" name="email_confirmation_label">"E-poçt ünvanı:"</string>
+    <string msgid="6577383216635400167" name="eml_loader_error_toast">"Fayl açılmır"</string>
+    <string msgid="3227552635613553855" name="empty_folder">"Burada heç bir məktub yoxdur."</string>
+    <string msgid="5901734942362315228" name="empty_inbox">"Hər şeyi tamamladınız! Gününüzdən həzz alın."</string>
+    <string msgid="8564899353449880818" name="empty_search">"Vay! Biz \"<ns1:g id="SEARCH_QUERY">%1$s</ns1:g>\" sorğusu üçün heç nə tapmadıq."</string>
+    <string msgid="2911988289997281371" name="empty_spam">"Boş Spam qovluğu"</string>
+    <string msgid="1130319045917820569" name="empty_spam_dialog_title">"Span Boşaldılsın?"</string>
+    <string msgid="3288985543286122800" name="empty_spam_folder">"Ura, heç bir spam yoxdur!"</string>
+    <string msgid="3385937024924728399" name="empty_trash">"Boş zibil yeşiyi"</string>
+    <string msgid="2104898489663621508" name="empty_trash_dialog_title">"Zibil Qutusu Boşaldılsın?"</string>
+    <string msgid="378119063015945020" name="empty_trash_folder">"Burada heç bir zibil yoxdur. Boşaltdığınız üçün təşəkkür edirik!"</string>
+    <string msgid="2848850136844740850" name="enumeration_comma">", "</string>
+    <string msgid="293118547772095111" name="exchange_name_alternate">"Microsoft Exchange ActiveSync"</string>
+    <string msgid="204247008751740034" name="feedback">"Cavab rəyi göndərin"</string>
+    <string msgid="2286628490159574159" name="fetching_attachment">"Qoşma əldə edilir"</string>
+    <string msgid="721666921386074505" name="filtered_tag">"[<ns1:g id="TAG">%1$s</ns1:g>]<ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="6272938864914794739" name="folder_icon_desc">"Qovluq ikonası"</string>
+    <string msgid="5656281444688183676" name="folder_removed">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> qovluğundan silindi"</string>
+    <string msgid="6466292659577092915" name="folder_shortcut_widget_label">"E-poçt qovluğu"</string>
+    <string msgid="349478353401667107" name="folder_sync_settings_pref_title">"Qovluq sinx ayarları"</string>
+    <string msgid="2876312737118986789" name="forms_are_disabled">"Formalar Gmail\'də deaktivləşdirilib"</string>
+    <string msgid="4397585145490426320" name="forward">"Yönləndirin"</string>
+    <string msgid="597850048345475752" name="forward_attribution">"---------- Yönləndirilmiş mesaj ----------&lt;br>From: <ns1:g id="FROM">%1$s</ns1:g>&lt;br>Tarix: <ns1:g id="DATE">%2$s</ns1:g>&lt;br>Mövzu: <ns1:g id="SUBJECT">%3$s</ns1:g>&lt;br>To: <ns1:g id="TO">%4$s</ns1:g>&lt;br>"</string>
+    <string msgid="1828826576779486239" name="forward_attribution_no_headers">"---------- Yönləndirilmiş mesaj ----------"</string>
+    <string msgid="2900585518884851062" name="forward_download_failed_ticker">"Bir və daha çox qoşma yönləndirilə bilmədi"</string>
+    <string msgid="2043036709913723298" name="forward_download_failed_title">"Qoşmalar yönləndirilmədi"</string>
+    <string msgid="5159056500059912358" name="from">"Kimdən"</string>
+    <string msgid="48290556829713090" name="from_heading">"Kimdən:"</string>
+    <string msgid="4212138728220418162" name="general_preferences_title">"Ümumi ayarlar"</string>
+    <string msgid="4683974765387240723" name="generic_attachment_problem">"Fayl qoşula bilmədi."</string>
+    <string msgid="8403333791332403244" name="getting_messages">"Mesajlarınız əldə edilir"</string>
+    <string msgid="2099786953868369991" name="gmail_name">"Gmail"</string>
+    <string msgid="7211458338163287670" name="help_and_feedback">"Yardım və geri əlaqə"</string>
+    <string msgid="3708286489943154681" name="help_and_info">"Yardım"</string>
+    <string msgid="8018801050702453314" name="hide_details">"Detalları gizlət"</string>
+    <string msgid="5768235486834692733" name="hide_elided">"▼ Sitat gətirilmiş mətni gizlət"</string>
+    <string msgid="7618891933409521283" name="hide_folders">"Qovluqları gizlət"</string>
+    <string msgid="8760314545535838430" name="ignore_spam_warning">"İqnor et, bu mesaja inanıram"</string>
+    <string msgid="8285222985908214985" name="imap_name">"Şəxsi (IMAP)"</string>
+    <string msgid="1357564480946178121" name="info">"İnfo"</string>
+    <string msgid="9157434699389936584" name="invalid_recipient">"<ns1:g id="WRONGEMAIL">%s</ns1:g> ünvanı etibarsızdır."</string>
+    <string msgid="1523463964465770347" name="kilobytes">"<ns1:g id="COUNT">%s</ns1:g> KB"</string>
+    <string msgid="323232821061341014" name="label_notification_ticker">"<ns1:g id="LABEL">%s</ns1:g>: <ns1:g id="NOTIFICATION">%s</ns1:g>"</string>
+    <string msgid="140881511322826320" name="label_notification_vibrate_title">"Vibrasiya"</string>
+    <string msgid="3055042669246912518" name="large_unseen_count">"<ns1:g id="COUNT">%d</ns1:g>+ yeni"</string>
+    <string msgid="8702691358453560575" name="load_more">"Daha çox yükləyin"</string>
+    <string msgid="7931600025861500397" name="loading_conversation">"Yüklənir…"</string>
+    <string msgid="7255732786298655246" name="loading_conversations">"Yüklənir…"</string>
+    <string msgid="4620839194581484497" name="login_failed_ticker">"<ns1:g id="ACCOUNT_NAME">%s</ns1:g> giriş uğursuz oldu."</string>
+    <string msgid="1737884069957090004" name="login_failed_title">"Daxil ola bilmədi"</string>
+    <string msgid="1660881999120625177" name="long_press_to_select_tip">"Bir söhbəti seçmək üçün toxunaraq barmağınızı saxlayın, sonra daha çoxunu seçmək üçün toxunun."</string>
+    <string msgid="4155918930481733669" name="mailbox_list_account_selector_combined_view">"Birləşmiş görünüş"</string>
+    <string msgid="3552043116466269581" name="mailbox_name_display_drafts">"Qaralamalar"</string>
+    <string msgid="5093068725739672126" name="mailbox_name_display_inbox">"Gələnlər qutusu"</string>
+    <string msgid="1634126984313831675" name="mailbox_name_display_junk">"Zir-zibil"</string>
+    <string msgid="8735725798805339414" name="mailbox_name_display_outbox">"Gedənlər Qutusu"</string>
+    <string msgid="6705058612006729985" name="mailbox_name_display_sent">"Göndərilmiş"</string>
+    <string msgid="8076384721309828453" name="mailbox_name_display_starred">"Ulduzlu"</string>
+    <string msgid="7020792045007681852" name="mailbox_name_display_trash">"Zibil qutusu"</string>
+    <string msgid="1453575937919310339" name="mailbox_name_display_unread">"Oxunmamış"</string>
+    <string msgid="2196614373847675314" name="mailbox_settings_activity_title">"Sinx seçənəkləri"</string>
+    <string msgid="5547676392298186906" name="mailbox_settings_activity_title_with_mailbox">"Sinx seçənəkləri (<ns1:g id="MAILBOXX_NAME">%s</ns1:g>)"</string>
+    <string msgid="7027516982341382326" name="mailbox_settings_mailbox_sync_window_label">"Məktubun sinxronlaşma günləri"</string>
+    <string msgid="7723413381707277856" name="mailbox_settings_sync_enabled_label">"Bu qovluğu sinxronlaşdırın"</string>
+    <string msgid="742233465207750578" name="mailbox_settings_sync_enabled_summary">"Mesajlar qoşulan zaman endirəcək"</string>
+    <string msgid="4734660452395086786" name="manage_accounts_menu_item">"Hesabları idarə edin"</string>
+    <string msgid="2271479734895537848" name="manual_sync">"İndi sinxronlaşdırın"</string>
+    <string msgid="8781680450177768820" name="mark_important">"Önəmli olaraq qeyd edin"</string>
+    <string msgid="3342258155408116917" name="mark_not_important">"Önəmsiz olaraq qeyd edin"</string>
+    <string msgid="8617774236231366651" name="mark_not_spam">"Spam olmadığını bildirin"</string>
+    <string msgid="579388143288052493" name="mark_read">"Oxunmuş olaraq qeyd edin"</string>
+    <string msgid="6245060538061533191" name="mark_unread">"Oxunmamış olaraq qeyd edin"</string>
+    <string msgid="4674452244417913816" name="me_object_pronoun">"mən"</string>
+    <string msgid="7479328865714008288" name="me_subject_pronoun">"mən"</string>
+    <string msgid="4309397368708773323" name="megabytes">"<ns1:g id="COUNT">%s</ns1:g> MB"</string>
+    <string msgid="2194946192901276625" name="menu_change_folders">"Qovluqları dəyişin"</string>
+    <string msgid="4575025207594709432" name="menu_compose">"Tərtib edin"</string>
+    <string msgid="8486398523679534519" name="menu_manage_folders">"Qovluq ayarları"</string>
+    <string msgid="7948877550284452830" name="menu_move_to">"Daşıyın:"</string>
+    <string msgid="258554178236001444" name="menu_move_to_inbox">"Gələnlərə köçürün"</string>
+    <string msgid="3084679038179342333" name="menu_photo_print">"Çap"</string>
+    <string msgid="2742869476474613396" name="menu_photo_save_all">"Hamısını yadda saxla"</string>
+    <string msgid="6410980274832639330" name="menu_photo_share">"Paylaşın"</string>
+    <string msgid="3049053252719665320" name="menu_photo_share_all">"Hamısını paylaşın"</string>
+    <string msgid="1949652467806052768" name="menu_search">"Axtar"</string>
+    <string msgid="7993485401501778040" name="menu_settings">"Ayarlar"</string>
+    <string msgid="2330398228979616661" name="menu_show_original">"Avtomatik ölçüləməni çevirin"</string>
+    <string msgid="8653049392208282481" name="menu_toggle_drawer">"Keçid siyirtməsi"</string>
+    <string msgid="6193988236722150221" name="message_compose_fwd_header_fmt">\n\n"-------- Original Mesaj --------\nMövzu: <ns1:g id="SUBJECT">%1$s</ns1:g>\nKimdən: <ns1:g id="SENDER">%2$s</ns1:g>\nKimə: <ns1:g id="TO">%3$s</ns1:g>\nNüsxəni Alan: <ns1:g id="CC_0">%4$s</ns1:g>\n\n"</string>
+    <string msgid="5836926808818821309" name="message_compose_insert_quick_response_list_title">"Tez cavab daxil edin"</string>
+    <string msgid="4393288554605333619" name="message_compose_insert_quick_response_menu_title">"Çevik cavab daxil edin"</string>
+    <string msgid="91396461771444300" name="message_decode_error">"Mesaj deşifrələnən zaman xəta baş verdi."</string>
+    <string msgid="60771875776494764" name="message_details_title">"Mesaj detalları"</string>
+    <string msgid="6792661321962262024" name="message_discarded">"Mesaj atıldı."</string>
+    <string msgid="7887650587384601790" name="message_failed">"Uğursuz oldu"</string>
+    <string msgid="8002758842580134835" name="message_invite_accept">"Hə"</string>
+    <string msgid="9181966650840809197" name="message_invite_calendar_view">"Təqvimdə Baxın"</string>
+    <string msgid="6331040872447290777" name="message_invite_decline">"Yox"</string>
+    <string msgid="4194264767870003397" name="message_invite_label_attending">"Gedirsiniz?"</string>
+    <string msgid="3199418731566655887" name="message_invite_tentative">"Bəlkə"</string>
+    <string msgid="5985161025144867256" name="message_invite_title">"Təqvim dəvəti"</string>
+    <string msgid="5335188121407261331" name="message_retrying">"Yenidən sınanılır..."</string>
+    <string msgid="3291655042310241793" name="message_saved">"Mesaj qaralama şəklində saxlandı."</string>
+    <string msgid="7571652141281187845" name="message_view_attachment_background_load">"Yönləndirdiyiniz mesajda bir və ya daha çox qoşma göndərilmədən öncə endiriləcək."</string>
+    <string msgid="2899691682394864507" name="more_info_attachment">"İnfo"</string>
+    <string msgid="4052506464467083621" name="move_to_selection_dialog_title">"Buraya daşıyın:"</string>
+    <string msgid="1386588046275174918" name="multiple_new_message_notification_item"><b>"<ns1:g id="SENDER">%1$s</ns1:g>"</b>"   <ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="9164839998562321569" name="mute">"Susdur"</string>
+    <string msgid="5931164247644972255" name="network_error">"Bağlantı yoxdur"</string>
+    <string msgid="2662478712866255138" name="next">"Növbəti"</string>
+    <string msgid="7309485680354949680" name="no_application_found">"Bu qoşmanı göstərmək üçün heç bir tətbiq aça bilməz."</string>
+    <string msgid="8716297053803961304" name="no_quick_responses">"Heç biri əlçatan deyil"</string>
+    <string msgid="5622708348540036959" name="no_subject">"(mövzu yoxdur)"</string>
+    <string msgid="3044618511909304701" name="non_synced_folder_description">"Söhbətləri görmək üçün bu qovluğu sinxronlaşdırın."</string>
+    <string msgid="3600180500934086346" name="not_synced_title">"Hesab sinxronlaşmayıb"</string>
+    <string msgid="2884874164831039047" name="notification_action_archive">"Arxiv"</string>
+    <string msgid="3201627482564624132" name="notification_action_delete">"Sil"</string>
+    <string msgid="3714785653186750981" name="notification_action_remove_label">"Etiketi silin"</string>
+    <string msgid="8378725460102575919" name="notification_action_reply">"Cavablayın"</string>
+    <string msgid="5693469099941000037" name="notification_action_reply_all">"Hamıya cavab"</string>
+    <string msgid="600186958134073582" name="notification_action_undo_archive">"Arxivləşmiş"</string>
+    <string msgid="6915612337413587103" name="notification_action_undo_delete">"Silindi"</string>
+    <string msgid="8341924850540100690" name="notification_action_undo_remove_label">"Etiket Yığışdırıldı"</string>
+    <string msgid="3771260531636603518" name="oauth_authentication_title">"Doğrulama sorğulanır"</string>
+    <string msgid="8466102021844409849" name="oauth_error_description">"Doğrulamaq olmur"</string>
+    <string msgid="6178802457914802336" name="ok">"OK"</string>
+    <string msgid="8643615555920977752" name="open_source_licenses">"Açıq mənbə lisenziyaları"</string>
+    <string msgid="6408695162723653446" name="or_label">"VƏ YA"</string>
+    <string msgid="7886090597023240426" name="overflow_description">"Daha çox seçim"</string>
+    <string msgid="4360288708739366810" name="password_expire_warning_content_title">"Ekran kilidi parolunun vaxtı keçir"</string>
+    <string msgid="1093389293050776319" name="password_expire_warning_dialog_content_fmt">"Siz ekran kilidi PIN\'inizi və ya parolunuzu tezliklə dəyişməlisiniz və ya <ns1:g id="ACCOUNT">%s</ns1:g> üçün olan data silinəcək. İndi dəyişdirilsin?"</string>
+    <string msgid="4901499545146045672" name="password_expire_warning_dialog_title">"Ekran kilidi parolunun vaxtı keçir"</string>
+    <string msgid="5543005790538884060" name="password_expire_warning_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" Sizdən kilid ekranı PIN\'ini və ya parolu dəyişməyi tələb edir."</string>
+    <string msgid="7379094218699681984" name="password_expired_content_title">"Ekran kilid kodunun vaxtı keçdi"</string>
+    <string msgid="8322213184626443346" name="password_expired_dialog_content_fmt">"<ns1:g id="ACCOUNT">%s</ns1:g> datası cihazınızdan silinir. Onu bərpa etmək üçün PIN kilid kodunuzu və ya parolunuzu dəyişməlisiniz. İndi dəyişmək istəyirsiniz?"</string>
+    <string msgid="7275534155170185252" name="password_expired_dialog_title">"Ekran kilidi parolunun vaxtı keçdi"</string>
+    <string msgid="3098703963402347483" name="password_expired_ticker">"Ekran kilidi PIN kodunun və parolun vaxtı keçdi."</string>
+    <string msgid="4226682910292828279" name="password_hint">"Parol"</string>
+    <string msgid="1887439537224212124" name="password_warning_label">"E-poçt ünvanı və ya parol səhvdir"</string>
+    <string msgid="5338433949655493713" name="permission_access_provider_desc">"Tətbiqə, qəbul edilmiş mesajlar, göndərilmiş mesajlar, istifadəçi adları və parollar daxil olmaqla, elektron poçt data bazanıza daxil olmağa imkan verir."</string>
+    <string msgid="977700184037298723" name="permission_access_provider_label">"E-poçt provayder datasına giriş"</string>
+    <string msgid="6579059616090100181" name="permission_read_attachment_desc">"Tətbiqə e-poçt qoşmalarınızı oxumağa imkan verir."</string>
+    <string msgid="6641407731311699536" name="permission_read_attachment_label">"E-poçt qoşmalarını oxumaq"</string>
+    <string msgid="4142617042507912053" name="phone">"telefon"</string>
+    <string msgid="577471721679146999" name="photo_load_failed">"Təsvir yüklənə bilmədi"</string>
+    <string msgid="733396083649496600" name="pick_end_date_title">"Bitir (Seçimli)"</string>
+    <string msgid="2274665037355224165" name="pick_start_date_title">"Başlayır"</string>
+    <string msgid="3953824147776128899" name="please_wait">"Lütfən, gözləyin..."</string>
+    <string msgid="6469328498345236120" name="policy_calendar_age">"Sinxronlaşmış təqvim tədbirlərinin sayını məhdudlaşdırın"</string>
+    <string msgid="8821533827628900689" name="policy_dont_allow_camera">"Cihaz kamerasının istifadəsinə icazə verməyin"</string>
+    <string msgid="3521941976575225050" name="policy_email_age">"Sinxronlaşmış e-poçt sayını məhdudlaşdırın"</string>
+    <string msgid="1287225242918742275" name="policy_password_expiration">"Parolların vaxtının keçməsini tələb edin"</string>
+    <string msgid="9001177390979112746" name="policy_password_history">"Son parolların yenidən istifadəsini məhdudlaşdırın"</string>
+    <string msgid="3556860917024612396" name="policy_require_password">"Cihaz parolu tələb edin"</string>
+    <string msgid="3499201409239287702" name="policy_screen_timeout">"İstifadəsiz qalmış cihazın öz ekranını kilidləməsini tələb edin"</string>
+    <string msgid="6653484706414263493" name="pop3_name">"Şəxsi (POP3)"</string>
+    <string msgid="5459235590885640678" name="prefDialogTitle_autoAdvance">"Buna doğru irəlilədin"</string>
+    <string msgid="7914272565548361304" name="prefDialogTitle_removal_action">"Defolt fəaliyyət"</string>
+    <string msgid="6385669491239514630" name="preference_advance_to_title">"Avto-irəliləmə"</string>
+    <string msgid="7318645995655875718" name="preference_confirm_before_archive_title">"Arxivləmədən öncə təsdiqləyin"</string>
+    <string msgid="7563587174619033835" name="preference_confirm_before_delete_title">"Silmədən öncə təsdiqləyin"</string>
+    <string msgid="4136585783513077039" name="preference_confirm_before_send_title">"Göndərmədən öncə təsdiqləyin"</string>
+    <string msgid="3922674681156121948" name="preference_header_action_confirmations">"Fəaliyyət Təsdiqləmələri"</string>
+    <string msgid="3128186577060329884" name="preference_removal_action_title">"Defolt fəaliyyət"</string>
+    <string msgid="3586817690132199889" name="preference_sender_image_description">"Söhbət siyahısı yanında ad göstərin"</string>
+    <string msgid="7890813537985591865" name="preference_sender_image_title">"Göndərici şəkli"</string>
+    <string msgid="3036560323237015010" name="preference_swipe_description">"Söhbət siyahısında"</string>
+    <string msgid="2073613840893904205" name="preference_swipe_title">"Vurma fəaliyyəti"</string>
+    <string msgid="5730999743867653106" name="preferences_conversation_mode_summary">"Mesajları ekrana uyğunlaşdırmaq üçün yığın"</string>
+    <string msgid="389352009651720838" name="preferences_conversation_mode_title">"Mesajları avtomatik uyğunlaşdır"</string>
+    <string msgid="895581085692979709" name="preferences_default_reply_all_summary_impl">"Mesaj cavabları üçün defolt olaraq istifadə edin"</string>
+    <string msgid="7255858488369635327" name="preferences_default_reply_all_title">"Hamıya cavab"</string>
+    <string msgid="7257824136988429629" name="preferences_disable_snap_headers_title">"Mesaj fəaliyyətləri"</string>
+    <string msgid="4801741764511807064" name="preferences_signature_dialog_title">"İmza"</string>
+    <string msgid="3776614319388053784" name="preferences_signature_summary_not_set">"Ayarlanmayıb"</string>
+    <string msgid="2318034745474929902" name="preferences_signature_title">"İmza"</string>
+    <string msgid="2268482117730576123" name="preferences_vacation_responder_title">"Avtocavab"</string>
+    <string msgid="6265457626086113833" name="preview_attachment">"Önizləmə"</string>
+    <string msgid="8985379053279804274" name="previous">"Öncəki"</string>
+    <string msgid="7987949243936577207" name="print">"Çap"</string>
+    <string msgid="4011022762279519941" name="print_all">"Hamısını çap edin"</string>
+    <string msgid="8895536548487605661" name="print_dialog">"Çap et..."</string>
+    <string msgid="212094623396418302" name="privacy_policy">"Məxfilik siyasəti"</string>
+    <string msgid="1596701148051980218" name="provider_note_t_online">"Bu e-poçt hesabını ayarlamadan öncə, T-Online saytını ziyarət edin və POP3 e-poçt girişi üçün parol yaradın."</string>
+    <string msgid="9130521670178673190" name="quick_1">"Təşəkkür edirik!"</string>
+    <string msgid="8611591278119481491" name="quick_2">"Xoşuma gəlir!"</string>
+    <string msgid="8070999183033184986" name="quick_3">"Bunu sonra oxuyacam və fikrimi bildirəcəm."</string>
+    <string msgid="216066940197616025" name="quick_4">"Bunu müzakirə etmək üçün görüş təyin edin."</string>
+    <string msgid="3394094315357455290" name="quick_responses_empty_view">"Tez cavab yoxdur."</string>
+    <string msgid="977782904293216533" name="quoted_text">"Sitat gətirilən mətn daxil edin"</string>
+    <string msgid="5256754205675159141" name="quoted_text_hidden_print">"Sitat gətirilmiş mətn gizlidir."</string>
+    <string msgid="2296807722849923934" name="quoted_text_label">"Mətni sitat gətirin"</string>
+    <string msgid="5495929677508576520" name="read_string">"oxunmuş söhbət"</string>
+    <string msgid="8943134955788867702" name="recent_folders_heading">"Son qovluqlar"</string>
+    <string msgid="319816879398937214" name="recipient_needed">"Ən azı bir alıcı əlavə edin."</string>
+    <string msgid="1533748989749277511" name="refresh">"Təzələyin"</string>
+    <string msgid="1478445871170879140" name="remove_attachment_desc">"<ns1:g id="ATTACHMENTNAME">%s</ns1:g> qoşmasını silin"</string>
+    <string msgid="2379905457788576297" name="remove_folder">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> qovluğundan silin"</string>
+    <string msgid="9126690774161840733" name="remove_star">"Ulduzu yığışdırın"</string>
+    <string msgid="8337757482824207118" name="reply">"Cavablayın"</string>
+    <string msgid="5366796103758360957" name="reply_all">"Hər kəsə cavab"</string>
+    <string msgid="1114972798797833259" name="reply_attribution">"<ns1:g id="DATE">%s</ns1:g> tarixində, <ns1:g id="PERSON">%s</ns1:g> yazıb:"</string>
+    <string msgid="6260338807944002651" name="reply_choice_frowning_face">":("</string>
+    <string msgid="6054314968043050748" name="reply_choice_hehe">"Heh"</string>
+    <string msgid="2496652737796884298" name="reply_choice_i_agree">"Razıyam"</string>
+    <string msgid="4629219072859486413" name="reply_choice_later">"Oldu, Sizinlə sonra əlaqə saxlayacam"</string>
+    <string msgid="4465894941302838676" name="reply_choice_nice">"Yaxşıdır"</string>
+    <string msgid="7068775605915475207" name="reply_choice_no">"Yox"</string>
+    <string msgid="7881073621845053152" name="reply_choice_ok">"Ok"</string>
+    <string msgid="1772253938506548631" name="reply_choice_smiling_face">":)"</string>
+    <string msgid="4978961954288364694" name="reply_choice_thanks">"Çox sağ olun"</string>
+    <string msgid="3327633032975373220" name="reply_choice_yes">"Bəli"</string>
+    <string msgid="5645003971107444269" name="reply_on_my_way">"Yolumda"</string>
+    <string msgid="8275255318292059079" name="replyto_heading">"Cavablayın:"</string>
+    <string msgid="4318141326014579036" name="report">"Xəbər verin"</string>
+    <string msgid="8454666464488413739" name="report_phishing">"Fişinqi xəbər verin"</string>
+    <string msgid="4106897677959987340" name="report_spam">"Spamı bildirin"</string>
+    <string msgid="6609746292081928078" name="respond_inline">"Sətiriçi cavablayın"</string>
+    <string msgid="1272723181782570649" name="resume_draft">"Düzəliş edin"</string>
+    <string msgid="916102442074217293" name="retry">"Yenidən cəhd edin"</string>
+    <string msgid="5740359453077441466" name="save_action">"Yadda saxlayın"</string>
+    <string msgid="375685179032130033" name="save_attachment">"Yadda saxlayın"</string>
+    <string msgid="2669523480789672118" name="save_draft">"Qaralamanı yadda saxlayın"</string>
+    <string msgid="161536102236967534" name="saved">"Yadda saxlanmış, <ns1:g id="SIZE">%s</ns1:g>"</string>
+    <string msgid="6274238733828387433" name="saving">"Yadda saxlanılır..."</string>
+    <string msgid="8038224690392783652" name="search_back_desc">"Axtarışı bağlayın"</string>
+    <string msgid="3044261775183044862" name="search_clear_desc">"Axtarış mətnini təmizləyin"</string>
+    <string msgid="7060626585689391003" name="search_hint">"Axtar"</string>
+    <string msgid="1461946302763342640" name="search_history_cleared">"Axtarış tarixçəsi təmizləndi."</string>
+    <string msgid="1529438451150580188" name="search_results_header">"Nəticələr"</string>
+    <string msgid="4165491276003825492" name="search_suggestion_desc">"Təklif: <ns1:g id="SUGGESTION">%s</ns1:g>"</string>
+    <string msgid="2873920566477359177" name="search_unsupported">"Axtarış bu hesabda dəstəklənmir"</string>
+    <string msgid="9103854398344077204" name="search_voice_desc">"Səs axtarışına başlayın"</string>
+    <string msgid="3823930420292838192" name="security_changed_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" hesabı təhlükəsizlik ayarlarını dəyişdi; istifadəçidən heç nə tələb olunmur."</string>
+    <string msgid="6619955920101834286" name="security_hold_required_text">"<ns1:g id="EMAIL_ADDRESS">%1$s</ns1:g> üçün təhlükəsizlik yeniliyi tələb olunur"</string>
+    <string msgid="7099561996532829229" name="security_needed_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" təhlükəsizlik ayarlarının güncəllənməsini tələb edir"</string>
+    <string msgid="615639963487448183" name="security_notification_content_change_title">"Təhlükəsizlik siyasəti dəyişdirildi"</string>
+    <string msgid="6494791400431198228" name="security_notification_content_unsupported_title">"Təhlükəsizlik siyasəti təmin edilə bilmir"</string>
+    <string msgid="6321099538307807621" name="security_notification_content_update_title">"Təhlükəsizlik güncəllənməsi tələb olunur"</string>
+    <string msgid="3249185558872836884" name="security_unsupported_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" təhlükəsizlik tələblərinə görə sinxronlaşa bilmir."</string>
+    <string msgid="353236686616663062" name="select_attachment_type">"Qoşma növü seçin"</string>
+    <string msgid="4269810089682120826" name="send">"Göndər"</string>
+    <string msgid="2727576121007079643" name="send_anyway">"İstənilən halda göndər"</string>
+    <string msgid="2186285547449865010" name="send_failed">"Mesaj göndərilmədi."</string>
+    <string msgid="124432913980620545" name="send_to_contacts_text">"Yalnız Kontaktlarıma göndər"</string>
+    <string msgid="5064559546745918393" name="send_to_domain_text">"Yalnız <ns1:g id="DOMAIN">%1$s</ns1:g> domeninə göndər"</string>
+    <string msgid="2490984995927904030" name="sender_whitelist_cleared">"Şəkillər avtomatik olaraq göstərilməyəcək."</string>
+    <string msgid="6549228851819460081" name="senders_split_token">", "</string>
+    <string msgid="5600034886763930499" name="sending">"Göndərilir..."</string>
+    <string msgid="2487846954946637084" name="sending_message">"Mesaj göndərilir ..."</string>
+    <string msgid="9207482909822072856" name="sent_folder_selection_title">"<ns1:g id="ACCOUNT">%s</ns1:g> hesabı üçün server elementlər göndərdi"</string>
+    <string msgid="7543009262788808443" name="set_end_date_dialog_title">"Son tarix (seçimli)"</string>
+    <string msgid="1562534040126088628" name="shortcut_name_title">"Qovluq qısayolunu adlandırın"</string>
+    <string msgid="2874876876336599985" name="show">"Göstərin"</string>
+    <string msgid="3456154624105704327" name="show_elided">"Sitat gətirilmiş mətni göstər"</string>
+    <string msgid="436044894053204084" name="show_images">"Şəkilləri göstər"</string>
+    <string msgid="1005879825500056552" name="show_n_more_folders">"<ns1:g id="NUMBER">%1$s</ns1:g> qovluğu göstər"</string>
+    <string msgid="5051852806423550830" name="sign_in_title">"Daxil olun"</string>
+    <string msgid="1412668282326928102" name="sign_in_with_google">"Google ilə daxil olun"</string>
+    <string msgid="3172144541947408374" name="signature">\n\n"<ns1:g id="SIGNATURE">%s</ns1:g>"</string>
+    <string msgid="4282359206358453634" name="signed_in_with_service_label">"%s ilə daxil olunub"</string>
+    <string msgid="4699091478139791244" name="signin">"Daxil olun"</string>
+    <string msgid="1570794756474381886" name="silent_ringtone">"Səssiz"</string>
+    <string msgid="2170154732664242904" name="single_new_message_notification_big_text">"<ns1:g id="SUBJECT">%1$s</ns1:g>\n<ns1:g id="SNIPPET">%2$s</ns1:g>"</string>
+    <string msgid="7954710563222504868" name="single_new_message_notification_title">"<ns1:g id="SENDER">%1$s</ns1:g>: <ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="4783683938444150638" name="storage">"Yaddaş"</string>
+    <string msgid="2136470287303571827" name="subject_hint">"Mövzu"</string>
+    <string msgid="1795794969006241678" name="sync_error">"Sinx alınmadı."</string>
+    <string msgid="4182644657243736635" name="sync_error_message">"Cihazınız sinxronizasiya üçün yetərincə yaddaşa malik deyil."</string>
+    <string msgid="2248313263003927725" name="system_account_create_failed">"Hesab yaratmaq mümkün deyil. Yenidən cəhd edin."</string>
+    <string msgid="818944260541160146" name="system_folders_sent_dlg">"Serverinizin göndərilmiş elementlər qovluğunu seçin"</string>
+    <string msgid="4252740721870748375" name="system_folders_sent_summary">"Serverinizin göndərilmiş elementlər qovluğunu seçin"</string>
+    <string msgid="8792934374188279309" name="system_folders_sent_title">"Göndərilmiş elementlər qovluğu"</string>
+    <string msgid="7161311881709109736" name="system_folders_title">"Sistem qovluqları"</string>
+    <string msgid="353701568340939392" name="system_folders_trash_dlg">"Serverinizin zibil qovluğunu seçin"</string>
+    <string msgid="2583143581531897068" name="system_folders_trash_summary">"Serverinizin zibil qovluğunu seçin"</string>
+    <string msgid="3190927115504713123" name="system_folders_trash_title">"Zibil qovluğu"</string>
+    <string msgid="4593581125469224791" name="tablet">"planşet"</string>
+    <string msgid="137172348280050643" name="tap_to_configure">"Quraşdırmaq üçün toxunun"</string>
+    <string msgid="3280434399275638071" name="tap_to_configure_folder_sync">"Sinx Qovluğu"</string>
+    <string msgid="3971614275716830581" name="to">"Kimə"</string>
+    <string msgid="3495203282540398336" name="to_heading">"Kimə: "</string>
+    <string msgid="679167047628308670" name="to_heading_no_space">"Kimə:"</string>
+    <string msgid="3954385178027011919" name="to_message_header">"<ns1:g id="RECIPIENTS">%1$s</ns1:g> adlı alıcıya"</string>
+    <string msgid="1006469736520919028" name="toggle_read_unread">"Oxunub/oxunmayıb keçidi"</string>
+    <string msgid="4964155563465970480" name="too_large_to_attach_additional">"Fayl qoşulmadı. <ns1:g id="MAXSIZE">%1$s</ns1:g> limiti keçildi."</string>
+    <string msgid="1620163295709036343" name="too_large_to_attach_multiple">"Bir və ya daha çox fayl qoşulmadı. Limit <ns1:g id="MAXSIZE">%1$s</ns1:g>."</string>
+    <string msgid="2669897137966512530" name="too_large_to_attach_single">"<ns1:g id="MAXSIZE">%1$s</ns1:g> ölçüdən çox fayl qoşula bilməz."</string>
+    <string msgid="686039558899469073" name="trash_folder_selection_title">"<ns1:g id="ACCOUNT">%s</ns1:g> üçün server zibil qovluğu seçin."</string>
+    <string msgid="614939812938149398" name="turn_auto_sync_on_dialog_body">"Sadəcə Gmail deyil, bütün tətbiqlər və hesablarda edəcəyiniz bütün dəyişikliklər veb,  <ns1:g id="PHONE_OR_TABLET">%1$s</ns1:g> cihazınız və digər cihazlarınız arasında sinxronlaşdırılacaq."</string>
+    <string msgid="7239160845196929866" name="turn_auto_sync_on_dialog_confirm_btn">"Yandır"</string>
+    <string msgid="543412762396502297" name="turn_auto_sync_on_dialog_title">"Avto-sinxronizasiya yandırılsın?"</string>
+    <string msgid="8256285267701059609" name="undo">"Geri alın"</string>
+    <string msgid="7342558841698083381" name="unread_string">"söhbət oxunmayıb"</string>
+    <string msgid="5509898665569695288" name="unseen_count">"<ns1:g id="COUNT">%d</ns1:g> yeni"</string>
+    <string msgid="146722891559469589" name="unsent_messages_in_outbox">"<ns1:g id="OUTBOX">%2$s</ns1:g> qovluğuna göndərilməmiş <ns1:g id="NUMBER">%1$s</ns1:g> mesaj"</string>
+    <string msgid="3527335757205741077" name="update_security_text">"indi yenilə"</string>
+    <string msgid="5570132559074523806" name="vacation_responder">"Avtocavab"</string>
+    <string msgid="9087613123105158494" name="vacation_responder_body_hint_text">"Mesaj"</string>
+    <string msgid="21756037735539983" name="vacation_responder_changes_discarded">"Avtocavabnın dəyişiklikləri ləğv edildi"</string>
+    <string msgid="91448817268121249" name="vacation_responder_changes_saved">"Avtocavabnın dəyişiklikləri saxlanıldı"</string>
+    <string msgid="6233629618520852439" name="vacation_responder_empty_subject_and_body_warning">"Mövzu və ya mesaj əlavə et"</string>
+    <string msgid="4429909341193366667" name="vacation_responder_off">"Deaktiv"</string>
+    <string msgid="4913238379320882449" name="vacation_responder_on">"Aktiv, <ns1:g id="DATE">%1$s</ns1:g> tarixindən"</string>
+    <string msgid="4360941815371475955" name="vacation_responder_on_with_end_date">"Aktiv, <ns1:g id="START_DATE">%1$s</ns1:g> tarixindən  <ns1:g id="END_DATE">%2$s</ns1:g> qədər"</string>
+    <string msgid="2670378260196977266" name="veiled_address"/>
+    <string msgid="6343564357099807582" name="veiled_alternate_text"/>
+    <string msgid="6728323554307952217" name="veiled_alternate_text_unknown_person"/>
+    <string msgid="2122359944161241551" name="veiled_summary_unknown_person"/>
+    <string msgid="1161745345056656547" name="version">"<ns1:g id="APP_NAME">%1$s</ns1:g> versiya <ns1:g id="VERSION">%2$s</ns1:g>"</string>
+    <string msgid="537951148511529082" name="via_domain">"<ns1:g id="VIADOMAIN">%1$s</ns1:g> vasitəsilə"</string>
+    <string msgid="3241990517052398927" name="view_app_page"/>
+    <string msgid="823281796655014454" name="view_entire_message">"Bütün mesajı göstər"</string>
+    <string msgid="8377920000247101901" name="view_more_conversations">"Daha çox söhbətə baxın"</string>
+    <string msgid="8493517060419469738" name="voice_search_not_supported">"Səs axtarışı bu cihazda dəstəklənmir."</string>
+    <string msgid="2823149409451003378" name="wait_for_manual_sync_body">"Bu hesab avtomatik sinxronlaşma üçün quraşdırlmayıb.\n"<b>"İndi Sinxronlaşdır"</b>" seçiminə toxunun ki, poçtu sinxronlaşdırasınız və ya  "<b>"Sinxronlaşma Ayarlarını Dəyişin"</b>" ki, bu hesabın avtomatik sinxronlaşmasını quraşdırasınız."</string>
+    <string msgid="4577632826912823075" name="wait_for_sync_title">"Sinx gözlənilir"</string>
+    <string msgid="8699435859096455837" name="widget_large_unread_count">"%d+"</string>
+</resources>

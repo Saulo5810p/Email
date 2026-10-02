@@ -1,0 +1,32 @@
+// Biblioteca AOSP vendorizada (Apache 2.0) — ver VENDORIZAR.md
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.android.common'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+        }
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+}

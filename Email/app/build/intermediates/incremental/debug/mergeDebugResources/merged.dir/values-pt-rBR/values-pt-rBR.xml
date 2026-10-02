@@ -27,6 +27,9 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string msgid="91481373431329121" name="accessbility_suggestion_dropdown_closed">"Nenhuma sugestão disponível"</string>
+    <string msgid="9015267358421989409" name="accessbility_suggestion_dropdown_opened">"Sugestões de contato ativadas"</string>
+    <string msgid="7172664623795021857" name="action_label">"Enter"</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"Atender"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Vídeo"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"Recusar"</string>
@@ -34,6 +37,17 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"Chamada recebida"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Chamada em andamento"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"Filtrando uma ligação recebida"</string>
+    <string msgid="2582257014578396781" name="chips_action_cancel">"Cancelar"</string>
+    <string msgid="6984158516334578792" name="chips_action_copy">"Copiar"</string>
+    <string msgid="5601284803674008863" name="chips_permission_text">"Permitir sugestões de contatos"</string>
+    <string msgid="1084563757174121331" name="copy_email">"Copiar endereço de e-mail"</string>
+    <string msgid="8860802152973030914" name="copy_number">"Copiar número de telefone"</string>
+    <string msgid="4359394656487762022" name="dropdown_delete_button_desc">"Remover <ns1:g id="CONTACT">%s</ns1:g> dos destinatários"</string>
+    <string msgid="8338915262229269954" name="failed">"Impossível carregar a imagem"</string>
+    <string msgid="643992135011109762" name="more_string">"+<ns1:g id="COUNT">%1$d</ns1:g>"</string>
+    <string msgid="3972196711827497300" name="photo_view_count">"<ns1:g id="CURRENT_POS">%1$d</ns1:g> de <ns1:g id="COUNT">%2$d</ns1:g>"</string>
+    <string msgid="3791698559547529232" name="retry">"Tentar novamente"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="3827868765772315200" name="titles">"<ns1:g id="TITLE_0">%1$s</ns1:g>, <ns1:g id="SUBTITLE">%2$s</ns1:g>"</string>
 </resources>

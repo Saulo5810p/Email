@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="certificate_selector_padding_top">16dp</dimen>
+    <dimen name="settings_fragment_padding_bottom">24dp</dimen>
+    <dimen name="settings_fragment_padding_side">32dp</dimen>
+    <dimen name="settings_fragment_padding_top">32dp</dimen>
+    <dimen name="setup_basics_logo_margin_bottom">16dp</dimen>
+    <dimen name="setup_basics_logo_margin_top">28dp</dimen>
+    <dimen name="setup_checkbox_margin_bottom">16dp</dimen>
+    <dimen name="setup_checkbox_margin_side">8dp</dimen>
+    <dimen name="setup_checkbox_margin_top">16dp</dimen>
+    <dimen name="setup_fragment_padding_bottom">16dp</dimen>
+    <dimen name="setup_fragment_padding_side">64dp</dimen>
+    <dimen name="setup_fragment_padding_top">16dp</dimen>
+    <dimen name="setup_headline_padding_side">64dp</dimen>
+    <dimen name="setup_headline_padding_top">24dp</dimen>
+    <dimen name="setup_headline_text_size">30sp</dimen>
+    <dimen name="setup_label_text_padding_top">0dp</dimen>
+    <dimen name="setup_lower_headline_margin_bottom">10dp</dimen>
+    <dimen name="setup_text_button_height">48sp</dimen>
+    <dimen name="setup_text_button_text_size">20sp</dimen>
+    <dimen name="setup_text_button_width">208sp</dimen>
+</resources>

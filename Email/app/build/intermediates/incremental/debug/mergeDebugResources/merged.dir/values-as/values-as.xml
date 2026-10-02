@@ -27,6 +27,9 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"ইয়াৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>ৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"সংকোচন কৰক"</string>
+    <string msgid="91481373431329121" name="accessbility_suggestion_dropdown_closed">"কোনো পৰামর্শ নাই"</string>
+    <string msgid="9015267358421989409" name="accessbility_suggestion_dropdown_opened">"সম্পৰ্কসূচীৰ পৰামৰ্শবোৰ খোলা হ’ল"</string>
+    <string msgid="7172664623795021857" name="action_label">"উভতি যাওক"</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"উত্তৰ দিয়ক"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"ভিডিঅ’"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"প্ৰত্যাখ্যান কৰক"</string>
@@ -34,6 +37,17 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"অন্তৰ্গামী কল"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"চলি থকা কল"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"এটা অন্তৰ্গামী কলৰ পৰীক্ষা কৰি থকা হৈছে"</string>
+    <string msgid="2582257014578396781" name="chips_action_cancel">"বাতিল কৰক"</string>
+    <string msgid="6984158516334578792" name="chips_action_copy">"প্ৰতিলিপি কৰক"</string>
+    <string msgid="5601284803674008863" name="chips_permission_text">"সম্পর্কসূচীৰ পৰামর্শসমূহৰ বাবে অনুমতি দিয়ক"</string>
+    <string msgid="1084563757174121331" name="copy_email">"ইমেইল ঠিকনা প্ৰতিলিপি কৰক"</string>
+    <string msgid="8860802152973030914" name="copy_number">"ফ\'ন নম্বৰ প্ৰতিলিপি কৰক"</string>
+    <string msgid="4359394656487762022" name="dropdown_delete_button_desc">"<ns1:g id="CONTACT">%s</ns1:g>ক প্ৰাপকসকলৰপৰা আঁতৰাওক"</string>
+    <string msgid="8338915262229269954" name="failed">"প্ৰতিচ্ছবি ল\'ড কৰিব পৰা নগ\'ল"</string>
+    <string msgid="643992135011109762" name="more_string">"+<ns1:g id="COUNT">%1$d</ns1:g>"</string>
+    <string msgid="3972196711827497300" name="photo_view_count">"<ns1:g id="COUNT">%2$d</ns1:g>ৰ <ns1:g id="CURRENT_POS">%1$d</ns1:g>"</string>
+    <string msgid="3791698559547529232" name="retry">"পুনৰ চেষ্টা কৰক"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"সন্ধান"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
+    <string msgid="3827868765772315200" name="titles">"<ns1:g id="TITLE_0">%1$s</ns1:g>, <ns1:g id="SUBTITLE">%2$s</ns1:g>"</string>
 </resources>

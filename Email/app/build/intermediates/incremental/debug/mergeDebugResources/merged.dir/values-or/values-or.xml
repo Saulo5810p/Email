@@ -27,6 +27,9 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"ଏହାଙ୍କ ସହ ସେୟାର୍‌ କରନ୍ତୁ"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ସହ ସେୟାର୍‍ କରନ୍ତୁ"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ସଂକୁଚିତ କରନ୍ତୁ"</string>
+    <string msgid="91481373431329121" name="accessbility_suggestion_dropdown_closed">"କୌଣସି ପରାମର୍ଶ ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string msgid="9015267358421989409" name="accessbility_suggestion_dropdown_opened">"କଣ୍ଟାକ୍ଟ ପରାମର୍ଶ ଖୋଲାଗଲା"</string>
+    <string msgid="7172664623795021857" name="action_label">"ଫେରନ୍ତୁ"</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"ଉତ୍ତର ଦିଅନ୍ତୁ"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"ଭିଡିଓ"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"ଅଗ୍ରାହ୍ୟ କର"</string>
@@ -34,6 +37,17 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"ଇନକମିଂ କଲ୍"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"ଚାଲିଥିବା କଲ୍"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"ଏକ ଇନକମିଂ କଲକୁ ସ୍କ୍ରିନ୍ କରୁଛି"</string>
+    <string msgid="2582257014578396781" name="chips_action_cancel">"ବାତିଲ କରନ୍ତୁ"</string>
+    <string msgid="6984158516334578792" name="chips_action_copy">"କପି କରନ୍ତୁ"</string>
+    <string msgid="5601284803674008863" name="chips_permission_text">"ଯୋଗାଯୋଗ ପରାମର୍ଶର ଅନୁମତି ଦିଅନ୍ତୁ"</string>
+    <string msgid="1084563757174121331" name="copy_email">"ଇମେଲ୍ ଠିକଣା କପି କରନ୍ତୁ"</string>
+    <string msgid="8860802152973030914" name="copy_number">"ଫୋନ୍‍ ନମ୍ବର କପି କରନ୍ତୁ"</string>
+    <string msgid="4359394656487762022" name="dropdown_delete_button_desc">"ପ୍ରାପ୍ତକର୍ତ୍ତାଙ୍କଠାରୁ <ns1:g id="CONTACT">%s</ns1:g>ଙ୍କୁ ବାହାର କରନ୍ତୁ"</string>
+    <string msgid="8338915262229269954" name="failed">"ଇମେଜ୍ ଲୋଡ୍ କରାଯାଇପାରିଲା ନାହିଁ"</string>
+    <string msgid="643992135011109762" name="more_string">"+<ns1:g id="COUNT">%1$d</ns1:g>"</string>
+    <string msgid="3972196711827497300" name="photo_view_count">"<ns1:g id="COUNT">%2$d</ns1:g> ରୁ <ns1:g id="CURRENT_POS">%1$d</ns1:g>"</string>
+    <string msgid="3791698559547529232" name="retry">"ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"ସର୍ଚ୍ଚ କରନ୍ତୁ"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="3827868765772315200" name="titles">"<ns1:g id="TITLE_0">%1$s</ns1:g>, <ns1:g id="SUBTITLE">%2$s</ns1:g>"</string>
 </resources>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="compose_modes">
+    <item msgid="9000553538766397816">"පිළිතුරු දෙන්න"</item>
+    <item msgid="2767793214788399009">"සියල්ලන්ටම පිළිතුරු යවන්න"</item>
+    <item msgid="2758162027982270607">"ඉදිරියට"</item>
+  </string-array>
+    <string-array name="prefEntries_autoAdvance">
+    <item msgid="1505450878799459652">"අලුත්"</item>
+    <item msgid="8000986144872247139">"පරණ"</item>
+    <item msgid="8015001161633421314">"සංවාද ලැයිස්තුව"</item>
+  </string-array>
+    <string-array name="prefEntries_removal_action">
+    <item msgid="7381624742404593351">"සංරක්ෂිත කරන්න"</item>
+    <item msgid="2567465476369142505">"මකාදමන්න"</item>
+  </string-array>
+    <string-array name="prefEntries_snapHeader">
+    <item msgid="6906986566816683587">"සැමවිටම පෙන්වන්න"</item>
+    <item msgid="113299655708990672">"සිරස් ලෙස පමණක් පෙන්වන්න"</item>
+    <item msgid="4403750311175924065">"පෙන්වන්න එපා"</item>
+  </string-array>
+    <string-array name="prefSummaries_autoAdvance">
+    <item msgid="8221665977497655719">"ඔබ මැකීමෙන් පසුව නව සංවාද පෙන්වන්න"</item>
+    <item msgid="1721869262893378141">"ඔබ මැකීමෙන් පසුව පරණ සංවාද පෙන්වන්න"</item>
+    <item msgid="880913657385630195">"ඔබ මැකීමෙන් පසුව සංවාද ලැයිස්තුව පෙන්වන්න"</item>
+  </string-array>
+    <string-array name="prefSummaries_removal_action_summary">
+    <item msgid="4080896545573973751">"සංරක්ෂිත කරන්න"</item>
+    <item msgid="6088164268501960435">"මකාදමන්න"</item>
+  </string-array>
+    <string-array name="prefSummaries_snapHeader">
+    <item msgid="43373293784193461">"පණිවිඩ ක්‍රියාකාරකම් සැමවිටම තිරයේ ඉහළින්ම පෙන්වන්න"</item>
+    <item msgid="1765271305989996747">"සිරස් වෙත කරකවා ඇතිවිට පමණක් පණිවිඩ ක්‍රියාකාරකම් තිරයේ ඉහළින්ම පෙන්වන්න"</item>
+    <item msgid="6311113076575333488">"පණිවිඩ ක්‍රියාකාරකම් පණිවිඩයේ ශීර්ෂකයට පිටතින් පෙන්වන්න එපා"</item>
+  </string-array>
+    <string-array name="sync_status">
+    <item msgid="4600303222943450797">"සාර්ථකයි"</item>
+    <item msgid="2835492307658712596">"සම්බන්ධතාවය නැත"</item>
+    <item msgid="5932644761344898987">"පුරනය වීමට නොහැකි විය"</item>
+    <item msgid="7335227237106118306">"ආරක්‍ෂිත දෝෂය"</item>
+    <item msgid="8148525741623865182">"සමමුහුර්ත කළ නොහැක"</item>
+    <item msgid="8026148967150231130">"අභ්‍යන්තර දෝෂය"</item>
+    <item msgid="5442620760791553027">"සේවාදායකයේ දෝෂයකි"</item>
+  </string-array>
+    <plurals name="actionbar_unread_messages">
+    <item msgid="3863201473731766006" quantity="other">"නොකියවූ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <plurals name="confirm_archive_conversation">
+    <item msgid="9105551557653306945" quantity="one">"මෙම සංවාදය සංරක්ෂණය කරන්නද?"</item>
+    <item msgid="2001972798185641108" quantity="other">"මෙම සංවාද <ns1:g id="COUNT">%1$d</ns1:g> සංරක්ෂණය කරන්නද?"</item>
+  </plurals>
+    <plurals name="confirm_delete_conversation">
+    <item msgid="7605755011865575440" quantity="one">"මෙම සංවාදය මකන්න?"</item>
+    <item msgid="1585660381208712562" quantity="other">"මෙම සංවාද <ns1:g id="COUNT">%1$d</ns1:g> මකන්නද?"</item>
+  </plurals>
+    <plurals name="confirm_discard_drafts_conversation">
+    <item msgid="2030421499893210789" quantity="one">"මෙම පණිවිඩය ඉවතලන්නද?"</item>
+    <item msgid="782234447471532005" quantity="other">"මෙම පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g> ඉවතලන්නද?"</item>
+  </plurals>
+    <plurals name="conversation_archived">
+    <item msgid="4859172326053399351" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් සංරක්ෂිත කරන ලදි"</item>
+    <item msgid="8520761617935818623" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් සංරක්ෂිත කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_deleted">
+    <item msgid="4819167474123685161" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් මකා දමන ලදි"</item>
+    <item msgid="6287534453625638257" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් මකා දමන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_folder_changed">
+    <item msgid="7787126147584620603" quantity="one">"ෆෝල්ඩරය වෙනස් කරන ලදි"</item>
+    <item msgid="6307772984911017972" quantity="other">"ෆෝල්ඩර වෙනස් කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_muted">
+    <item msgid="3622533556738049499" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් නිහඬ කරන ලදි"</item>
+    <item msgid="4559007262578295280" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් නිහඬ කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_not_important">
+    <item msgid="7432667428974709669" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් වැදගත් නොවන බව සලකුණු කරන ලදි"</item>
+    <item msgid="4823331037057239763" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් වැදගත් නොවන බව සලකුණු කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_not_spam">
+    <item msgid="3680479171846552641" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් ආයාචිත නොවන බව වාර්තා කරන ලදි"</item>
+    <item msgid="6351739502184556635" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් ආයාචිත නොවන බව වාර්තා කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_phished">
+    <item msgid="3511804715065046338" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් තතුබෑම ලෙස වාර්තා කරන ලදි"</item>
+    <item msgid="8400382886585779414" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ක් තතුබෑම ලෙස වාර්තා කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_spammed">
+    <item msgid="1749550834135461470" quantity="one">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ආයාචිත ලෙස සලකුණු කරන ලදි"</item>
+    <item msgid="664292592683692920" quantity="other">"&lt;b><ns1:g id="COUNT">%1$d</ns1:g>&lt;/b> ආයාචිත ලෙස සලකුණු කරන ලදි"</item>
+  </plurals>
+    <plurals name="conversation_unstarred">
+    <item msgid="1701235480675303125" quantity="one">"සංවාද <ns1:g id="COUNT">%1$d</ns1:g> කින් තරු ඉවත් කරමින්"</item>
+    <item msgid="1154441830432477256" quantity="other">"සංවාද <ns1:g id="COUNT">%1$d</ns1:g> කින් තරු ඉවත් කරමින්"</item>
+  </plurals>
+    <plurals name="draft">
+    <item msgid="6717535677167943402" quantity="one">"කටු සටහන"</item>
+    <item msgid="1335781147509740039" quantity="other">"කටු සටහන්"</item>
+  </plurals>
+    <plurals name="empty_folder_dialog_message">
+    <item msgid="3315412388217832914" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> පණිවිඩයක් ස්ථිරවම මැකෙනු ඇත."</item>
+    <item msgid="263840304486020101" quantity="other">"පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g> ක් ස්ථිරවම මැකෙනු ඇත."</item>
+  </plurals>
+    <plurals name="new_incoming_messages">
+    <item msgid="1532079301006372605" quantity="one">"අලුත් පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+    <item msgid="4085982174357328926" quantity="other">"අලුත් පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <plurals name="new_messages">
+    <item msgid="3446656407520493241" quantity="one">"අලුත් පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+    <item msgid="3531683811183204615" quantity="other">"අලුත් පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <plurals name="num_attachments">
+    <item msgid="5494465717267988888" quantity="one">"ඇමුණුම් <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+    <item msgid="5422167728480739361" quantity="other">"ඇමුණුම් <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <plurals name="num_messages">
+    <item msgid="8071234386915191851" quantity="one">"<ns1:g id="COUNT">%1$d</ns1:g> පණිවිඩයි"</item>
+    <item msgid="962415099931188360" quantity="other">"පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <plurals name="show_messages_read">
+    <item msgid="8094857552036574099" quantity="other">"පැරණි පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g> විදහන්න"</item>
+  </plurals>
+    <plurals name="super_collapsed_block_accessibility_announcement">
+    <item msgid="2016326586162784420" quantity="other">"විහිදන ලද පැරණි පණිවිඩ <ns1:g id="COUNT">%1$d</ns1:g>"</item>
+  </plurals>
+    <string msgid="6747351773934787126" name="account_duplicate_dlg_message_fmt">"ඔබ මේවන විටත් මෙම පරිශීලක නාමය \"<ns1:g id="DUPLICATE">%s</ns1:g>\" ගිණුම සඳහා භාවිතා කරමින් සිටියි."</string>
+    <string msgid="3768813340753269695" name="account_duplicate_dlg_title">"අනුපිටපත් ගිණුම"</string>
+    <string msgid="4107093049191103780" name="account_security_dialog_content_fmt">"ඔබට ඔබගේ ආරක්‍ෂිත සැකසීම් යාවත්කාලීන කිරීමට <ns1:g id="ACCOUNT">%s</ns1:g>ට අවශ්‍යයි."</string>
+    <string msgid="7003032393805438164" name="account_security_dialog_title">"ආරක්‍ෂිත යාවත්කාලීන"</string>
+    <string msgid="2527501853520160827" name="account_security_policy_explanation_fmt">"ඔබගේ Android උපාංගයේ සමහර ආරක්ෂක විශේෂාංග දුරස්ථව පාලනයට ඔබගේ අනුමැතිය <ns1:g id="SERVER">%s</ns1:g> සේවාදායකයට අවශ්‍යව ඇත."</string>
+    <string msgid="6072273231606918870" name="account_security_title">"උපාංග ආරක්ෂාව"</string>
+    <string msgid="589969653965674604" name="account_settings_action">"ගිණුම් සැකසීම්"</string>
+    <string msgid="3552681465680701047" name="account_settings_background_attachments_label">"ඇමුණුම් බාගන්න"</string>
+    <string msgid="8801504001229061032" name="account_settings_background_attachments_summary">"ස්වයංක්‍රිය-බාගැනීමේ ඇමුණුම් Wi-Fi හරහා මෑත පණිවිඩ වෙත"</string>
+    <string msgid="6400715160238559711" name="account_settings_data_usage">"දත්ත භාවිතය"</string>
+    <string msgid="2073736045984411004" name="account_settings_description_label">"ගිණුමේ නම"</string>
+    <string msgid="6105791335935883199" name="account_settings_edit_quick_responses_label">"ක්ෂණික ප්‍රතිචාර"</string>
+    <string msgid="5406599402930290682" name="account_settings_edit_quick_responses_summary">"ඊ-තැපෑලක් සාදන විට ඔබ නිතර ඇතුළත් කරන පෙළ සංස්කරණය කරන්න"</string>
+    <string msgid="7005050362066086119" name="account_settings_enforced_label">"ප්‍රතිපත්ති බලාත්මක කරන ලදි"</string>
+    <string msgid="1668581504445370253" name="account_settings_enforced_summary">"කිසිවක් නැත"</string>
+    <string msgid="4232590695889111419" name="account_settings_exit_server_settings">"නොසුරැකුණු වෙනස් කිරීම් ඉවතලන්නද?"</string>
+    <string msgid="3793314460723296874" name="account_settings_incoming_label">"ඇතුළට එන සැකසීම්"</string>
+    <string msgid="7521181981008371492" name="account_settings_incoming_summary">"පරිශීලක නාමය, මුරපදය සහ අනෙකුත් ඇතුළට එන සේවාදායක සැකසීම්"</string>
+    <string msgid="4107847714594035131" name="account_settings_mail_check_frequency_label">"සමමුහුර්ත කිරීමේ සංඛ්‍යාතය"</string>
+    <string msgid="8230436030850457988" name="account_settings_name_label">"ඔබගේ නම"</string>
+    <string msgid="2842952349214972116" name="account_settings_notifications">"දැනුම්දීම් සැකසීම්"</string>
+    <string msgid="8621226576645167987" name="account_settings_notify_label">"ඊ-තැපෑල දැනුම්දීම්"</string>
+    <string msgid="88560545461159120" name="account_settings_notify_summary">"ඊ-තැපෑලක් පැමිණෙන විට දැනුම්දීමක් යවන්න"</string>
+    <string msgid="4997504719643828381" name="account_settings_outgoing_label">"පිටතට යන සැකසීම්"</string>
+    <string msgid="1884202151340479161" name="account_settings_outgoing_summary">"පරිශීලක නාමය, මුරපදය සහ අනෙකුත් පිටතට යන සේවාදායක සැකසීම්"</string>
+    <string msgid="5972183883466873359" name="account_settings_policies">"ආරක්‍ෂක ප්‍රතිපත්ති"</string>
+    <string msgid="8605492340808650923" name="account_settings_retry_label">"සමමුහුර්ත කිරීමේ උත්සාහය"</string>
+    <string msgid="2598065993718592906" name="account_settings_retry_summary">"මෙම ගිණුම සමමුහුර්ත කිරීමට මෙහි ස්පර්ශ කරන්න"</string>
+    <string msgid="2238523918221865167" name="account_settings_ringtone">"රිංග්ටෝනය තෝරන්න"</string>
+    <string msgid="3386185135392642067" name="account_settings_servers">"සේවාදායක සැකසීම්"</string>
+    <string msgid="4733776978291376161" name="account_settings_summary">"නිතර සිදු වීම්, දැනුම්දීම් අදීය සමමුහුර්ත කරන්න."</string>
+    <string msgid="3172491863244160828" name="account_settings_sync_calendar_enable">"දින දර්ශනය සමමුහුර්ත කරන්න"</string>
+    <string msgid="411960248618953311" name="account_settings_sync_calendar_summary">"මෙම ගිණුම සඳහා දින දර්ශන සිදුවීම සමමුහුර්ත කරන්න"</string>
+    <string msgid="2642448079273767521" name="account_settings_sync_contacts_enable">"සම්බන්ධතා සමමුහුර්ත කරන්න"</string>
+    <string msgid="1716022682035150630" name="account_settings_sync_contacts_summary">"මෙම ගිණුම සඳහා සම්බන්ධතා සමමුහුර්ත කරන්න"</string>
+    <string msgid="7135765408226471860" name="account_settings_sync_email_enable">"ඊ-තැපෑල සමමුහුර්ත කරන්න"</string>
+    <string msgid="71710510041953351" name="account_settings_sync_email_summary">"මෙම ගිණුම සඳහා ඊ-තැපෑල සමමුහුර්ත කරන්න"</string>
+    <string msgid="7286722617178322465" name="account_settings_unsupported_label">"සහය නොදක්වන ප්‍රතිපත්ති"</string>
+    <string msgid="1980825746966562221" name="account_settings_unsupported_summary">"කිසිවක් නැත"</string>
+    <string msgid="1434091698882290052" name="account_setup_ab_headline">"ගිණුම් වර්ගය සහතික කරන්න"</string>
+    <string msgid="6223657094843768202" name="account_setup_ab_instructions_format">"<ns1:g id="USERPROTOCOL">%2$s</ns1:g> භාවිත කරන්නේ <ns1:g id="EMAIL">%1$s</ns1:g> බව ඔබ පෙන්වා දෙන ලදි, නමුත් ගිණුම භාවිත කරන්නේ <ns1:g id="PROVIDERPROTOCOL">%3$s</ns1:g> ය"</string>
+    <string msgid="3375795537675351389" name="account_setup_account_type_headline">"ගිණුම් වර්ගය"</string>
+    <string msgid="968088954656738617" name="account_setup_account_type_instructions">"මෙය කුමන වර්ගයේ ගිණුමක්ද?"</string>
+    <string msgid="4075075565221436715" name="account_setup_autodiscover_dlg_authfail_message">"පරිශීලක නාමය, මුරපදය, සහ ගිණුම් සැකසීම් නිවැරදි දැයි තහවුරු කරන්න."</string>
+    <string msgid="7551559109838593189" name="account_setup_autodiscover_dlg_authfail_title">"ගිණුම් ස්ථාපනය සමඟ ඇති ගැටලු"</string>
+    <string msgid="8701406783555749929" name="account_setup_basics_email_label">"ඊ-තැපැල් ලිපිනය"</string>
+    <string msgid="8468280216822264643" name="account_setup_basics_headline">"ඊ-තැපැල් ගිණුම"</string>
+    <string msgid="7690861839383362085" name="account_setup_basics_manual_setup_action">"අතින් සැකසීම"</string>
+    <string msgid="784962388753706730" name="account_setup_basics_password_label">"මුරපදය"</string>
+    <string msgid="5050895656741229172" name="account_setup_basics_title">"ගිණුම සැකසීම"</string>
+    <string msgid="9196418179524308411" name="account_setup_check_settings_check_incoming_msg">"සේවාදායක සැකසීම් වලංගු කරමින්…"</string>
+    <string msgid="9062019904409225329" name="account_setup_check_settings_check_outgoing_msg">"smtp සැකසීම් සත්‍යාපනය කරමින්…"</string>
+    <string msgid="9103280616618316032" name="account_setup_check_settings_retr_info_msg">"ගිණුම් තොරතුරු සොයා ලබාගනිමින්…"</string>
+    <string msgid="2898648422471181490" name="account_setup_creating_account_msg">"ගිණුම සාදමින්…"</string>
+    <string msgid="8756785660598838350" name="account_setup_exchange_certificate_title">"සේවාලාභී සහතිකය"</string>
+    <string msgid="2306603503497194905" name="account_setup_exchange_device_id_label">"ජංගම උපාංගය ID"</string>
+    <string msgid="3569712401698909695" name="account_setup_exchange_no_certificate">"කිසිවක් නැත"</string>
+    <string msgid="1222387802827919583" name="account_setup_exchange_remove_certificate">"ඉවත් කරන්න"</string>
+    <string msgid="264748505181695915" name="account_setup_exchange_select_certificate">"තෝරන්න"</string>
+    <string msgid="6513687497912094538" name="account_setup_exchange_use_certificate">"සේවාදායකගේ සහතික භාවිතා කරන්න"</string>
+    <string msgid="2051742796367919026" name="account_setup_failed_access_denied">"මෙම සේවාදායකය සමග සමමුහුර්ත වීමට ඔබට අවසර නැත. වැඩිපුර තොරතුරු සඳහා ඔබගේ සේවාදායකයේ පරිපාලකයාව අමතන්න."</string>
+    <string msgid="2684010997018901707" name="account_setup_failed_auth_required">"සත්‍යාපනය ක්‍රම, සේවාදායකය මඟින් සහය නොදැක්වයි."</string>
+    <string msgid="4574461885959029072" name="account_setup_failed_certificate_inaccessible">"සහතිකය අවලංගුයි හෝ ප්‍රවේශ වීමට නොහැක."</string>
+    <string msgid="4607859382193244795" name="account_setup_failed_certificate_required">"සේවාලාභී සහතිකයක් අවශ්‍යයි. සේවාලාභී සහතිකයක් සමග සේවාදායකයට සම්බන්ධ වීමට ඔබට අවශ්‍යද?"</string>
+    <string msgid="430054384233036305" name="account_setup_failed_check_credentials_message">"සේවාදායකය දෝෂ සහිතව ප්‍රතිචාර ලබාදුණි. ඔබගේ පරිශීලක නාමය සහ මුරපදය පරීක්ෂා කර නැවත උත්සාහ කරන්න."</string>
+    <string msgid="5608549872868036352" name="account_setup_failed_dlg_auth_message">"පරිශීලක නාමය හෝ මුරපදය වැරදිය."</string>
+    <string msgid="4725950885859654809" name="account_setup_failed_dlg_certificate_message">"සේවාදායකය වෙත ආරක්ෂිතව සම්බන්ධ වීමට නොහැකිය."</string>
+    <string msgid="3451681985727559303" name="account_setup_failed_dlg_certificate_message_fmt">"සේවාදායකය වෙත ආරක්ෂිතව සම්බන්ධ වීමට නොහැකිය.\n(<ns1:g id="ERROR">%s</ns1:g>)"</string>
+    <string msgid="8155332642922842729" name="account_setup_failed_dlg_edit_details_action">"විස්තර සංස්කරණය කරන්න"</string>
+    <string msgid="1180197172141077524" name="account_setup_failed_dlg_server_message">"සේවාදායකය වෙත සම්බන්ධ වීමට නොහැකිය."</string>
+    <string msgid="3889441611138037320" name="account_setup_failed_dlg_server_message_fmt">"සේවාදායකයට සම්බන්ධ විය නොහැක.\n(<ns1:g id="ERROR">%s</ns1:g>)"</string>
+    <string msgid="7923577224474005464" name="account_setup_failed_dlg_title">"අවසන් කිරීමට නොහැකි විය"</string>
+    <string msgid="3862689923436539909" name="account_setup_failed_ioerror">"සේවාදායකයට සම්බන්ධතාවයක් වීවෘත කළ නොහැක."</string>
+    <string msgid="4973054582044010375" name="account_setup_failed_protocol_unsupported">"ඔබ වැරදි සේවාදායකය ලිපිනයක් ටයිප් කර ඇත නැතිනම් ඊ-තැපෑල සහය නොදක්වන ප්‍රොටොකෝල අනුවාදයක් සේවාදායකයට අවශ්‍යය."</string>
+    <string msgid="1627240499907011040" name="account_setup_failed_security">"ආරක්‍ෂිත දෝෂයක් නිසා සේවාදායකය වෙත සම්බන්ධතාවය විවෘත කිරීමට නොහැක."</string>
+    <string msgid="4619685657253094627" name="account_setup_failed_security_policies_unsupported">"මෙම සේවාදායකය ඔබගේ Android උපාංගය සහය නොදෙන ආරක්ෂක විශේෂාංග ඉල්ලා සිටියි, එනම්: <ns1:g id="ERROR">%s</ns1:g>"</string>
+    <string msgid="1902309158359287958" name="account_setup_failed_tls_required">"TLS අත්‍යවශ්‍ය නමුත් සේවාදායකය මඟින් සහය නොදක්වයි."</string>
+    <string msgid="8677018382715596606" name="account_setup_incoming_delete_policy_delete_label">"එන ලිපි වලින් මම මකන විට"</string>
+    <string msgid="2341742235654301690" name="account_setup_incoming_delete_policy_label">"සේවාදායකයෙන් ඊ-තැපෑල මකන්න"</string>
+    <string msgid="5777530843489961009" name="account_setup_incoming_delete_policy_never_label">"කවදාවත් නොවේ"</string>
+    <string msgid="6232828824446177639" name="account_setup_incoming_headline">"ඇතුළට එන සේවාදායක සැකසීම්"</string>
+    <string msgid="206747922689229932" name="account_setup_incoming_imap_path_prefix_hint">"වෛකල්පිත"</string>
+    <string msgid="3531290378620033218" name="account_setup_incoming_imap_path_prefix_label">"IMAP මාර්ග උපසර්ගය"</string>
+    <string msgid="4806105500058512876" name="account_setup_incoming_password_label">"මුරපදය"</string>
+    <string msgid="402562424498833560" name="account_setup_incoming_port_label">"තොට"</string>
+    <string msgid="8360505617331971663" name="account_setup_incoming_security_label">"ආරක්ෂක වර්ගය"</string>
+    <string msgid="2461510827337484818" name="account_setup_incoming_security_none_label">"කිසිවක් නැත"</string>
+    <string msgid="5169133414545009342" name="account_setup_incoming_security_ssl_label">"SSL/TLS"</string>
+    <string msgid="2834386066577239560" name="account_setup_incoming_security_ssl_trust_certificates_label">"SSL/TLS (සියලු සහතික පිළිගන්න)"</string>
+    <string msgid="3892291833944170882" name="account_setup_incoming_security_tls_label">"STARTTLS"</string>
+    <string msgid="2281920902104029077" name="account_setup_incoming_security_tls_trust_certificates_label">"STARTTLS (සියලු සහතික පිළිගන්න)"</string>
+    <string msgid="5409694850973258387" name="account_setup_incoming_server_label">"සේවාදායකය"</string>
+    <string msgid="2609699829997945895" name="account_setup_incoming_username_label">"පරිශීලක නාමය"</string>
+    <string msgid="3487538709712378441" name="account_setup_names_account_name_label">"මෙම ගිණුමට නමක් දෙන්න (විකල්ප)"</string>
+    <string msgid="2031978210683887370" name="account_setup_names_headline">"ඔබගේ ගිණුම සකසා ඇති අතර ඊ-තැපෑල අතරමගය!"</string>
+    <string msgid="4298006111315033499" name="account_setup_names_user_name_label">"ඔබගේ නම (පිටතට යන පණිවීඩවල දර්ශනය කර ඇත)"</string>
+    <string msgid="4085327585082867216" name="account_setup_options_background_attachments_label">"Wi-Fi වෙත සම්බන්ධ වීමේදී ඇමුණුම් ස්වයංක්‍රියව බාගන්න."</string>
+    <string msgid="4810292194395251968" name="account_setup_options_headline">"ගිණුම් විකල්ප"</string>
+    <string msgid="8787901333816702849" name="account_setup_options_mail_check_frequency_10min">"සෑම මිනිත්තු 10 වරක්"</string>
+    <string msgid="7127640170766018765" name="account_setup_options_mail_check_frequency_15min">"සෑම මිනිත්තු 15 ට වරක්"</string>
+    <string msgid="107706566853925273" name="account_setup_options_mail_check_frequency_1hour">"සෑම පැයකට වරක්"</string>
+    <string msgid="4223562871143897449" name="account_setup_options_mail_check_frequency_30min">"සෑම මිනිත්තු 30 වරක්"</string>
+    <string msgid="8929785860545198867" name="account_setup_options_mail_check_frequency_5min">"සෑම මිනිත්තු 5 වරක්"</string>
+    <string msgid="7253305392938373553" name="account_setup_options_mail_check_frequency_label">"සමමුහුර්ත කිරීමේ සංඛ්‍යාතය:"</string>
+    <string msgid="2937664246354067829" name="account_setup_options_mail_check_frequency_never">"කවදාවත් නොවේ"</string>
+    <string msgid="5511415696925307797" name="account_setup_options_mail_check_frequency_push">"ස්වයංක්‍රියව (තල්ලු කරන්න)"</string>
+    <string msgid="7930883294844418428" name="account_setup_options_mail_window_1day">"අවසාන දිනය"</string>
+    <string msgid="3228265299330513816" name="account_setup_options_mail_window_1month">"අවසාන මාසය"</string>
+    <string msgid="5230695719358085318" name="account_setup_options_mail_window_1week">"අවසාන සතිය"</string>
+    <string msgid="1144271277694832921" name="account_setup_options_mail_window_2weeks">"අවසාන සති දෙක"</string>
+    <string msgid="3435093562391555730" name="account_setup_options_mail_window_3days">"අවසාන දින තුන"</string>
+    <string msgid="4794683936065721438" name="account_setup_options_mail_window_all">"සියලු"</string>
+    <string msgid="7407981634952005775" name="account_setup_options_mail_window_auto">"ස්වයංක්‍රිය"</string>
+    <string msgid="5518038139722596598" name="account_setup_options_mail_window_default">"ගිණුම් සුපුරුද්ද භාවිතා කරන්න"</string>
+    <string msgid="4737241149297585368" name="account_setup_options_mail_window_label">"වෙතින් ඊ-තැපැල් සමමුහුර්ත කරන්න:"</string>
+    <string msgid="3101529443722198112" name="account_setup_options_notify_label">"ඊ-තැපෑල පැමිණිවිට මට දැනුම් දෙන්න"</string>
+    <string msgid="303441956432308807" name="account_setup_options_sync_calendar_label">"මෙම ගිණුමෙන් දින දර්ශනය සමමුහුර්ත කරන්න"</string>
+    <string msgid="5029046373980454714" name="account_setup_options_sync_contacts_label">"මෙම ගිණුමෙන් සම්බන්ධතාවයන් සමමුහුර්ත කරන්න"</string>
+    <string msgid="468957966555663131" name="account_setup_options_sync_email_label">"මෙම ගිණුමෙන් ඊ-තැපෑල සමමුහුර්ත කරන්න"</string>
+    <string msgid="6638171491109658047" name="account_setup_outgoing_headline">"පිටතට යන සේවාදායක සැකසීම්"</string>
+    <string msgid="3735952013505812378" name="account_setup_outgoing_port_label">"තොට"</string>
+    <string msgid="5405196721947884033" name="account_setup_outgoing_require_login_label">"පුරනය වීම අවශ්‍යය"</string>
+    <string msgid="6473177134731615282" name="account_setup_outgoing_security_label">"ආරක්ෂක වර්ගය"</string>
+    <string msgid="3460163861711242681" name="account_setup_outgoing_smtp_server_label">"SMTP සේවාදායකය"</string>
+    <string msgid="8844680398828891772" name="account_setup_outgoing_username_label">"පරිශීලක නාමය"</string>
+    <string msgid="5930042642982830233" name="account_setup_password_subheading">"මුරපදය"</string>
+    <string msgid="9029471168291631932" name="account_setup_security_policies_required_fmt">"ඔබගේ Android උපාංගයේ සමහර ආරක්ෂක විශේෂාංග දුරස්ථව පාලනයට ඔබගේ අනුමැතිය <ns1:g id="SERVER">%s</ns1:g> සේවාදායකයට අවශ්‍යව ඇත. මෙම ගිණුම සැකසීම් කිරීම අවසන් කිරීමට ඔබ කැමතිද?"</string>
+    <string msgid="667943309546419435" name="account_setup_security_required_title">"දුරස්ථ ආරක්ෂක පරිපාලනය"</string>
+    <string msgid="3659744829670065777" name="account_setup_username_password_toast">"වලංගු ඊ-තැපැල් ලිපිනයක් සහ මුරපදයක් ටයිප් කරන්න."</string>
+    <string msgid="5720018952998097061" name="account_sync_off">"ගිණුම් සමමුහුර්තනය අබලයි. &lt;a href=\'http://www.example.com\'>ගිණුම් සැකසීම්&lt;/a> තුළ එය සබල කරන්න."</string>
+    <string msgid="8848194305692897677" name="account_waiting_for_folders_msg">"ෆෝල්ඩර ලැයිස්තුව පූරණ වෙමින්…"</string>
+    <string msgid="7230367425520242593" name="accounts_welcome">"ඔබට පියවර කිහිපයකින් ඔබගේ ගිණුම සකස් කළ හැක."</string>
+    <string msgid="8375243281001234750" name="activity_folder_selection">"ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="7489813868539767701" name="activity_mailbox_selection">"ගිණුම තෝරන්න"</string>
+    <string msgid="8966077432517613292" name="activity_preferences">"සැකසීම්"</string>
+    <string msgid="5905863370226612377" name="add_account">"ගිණුමක් එකතු කරන්න"</string>
+    <string msgid="382998197798081729" name="add_authentication_label">"සත්‍යාපනය එක් කරන්න"</string>
+    <string msgid="963745641238037813" name="add_bcc_label">"ර.කා.පි. එක් කරන්න"</string>
+    <string msgid="2249679001141195213" name="add_cc_label">"කා.පි/ර.කා.පි. එකතු කරන්න"</string>
+    <string msgid="2604880054248593993" name="add_file_attachment">"ගොනුව අමුණන්න"</string>
+    <string msgid="3285338046038610902" name="add_label">"ෆෝල්ඩරය එකතු කරන්න"</string>
+    <string msgid="7163589794940909528" name="add_photo_attachment">"පින්තුරයක් අමුණන්න"</string>
+    <string msgid="3275117671153616270" name="add_star">"තරුවක් එක් කරන්න"</string>
+    <string msgid="2098008376913966177" name="address_display_format">"<ns1:g id="NAME">%1$s</ns1:g> <ns1:g id="EMAIL">%2$s</ns1:g>"</string>
+    <string msgid="8108294635074750048" name="address_display_format_with_via_domain">"<ns1:g id="VIA_DOMAIN">%3$s</ns1:g> මගින් <ns1:g id="NAME">%1$s</ns1:g> &lt;<ns1:g id="EMAIL">%2$s</ns1:g>>"</string>
+    <string msgid="9023770187629170967" name="all_folders_heading">"සියලුම ෆෝල්ඩර"</string>
+    <string msgid="556087529413707819" name="always_show_images">"මෙම යවන්නාගෙන් සෑම විටම පින්තූර පෙන්වන්න"</string>
+    <string msgid="3763157294047555051" name="always_show_images_toast">"මෙම යවන්නාගෙන් පින්තූර ස්වයංක්‍රියව පෙන්වනු ඇත."</string>
+    <string msgid="2206468539066258195" name="app_name">"ඊ-තැපෑල"</string>
+    <string msgid="5978663590021719939" name="archive">"සංරක්ෂිත කරන්න"</string>
+    <string msgid="6283673603512713022" name="archived">"සංරක්ෂිත"</string>
+    <string msgid="2110108876623152162" name="attachment_application_msword">"ලේඛනය"</string>
+    <string msgid="4207340200944655970" name="attachment_application_pdf">"PDF"</string>
+    <string msgid="5585781311136609103" name="attachment_application_vnd_ms_excel">"පැතිරුම්පත්"</string>
+    <string msgid="425353008963359230" name="attachment_application_vnd_ms_powerpoint">"ඉදිරිපත් කිරීම"</string>
+    <string msgid="7097658089301809284" name="attachment_audio">"ශ්‍රව්‍ය"</string>
+    <string msgid="6375306026208274564" name="attachment_image">"රූපය"</string>
+    <string msgid="2274397783497640486" name="attachment_permission_denied">"ඇමිණුම සඳහා අවසරය ප්‍රතික්ෂේප කරන ලදි."</string>
+    <string msgid="3485853714965922173" name="attachment_text">"පෙළ"</string>
+    <string msgid="3360536730101083926" name="attachment_unknown">"<ns1:g id="ATTACHMENTEXTENSION">%s</ns1:g> ගොනුව"</string>
+    <string msgid="7119476472603939848" name="attachment_video">"වීඩියෝව"</string>
+    <string msgid="914463525214987772" name="authentication_label">"සත්‍යාපනය"</string>
+    <string msgid="3691189864057581214" name="auto_sync_off">"ස්වයංක්‍රිය සමමුහුර්තය අක්‍රිය කර ඇත. සක්‍රිය කිරීම සඳහා ස්පර්ශ කරන්න."</string>
+    <string msgid="3979372269373936750" name="badge_and_subject">"<ns1:g id="ID_1">%1$s</ns1:g> <ns1:g id="ID_2">%2$s</ns1:g>"</string>
+    <string msgid="519303553518479171" name="bcc">"ර.කා.පි."</string>
+    <string msgid="1834716758549842454" name="bcc_header_for_recipient_summary">"ර.කා.පි: "</string>
+    <string msgid="1482186590756218269" name="bcc_heading">"ර.කා.පි.:"</string>
+    <string msgid="6478994981747057817" name="body_hint">"ඊ-තැපෑලක් සකසන්න"</string>
+    <string msgid="651011686747499628" name="bytes">"<ns1:g id="COUNT">%s</ns1:g> B"</string>
+    <string msgid="4831678293149626190" name="cancel">"අවලංගු කරන්න"</string>
+    <string msgid="4155490583610926755" name="cant_move_or_change_labels">"තේරීමට ගිණුම් කිහිපයක් අඩංගු වන බැවින් ගෙනයාමට නොහැක."</string>
+    <string msgid="8768828862207919684" name="cc">"කා.පි"</string>
+    <string msgid="2928584226469388899" name="cc_attribution">"කා.පි: <ns1:g id="CC">%1$s</ns1:g>&lt;br>"</string>
+    <string msgid="5603892257866345823" name="cc_heading">"කා.පි.:"</string>
+    <string msgid="9174464298613273814" name="change_folders_selection_dialog_title">"ෆෝල්ඩර වෙනස් කරන්න"</string>
+    <string msgid="3615852118397055361" name="change_sync_settings">"සමමුහුර්ත කිරීමේ සැකසීම් වෙනස් කරන්න"</string>
+    <string msgid="3539537264873337959" name="choosertitle_sharevia">"බෙදාගන්නේ"</string>
+    <string msgid="765949970989448022" name="clear">"හිස් කරන්න"</string>
+    <string msgid="4750930803913225689" name="clear_authentication_label">"සත්‍යාපනය හිස් කරන්න"</string>
+    <string msgid="3952553078559373729" name="clear_display_images_whitelist_dialog_message">"ඔබ පෙර අවසර දුන් යවන්නන්ගේ පේළිගත කළ පින්තූර පෙන්වීම නවත්වන්න."</string>
+    <string msgid="1942692501166848471" name="clear_display_images_whitelist_dialog_title">"පින්තූර අනුමැති හිස් කරන්න ද?"</string>
+    <string msgid="2012677202404471778" name="clear_display_images_whitelist_title">"පින්තූර අනුමැති හිස් කරන්න"</string>
+    <string msgid="5202922561632407778" name="clear_history_dialog_message">"ඔබ පෙර කළ සියලු සෙවීම් ඉවත් වනු ඇත."</string>
+    <string msgid="3503603389704365385" name="clear_history_dialog_title">"සෙවීම් ඉතිහාසය හිස් කරන්නද?"</string>
+    <string msgid="5536216295725760357" name="clear_history_title">"සෙවීම් ඉතිහාසය හිස් කරන්න"</string>
+    <string msgid="2602861958391035523" name="compose">"සකසනය"</string>
+    <string msgid="5673376086133995913" name="compose_title">"සකසනය"</string>
+    <string msgid="5172680524418848519" name="confirm_discard_text">"මෙම පණිවිඩය ඉවතලන්නද?"</string>
+    <string msgid="6764021931370809514" name="confirm_response">"ප්‍රතිචාරය යවමින්..."</string>
+    <string msgid="6211518590166222735" name="confirm_send_message">"මෙම පණිවිඩය යවන්නද?"</string>
+    <string msgid="3329355318700201516" name="confirm_send_message_with_no_body">"පණිවිඩ බොඩියේ පෙළ නොමැත."</string>
+    <string msgid="1442628074022609987" name="confirm_send_message_with_no_subject">"පණිවිඩ කාරණාවේ පෙළ නොමැත."</string>
+    <string msgid="6484930184867405276" name="contact_info_string">"<ns1:g id="NAME">%1$s</ns1:g> සඳහා සම්බන්ධතා තොරතුරු පෙන්වන්න"</string>
+    <string msgid="6204228921864816351" name="contact_info_string_default">"සම්බන්ධතා තොරතුරු පෙන්වන්න"</string>
+    <string msgid="854320355052962069" name="content_description">"<ns1:g id="SUBJECT">%3$s</ns1:g> <ns1:g id="SNIPPET">%4$s</ns1:g> පිළිබඳව, <ns1:g id="DATE">%5$s</ns1:g> <ns1:g id="READSTATE">%6$s</ns1:g> දින, <ns1:g id="TOHEADER">%1$s</ns1:g> <ns1:g id="PARTICIPANT">%2$s</ns1:g>"</string>
+    <string msgid="1634422834354116955" name="content_description_today">"<ns1:g id="SUBJECT">%3$s</ns1:g> <ns1:g id="SNIPPET">%4$s</ns1:g> පිළිබඳව, <ns1:g id="TIME">%5$s</ns1:g> <ns1:g id="READSTATE">%6$s</ns1:g> ට, <ns1:g id="TOHEADER">%1$s</ns1:g> <ns1:g id="PARTICIPANT">%2$s</ns1:g>"</string>
+    <string msgid="860548626146933495" name="content_description_today_with_folders">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> <ns1:g id="SUBJECT">%3$s</ns1:g> පිලිබඳ, <ns1:g id="SNIPPET">%4$s</ns1:g> <ns1:g id="TIME">%5$s</ns1:g> ට, <ns1:g id="READSTATE">%6$s</ns1:g>, ලේබල: <ns1:g id="FOLDERS">%7$s</ns1:g>"</string>
+    <string msgid="482368474097191879" name="content_description_with_folders">"<ns1:g id="TOHEADER">%1$s</ns1:g><ns1:g id="PARTICIPANT">%2$s</ns1:g> <ns1:g id="SUBJECT">%3$s</ns1:g> පිලිබඳ, <ns1:g id="SNIPPET">%4$s</ns1:g> <ns1:g id="DATE">%5$s</ns1:g> දින, <ns1:g id="READSTATE">%6$s</ns1:g>, ලේබල: <ns1:g id="FOLDERS">%7$s</ns1:g>"</string>
+    <string msgid="2310064151427072475" name="contextmenu_add_contact">"සම්බන්ධතාවය එක් කරන්න"</string>
+    <string msgid="2584243784216385180" name="contextmenu_copy">"පිටපත් කරන්න"</string>
+    <string msgid="8659897702269320063" name="contextmenu_copylink">"URL සබැඳුම පිටපත් කරන්න"</string>
+    <string msgid="8881095692316726628" name="contextmenu_dial_dot">"අමතන්න..."</string>
+    <string msgid="5118951927399465521" name="contextmenu_map">"සිතියම"</string>
+    <string msgid="6952228183947135362" name="contextmenu_openlink">"බ්‍රව්සරයේ විවෘත කරන්න"</string>
+    <string msgid="3834654593200105396" name="contextmenu_send_mail">"ඊ-තැපෑල යවන්න"</string>
+    <string msgid="8670940060477758709" name="contextmenu_sharelink">"සබැඳුම බෙදාගන්න"</string>
+    <string msgid="5319737001771622657" name="contextmenu_sms_dot">"SMS..."</string>
+    <string msgid="1031172763893491000" name="contextmenu_view_image">"පින්තූරය බලන්න"</string>
+    <string msgid="6475872337373081683" name="conversation_folder_moved">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> වෙත ගෙනයන ලදි"</string>
+    <string msgid="836483155429003787" name="conversation_photo_welcome_text">"සංවාදය තේරීමට යවන්නාගේ රූපය ස්පර්ශ කරන්න."</string>
+    <string msgid="3121335168340432582" name="copyright">"©<ns1:g id="YEAR">%1$d</ns1:g> Google Inc."</string>
+    <string msgid="971422874488783312" name="copyright_information">"ප්‍රකාශන හිමිකම් තොරතුරු"</string>
+    <string msgid="6575946089819721958" name="create_action">"අලුතින් නිර්මාණය කරන්න"</string>
+    <string msgid="5794846334232367838" name="custom_date">"අභිරුචි"</string>
+    <string msgid="5042317430007736322" name="custom_from_account_label">"තැපැල් යවන්නේ:"</string>
+    <string msgid="2952994746916149969" name="date_and_view_details">"<ns1:g id="DATE">%1$s</ns1:g> &lt;a href=\'http://www.example.com\'>විස්තර පෙන්වන්න&lt;/a>"</string>
+    <string msgid="4213063948406397168" name="date_heading">"දිනය:"</string>
+    <string msgid="4168417403884350040" name="date_message_received_print">"<ns1:g id="DAY_AND_DATE">%1$s</ns1:g> <ns1:g id="TIME">%2$s</ns1:g>"</string>
+    <string msgid="1061426502665431412" name="date_none">"කිසිවක් නැත"</string>
+    <string msgid="3251555782945051904" name="date_not_set">"පිහිටුවා නැත"</string>
+    <string msgid="1337476992195531309" name="debug_title">"නිදොස්කරණය"</string>
+    <string msgid="6784262386780496958" name="delete">"මකන්න"</string>
+    <string msgid="7378013910782008375" name="deleted">"මකාදමන ලදී"</string>
+    <string msgid="4299378570982520839" name="device_admin_description">"සේවාදායකය-විශේෂණය කළ ආරක්ෂක ප්‍රතිපත්තීන් සබල කර ඇත"</string>
+    <string msgid="3335272972461391415" name="device_admin_label">"ඊ-තැපෑල"</string>
+    <string msgid="6001542250505146252" name="disable_admin_warning">"අවවාදය: ඔබගේ උපාංගය පාලනය කිරීමේ ඊ-තැපෑල යෙදුමේ අධිකාරත්වය අක්‍රිය කිරීම මගින් ඔවුනගේ ඊ-තැපැල්, සම්බන්ධතා, දින දර්ශන සිදුවීම්, සහ වෙනත් දත්තද සමග එයට අවශ්‍ය සියලු ඊ-තැපැල් ගිණුම් මැකෙයි."</string>
+    <string msgid="4905982179911608430" name="discard">"ඉවත ලන්න"</string>
+    <string msgid="5699760550972324746" name="discard_changes">"වෙනස්කම් ඉවතලන්න ද?"</string>
+    <string msgid="5881484193628472105" name="discard_drafts">"කටු සටහන් ඉවත ලන්න"</string>
+    <string msgid="7520780769812210279" name="discard_failed">"ඉවත ලෑම අසාර්ථක විය"</string>
+    <string msgid="5400049020835024519" name="dismiss_tip_hover_text">"චාරිකාව අස් කරන්න"</string>
+    <string msgid="344354738335270292" name="done">"හරි"</string>
+    <string msgid="8195787340878328119" name="download_again">"නැවත බාගැනීම කරන්න"</string>
+    <string msgid="3878373998269062395" name="download_failed">"බාගැනීම කිරීමට නොහැක. නැවත උත්සහ කිරීමට ස්පර්ශ කරන්න."</string>
+    <string msgid="9122583199850209286" name="draft_count_format">" (<ns1:g id="COUNT">%1$s</ns1:g>)"</string>
+    <string msgid="7032951343184552800" name="draft_heading">"කටු සටහන"</string>
+    <string msgid="7370121943946205024" name="draft_to_heading">"වෙත කටු සටහනක්:"</string>
+    <string msgid="2065829742127544297" name="drawer_close">"සංචාලන ඇදීම වසන්න"</string>
+    <string msgid="2285557278907103851" name="drawer_open">"සංචාලන ඇදීම විවෘත කරන්න"</string>
+    <string msgid="3766219846644975778" name="drawer_title">"සංචලනය"</string>
+    <string msgid="3048014284772648575" name="edit_quick_response_dialog">"ක්ෂණික ප්‍රතිචාරය"</string>
+    <string msgid="64258748053106017" name="email_confirmation_label">"ඊ-තැපැල් ලිපිනය:"</string>
+    <string msgid="6577383216635400167" name="eml_loader_error_toast">"මෙම ගොනුව විවෘත කළ නොහැක"</string>
+    <string msgid="3227552635613553855" name="empty_folder">"මෙහි තැපැල් නොමැත."</string>
+    <string msgid="5901734942362315228" name="empty_inbox">"ඔබ සියල්ල සම්පූර්ණ කර ඇත! කරුණාකර ඔබගේ දවස ප්‍රීතියෙන් ගත කරන්න."</string>
+    <string msgid="8564899353449880818" name="empty_search">"අපොයි! අපට \"<ns1:g id="SEARCH_QUERY">%1$s</ns1:g>\" සඳහා කිසිවක් සොයාගත නොහැකි විය."</string>
+    <string msgid="2911988289997281371" name="empty_spam">"අයාචිත තැපෑල හිස්කරන්නද?"</string>
+    <string msgid="1130319045917820569" name="empty_spam_dialog_title">"අයාචිත තැපෑල හිස්කරන්නද?"</string>
+    <string msgid="3288985543286122800" name="empty_spam_folder">"නියමයි, මෙතන අයාචිත තැපැල් නැහැ!"</string>
+    <string msgid="3385937024924728399" name="empty_trash">"අපද්‍රව්‍ය හිස් කරන්න"</string>
+    <string msgid="2104898489663621508" name="empty_trash_dialog_title">"අපද්‍රව්‍ය හිස් කරන්න ද?"</string>
+    <string msgid="378119063015945020" name="empty_trash_folder">"මෙහි ඉවත ලන දේ නොමැත. ප්‍රතිචක්‍රකරණය කිරීම පිළිබඳ ස්තූතියි!"</string>
+    <string msgid="2848850136844740850" name="enumeration_comma">", "</string>
+    <string msgid="293118547772095111" name="exchange_name_alternate">"Microsoft Exchange ක්‍රියාකාරී සමමුහුර්තය"</string>
+    <string msgid="204247008751740034" name="feedback">"ප්‍රතිපෝෂණය යවන්න"</string>
+    <string msgid="2286628490159574159" name="fetching_attachment">"ඇමුණුම ලබාගනිමින්"</string>
+    <string msgid="721666921386074505" name="filtered_tag">"[<ns1:g id="TAG">%1$s</ns1:g>]<ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="6272938864914794739" name="folder_icon_desc">"ෆෝල්ඩර නිරූපකය"</string>
+    <string msgid="5656281444688183676" name="folder_removed">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> වෙතින් ඉවත් කරන ලදි"</string>
+    <string msgid="6466292659577092915" name="folder_shortcut_widget_label">"ඊ-තැපැල් ෆෝල්ඩරය"</string>
+    <string msgid="349478353401667107" name="folder_sync_settings_pref_title">"ෆෝල්ඩර සමමුහුර්ත සැකසීම්"</string>
+    <string msgid="2876312737118986789" name="forms_are_disabled">"Gmail තුළ පෝරම අබල කර ඇත"</string>
+    <string msgid="4397585145490426320" name="forward">"ඉදිරියට"</string>
+    <string msgid="597850048345475752" name="forward_attribution">"---------- ඉදිරියට යවන ලද පණිවිඩය ----------&lt;br>වෙතින්: <ns1:g id="FROM">%1$s</ns1:g>&lt;br>දිනය: <ns1:g id="DATE">%2$s</ns1:g>&lt;br>කාරණය: <ns1:g id="SUBJECT">%3$s</ns1:g>&lt;br>වෙත: <ns1:g id="TO">%4$s</ns1:g>&lt;br>"</string>
+    <string msgid="1828826576779486239" name="forward_attribution_no_headers">"---------- ඉදිරියට යැවූ පණිවිඩය ----------"</string>
+    <string msgid="2900585518884851062" name="forward_download_failed_ticker">"ඇමුණුම් එකක් හෝ කිහිපයක් ඉදිරියට යැවීමට නොහැක."</string>
+    <string msgid="2043036709913723298" name="forward_download_failed_title">"ඇමුණුම ඉදිරියට නොයවන ලදි"</string>
+    <string msgid="5159056500059912358" name="from">"වෙතින්"</string>
+    <string msgid="48290556829713090" name="from_heading">"වෙතින්:"</string>
+    <string msgid="4212138728220418162" name="general_preferences_title">"සාමාන්‍ය සැකසීම්"</string>
+    <string msgid="4683974765387240723" name="generic_attachment_problem">"ගොනුව ඇමිණිමට නොහැකි විය."</string>
+    <string msgid="8403333791332403244" name="getting_messages">"ඔබගේ පණිවිඩ ලබාගනිමින්"</string>
+    <string msgid="2099786953868369991" name="gmail_name">"Gmail"</string>
+    <string msgid="7211458338163287670" name="help_and_feedback">"උදවු සහ ප්‍රතිපෝෂණ"</string>
+    <string msgid="3708286489943154681" name="help_and_info">"සහාය"</string>
+    <string msgid="8018801050702453314" name="hide_details">"විස්තර සඟවන්න"</string>
+    <string msgid="5768235486834692733" name="hide_elided">"▼ උපුටා ගත් පෙළ සඟවන්න"</string>
+    <string msgid="7618891933409521283" name="hide_folders">"ෆෝල්ඩර සඟවන්න"</string>
+    <string msgid="8760314545535838430" name="ignore_spam_warning">"නොසලකා හරින්න, මම මෙය පණිවිඩය විශ්වාස කරනවා"</string>
+    <string msgid="8285222985908214985" name="imap_name">"පුද්ගලික (IMAP)"</string>
+    <string msgid="1357564480946178121" name="info">"තොරතුරු"</string>
+    <string msgid="9157434699389936584" name="invalid_recipient">"<ns1:g id="WRONGEMAIL">%s</ns1:g> ලිපිනය අවලංගුය"</string>
+    <string msgid="1523463964465770347" name="kilobytes">"<ns1:g id="COUNT">%s</ns1:g> KB"</string>
+    <string msgid="323232821061341014" name="label_notification_ticker">"<ns1:g id="LABEL">%s</ns1:g>: <ns1:g id="NOTIFICATION">%s</ns1:g>"</string>
+    <string msgid="140881511322826320" name="label_notification_vibrate_title">"කම්පනය වීම"</string>
+    <string msgid="3055042669246912518" name="large_unseen_count">"අලුත් <ns1:g id="COUNT">%d</ns1:g>+"</string>
+    <string msgid="8702691358453560575" name="load_more">"තවත් පූරණය කරන්න"</string>
+    <string msgid="7931600025861500397" name="loading_conversation">"පූරණය වෙමින්..."</string>
+    <string msgid="7255732786298655246" name="loading_conversations">"පූරණය වෙමින්..."</string>
+    <string msgid="4620839194581484497" name="login_failed_ticker">"<ns1:g id="ACCOUNT_NAME">%s</ns1:g> පුරනය වීම අසාර්ථකයි."</string>
+    <string msgid="1737884069957090004" name="login_failed_title">"පුරනය වීමට නොහැකි විය"</string>
+    <string msgid="1660881999120625177" name="long_press_to_select_tip">"තනි සංවාදයක් තේරීමට රඳවන්න සහ ස්පර්ශ කරන්න, පසුව තව තේරීමට ස්පර්ශ කරන්න"</string>
+    <string msgid="4155918930481733669" name="mailbox_list_account_selector_combined_view">"සංයුක්ත දර්ශනය"</string>
+    <string msgid="3552043116466269581" name="mailbox_name_display_drafts">"කටු සටහන්"</string>
+    <string msgid="5093068725739672126" name="mailbox_name_display_inbox">"එන ලිපි"</string>
+    <string msgid="1634126984313831675" name="mailbox_name_display_junk">"නිසරු"</string>
+    <string msgid="8735725798805339414" name="mailbox_name_display_outbox">"යන ලිපි"</string>
+    <string msgid="6705058612006729985" name="mailbox_name_display_sent">"යවන ලද"</string>
+    <string msgid="8076384721309828453" name="mailbox_name_display_starred">"තරුව සලකුණු කළ"</string>
+    <string msgid="7020792045007681852" name="mailbox_name_display_trash">"අපද්‍රව්‍ය"</string>
+    <string msgid="1453575937919310339" name="mailbox_name_display_unread">"නොකියැවූ"</string>
+    <string msgid="2196614373847675314" name="mailbox_settings_activity_title">"සමමුහුර්ත කිරීමේ විකල්ප"</string>
+    <string msgid="5547676392298186906" name="mailbox_settings_activity_title_with_mailbox">"සමමුහුර්ත කිරීමේ විකල්ප (<ns1:g id="MAILBOXX_NAME">%s</ns1:g>)"</string>
+    <string msgid="7027516982341382326" name="mailbox_settings_mailbox_sync_window_label">"සමමුහුර්ත කළ යුතු තැපැල් සඳහා දින"</string>
+    <string msgid="7723413381707277856" name="mailbox_settings_sync_enabled_label">"මෙම් ෆෝල්ඩරය සමමුහුර්ත කරන්න"</string>
+    <string msgid="742233465207750578" name="mailbox_settings_sync_enabled_summary">"සම්බන්ධ වූ විටදී පණිවිඩ බාගත වෙයි"</string>
+    <string msgid="4734660452395086786" name="manage_accounts_menu_item">"ගිණුම් කළමනාකරණය කරන්න"</string>
+    <string msgid="2271479734895537848" name="manual_sync">"දැන් සමමුහුර්ත කරන්න"</string>
+    <string msgid="8781680450177768820" name="mark_important">"වැදගත්යැයි ලකුණු කරන්න"</string>
+    <string msgid="3342258155408116917" name="mark_not_important">"නොවැදගත් ලෙස සලකුණු කරන්න"</string>
+    <string msgid="8617774236231366651" name="mark_not_spam">"අයාචිත තැපෑල ලෙස වාර්තා නොකරන්න"</string>
+    <string msgid="579388143288052493" name="mark_read">"කියවූ ලෙස සලකුණු කරන්න"</string>
+    <string msgid="6245060538061533191" name="mark_unread">"නොකියවූ සලකුණු කරන්න"</string>
+    <string msgid="4674452244417913816" name="me_object_pronoun">"මම"</string>
+    <string msgid="7479328865714008288" name="me_subject_pronoun">"මම"</string>
+    <string msgid="4309397368708773323" name="megabytes">"<ns1:g id="COUNT">%s</ns1:g> MB"</string>
+    <string msgid="2194946192901276625" name="menu_change_folders">"ෆෝල්ඩර වෙනස් කරන්න"</string>
+    <string msgid="4575025207594709432" name="menu_compose">"සකසනය"</string>
+    <string msgid="8486398523679534519" name="menu_manage_folders">"ෆෝල්ඩර සැකසීම්"</string>
+    <string msgid="7948877550284452830" name="menu_move_to">"ගෙන යන්නේ"</string>
+    <string msgid="258554178236001444" name="menu_move_to_inbox">"එන ලිපි වෙත ගෙනයන්න"</string>
+    <string msgid="3084679038179342333" name="menu_photo_print">"මුද්‍රණය කරන්න"</string>
+    <string msgid="2742869476474613396" name="menu_photo_save_all">"සියල්ල සුරකින්න"</string>
+    <string msgid="6410980274832639330" name="menu_photo_share">"බෙදාගන්න"</string>
+    <string msgid="3049053252719665320" name="menu_photo_share_all">"සියල්ලම බෙදාගන්න"</string>
+    <string msgid="1949652467806052768" name="menu_search">"සෙවීම"</string>
+    <string msgid="7993485401501778040" name="menu_settings">"සැකසීම්"</string>
+    <string msgid="2330398228979616661" name="menu_show_original">"ස්වයංක්‍රීය-ප්‍රමාණ කිරීම ප්‍රතිවර්තනය කරන්න"</string>
+    <string msgid="8653049392208282481" name="menu_toggle_drawer">"ලාච්චුව ටොගල් කරන්න"</string>
+    <string msgid="6193988236722150221" name="message_compose_fwd_header_fmt">\n\n"-------- මුල් පණිවිඩය --------\nකාරණය: <ns1:g id="SUBJECT">%1$s</ns1:g>\nවෙතින්: <ns1:g id="SENDER">%2$s</ns1:g>\nවෙත: <ns1:g id="TO">%3$s</ns1:g>\nකා.පි: <ns1:g id="CC_0">%4$s</ns1:g>\n\n"</string>
+    <string msgid="5836926808818821309" name="message_compose_insert_quick_response_list_title">"ක්ෂණික ප්‍රතිචාරයක් ඇතුළත් කරන්න"</string>
+    <string msgid="4393288554605333619" name="message_compose_insert_quick_response_menu_title">"ක්ෂණික ප්‍රතිචාරය ඇතුළත් කරන්න"</string>
+    <string msgid="91396461771444300" name="message_decode_error">"පණිවිඩය විකේතනය කිරීමේදී දෝෂයකි."</string>
+    <string msgid="60771875776494764" name="message_details_title">"පණිවිඩ විස්තර"</string>
+    <string msgid="6792661321962262024" name="message_discarded">"පණිවිඩය ඉවතලන ලදි."</string>
+    <string msgid="7887650587384601790" name="message_failed">"අසාර්ථක වුණි"</string>
+    <string msgid="8002758842580134835" name="message_invite_accept">"ඔව්"</string>
+    <string msgid="9181966650840809197" name="message_invite_calendar_view">"දින දර්ශනය තුළ පෙන්වන්න"</string>
+    <string msgid="6331040872447290777" name="message_invite_decline">"නැත"</string>
+    <string msgid="4194264767870003397" name="message_invite_label_attending">"යනවාද?"</string>
+    <string msgid="3199418731566655887" name="message_invite_tentative">"සමහර විට"</string>
+    <string msgid="5985161025144867256" name="message_invite_title">"දින දර්ශනයේ ආරාධනාව"</string>
+    <string msgid="5335188121407261331" name="message_retrying">"යළි උත්සාහ කරමින්"</string>
+    <string msgid="3291655042310241793" name="message_saved">"පණිවිඩය කටු සටහනක් ලෙස සුරැකිණි."</string>
+    <string msgid="7571652141281187845" name="message_view_attachment_background_load">"යැවීමට ප්‍රථමයෙන් ඔබගේ ඉදිරියට යැවූ පණිවිඩයේ ඇමුණුම් එකක් හෝ තව ඇමුණුම් බාගත වෙයි."</string>
+    <string msgid="2899691682394864507" name="more_info_attachment">"තොරතුරු"</string>
+    <string msgid="4052506464467083621" name="move_to_selection_dialog_title">"ගෙනයන්නේ"</string>
+    <string msgid="1386588046275174918" name="multiple_new_message_notification_item"><b>"<ns1:g id="SENDER">%1$s</ns1:g>"</b>"   <ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="9164839998562321569" name="mute">"නිශ්ශබ්ද කරන්න"</string>
+    <string msgid="5931164247644972255" name="network_error">"සම්බන්ධතාවය නැත"</string>
+    <string msgid="2662478712866255138" name="next">"මීළඟ"</string>
+    <string msgid="7309485680354949680" name="no_application_found">"නැරඹීම සඳහා මෙම ඇමුණුම කිසිදු යෙදුමකට විවෘත කළ නොහැක."</string>
+    <string msgid="8716297053803961304" name="no_quick_responses">"කිසිවක් ලබාගත නොහැක"</string>
+    <string msgid="5622708348540036959" name="no_subject">"(මාතෘකාවක් නොමැත)"</string>
+    <string msgid="3044618511909304701" name="non_synced_folder_description">"අලුත් සංවාදයන් බැලීමට, මෙම ෆෝල්ඩරය සමමුහුර්ත කරන්න."</string>
+    <string msgid="3600180500934086346" name="not_synced_title">"ගිණුම සමමුහුර්ත කර නොමැත"</string>
+    <string msgid="2884874164831039047" name="notification_action_archive">"සංරක්ෂිත කරන්න"</string>
+    <string msgid="3201627482564624132" name="notification_action_delete">"මකන්න"</string>
+    <string msgid="3714785653186750981" name="notification_action_remove_label">"ලේබලය ඉවත් කරන්න"</string>
+    <string msgid="8378725460102575919" name="notification_action_reply">"පිළිතුරු දෙන්න"</string>
+    <string msgid="5693469099941000037" name="notification_action_reply_all">"සියල්ලන්ටම ප්‍පිළිතුරු යවන්න"</string>
+    <string msgid="600186958134073582" name="notification_action_undo_archive">"සංරක්ෂිතය කරන ලද"</string>
+    <string msgid="6915612337413587103" name="notification_action_undo_delete">"මකාදමන ලදි"</string>
+    <string msgid="8341924850540100690" name="notification_action_undo_remove_label">"ලේබලය ඉවත් කරන ලදි"</string>
+    <string msgid="3771260531636603518" name="oauth_authentication_title">"අනුමැතිය ඉල්ලමින්"</string>
+    <string msgid="8466102021844409849" name="oauth_error_description">"සත්‍යාපනය කිරීමට නොහැකිය"</string>
+    <string msgid="6178802457914802336" name="ok">"හරි"</string>
+    <string msgid="8643615555920977752" name="open_source_licenses">"විවෘත මූල බලපත්‍ර"</string>
+    <string msgid="6408695162723653446" name="or_label">"හෝ"</string>
+    <string msgid="7886090597023240426" name="overflow_description">"තවත් විකල්ප"</string>
+    <string msgid="4360288708739366810" name="password_expire_warning_content_title">"තිරය අගුල් දැමීමේ මුරපද කල් ඉකුත් වේ"</string>
+    <string msgid="1093389293050776319" name="password_expire_warning_dialog_content_fmt">"ඔබගේ තිරය අගුළු දැමීමේ PIN එක හෝ මුරපදය හැකි ඉක්මණින් ඔබ වෙනස් කිරීමට අවශ්‍යය, නැතිනම් <ns1:g id="ACCOUNT">%s</ns1:g> ගිණුම සඳහා දත්ත මැකෙනු ඇත. ඔබට දැන් එය වෙනස් කිරීමට අවශ්‍යද?"</string>
+    <string msgid="4901499545146045672" name="password_expire_warning_dialog_title">"තිරය අගුල් දැමීමේ මුරපද කල් ඉකුත් වේ"</string>
+    <string msgid="5543005790538884060" name="password_expire_warning_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" ට ඔබගේ තිරය අගුළු දැමීමේ PIN එක හෝ මුරපදය වෙනස් කිරීම අවශ්‍යය."</string>
+    <string msgid="7379094218699681984" name="password_expired_content_title">"ඔබගේ තිරය අගුළු දැමීමේ මුරපදය කල් ඉකුත් වී ඇත."</string>
+    <string msgid="8322213184626443346" name="password_expired_dialog_content_fmt">"<ns1:g id="ACCOUNT">%s</ns1:g> සඳහා දත්ත ඔබගේ උපාංගයෙන් මකා දමනු ලැබේ. ඔබගේ තිරය අගුළු දැමීමේ PIN හෝ මුරපදය වෙනස් කිරීමෙන් ඔබට එය නැවත පිහිටුවීම කළ හැක. ඔබට දැන් එය වෙනස් කිරීමට අවශ්‍යද?"</string>
+    <string msgid="7275534155170185252" name="password_expired_dialog_title">"තිරය අගුළු දැමීමේ මුරපදය කල් ඉකුත්වී ඇත"</string>
+    <string msgid="3098703963402347483" name="password_expired_ticker">"ඔබගේ තිර අගුළේ PIN හෝ මුරපදය කල් ඉකුත්වී ඇත."</string>
+    <string msgid="4226682910292828279" name="password_hint">"මුරපදය"</string>
+    <string msgid="1887439537224212124" name="password_warning_label">"ඊ-තැපැල් ලිපිනය හෝ මුරපදය වැරදියි"</string>
+    <string msgid="5338433949655493713" name="permission_access_provider_desc">"ලැබුණු පණිවිඩ, යැවූ පණිවිඩ, පරිශීලක නාම, සහ මුරපද ඇතුළත් ඔබගේ ඊ-තැපැල් දත්ත සමුදාය වෙත පිවිසීමට යෙදුමට ඉඩ දෙන්න."</string>
+    <string msgid="977700184037298723" name="permission_access_provider_label">"ඊ-තැපැල් සැපයුම් දත්ත වෙත පිවිසෙන්න"</string>
+    <string msgid="6579059616090100181" name="permission_read_attachment_desc">"ඔබගේ ඊ-තැපැල් ඇමුණුම් කියවීමට යෙදුමට ඉඩ දෙන්න"</string>
+    <string msgid="6641407731311699536" name="permission_read_attachment_label">"ඊ-තැපැල් ඇමුණුම් කියවන්න"</string>
+    <string msgid="4142617042507912053" name="phone">"දුරකථනය"</string>
+    <string msgid="577471721679146999" name="photo_load_failed">"රුපය පූරණ කළ නොහැක"</string>
+    <string msgid="733396083649496600" name="pick_end_date_title">"අවසානය (විකල්ප)"</string>
+    <string msgid="2274665037355224165" name="pick_start_date_title">"ආරම්භය"</string>
+    <string msgid="3953824147776128899" name="please_wait">"කරුණාකර රැඳී සිටින්න..."</string>
+    <string msgid="6469328498345236120" name="policy_calendar_age">"සමමුහුර්ත කරන ලද දින දර්ශන සිද්ධි ගණන සිමා කරන්න"</string>
+    <string msgid="8821533827628900689" name="policy_dont_allow_camera">"උපාංගවල කැමරාව භාවිතයට ඉඩ නොදෙන්න"</string>
+    <string msgid="3521941976575225050" name="policy_email_age">"සමමුහුර්ත කරන ලද ඊ-තැපෑල් ගණන සිමා කරන්න"</string>
+    <string msgid="1287225242918742275" name="policy_password_expiration">"කල් ඉකුත් වීමට මුරපද අවශ්‍යය"</string>
+    <string msgid="9001177390979112746" name="policy_password_history">"මෑත කාලින මුරපද නැවත භාවිතය සීමා කරන්න"</string>
+    <string msgid="3556860917024612396" name="policy_require_password">"උපාංග මුරපදයක් අවශ්‍යය"</string>
+    <string msgid="3499201409239287702" name="policy_screen_timeout">"එහි තිරය අගුළු දැමීමට උපාංගය නිකම් තිබීම අවශ්‍යය"</string>
+    <string msgid="6653484706414263493" name="pop3_name">"පුද්ගලික (POP3)"</string>
+    <string msgid="5459235590885640678" name="prefDialogTitle_autoAdvance">"වෙත උසස් කරන්න"</string>
+    <string msgid="7914272565548361304" name="prefDialogTitle_removal_action">"සුපුරුදු ක්‍රියාව"</string>
+    <string msgid="6385669491239514630" name="preference_advance_to_title">"ස්වයංක්‍රිය උසස් කිරීම"</string>
+    <string msgid="7318645995655875718" name="preference_confirm_before_archive_title">"සංරක්ෂණය කිරීමට පෙර තහවුරු කරන්න"</string>
+    <string msgid="7563587174619033835" name="preference_confirm_before_delete_title">"මැකීමට පෙර තහවුරු කරන්න"</string>
+    <string msgid="4136585783513077039" name="preference_confirm_before_send_title">"යැවීමට පෙර තහවුරු කරන්න"</string>
+    <string msgid="3922674681156121948" name="preference_header_action_confirmations">"ක්‍රියා තහවුරු කිරීම්"</string>
+    <string msgid="3128186577060329884" name="preference_removal_action_title">"සුපුරුදු ක්‍රියාව"</string>
+    <string msgid="3586817690132199889" name="preference_sender_image_description">"සංවාද ලැයිස්තුවේ නම අසලින් පෙන්වන්න"</string>
+    <string msgid="7890813537985591865" name="preference_sender_image_title">"යවන්නාගේ රූපය"</string>
+    <string msgid="3036560323237015010" name="preference_swipe_description">"සංවාද ලැයිස්තුව තුළ"</string>
+    <string msgid="2073613840893904205" name="preference_swipe_title">"ස්වයිප් ක්‍රියා"</string>
+    <string msgid="5730999743867653106" name="preferences_conversation_mode_summary">"තිරයට සුදුසු පරිදි පණිවිඩය හකුළන්න"</string>
+    <string msgid="389352009651720838" name="preferences_conversation_mode_title">"පණිවිඩ ස්වයංක්‍රියව හැඩගස්වන්න"</string>
+    <string msgid="895581085692979709" name="preferences_default_reply_all_summary_impl">"පණිවිඩ ප්‍රතිචාර සඳහා සුපුරුදු ලෙස භාවිතා කරන්න"</string>
+    <string msgid="7255858488369635327" name="preferences_default_reply_all_title">"සියල්ලන්ටම ප්‍රතිඋත්තර යවන්න"</string>
+    <string msgid="7257824136988429629" name="preferences_disable_snap_headers_title">"පණිවිඩ ක්‍රියාවන්"</string>
+    <string msgid="4801741764511807064" name="preferences_signature_dialog_title">"අත්සන"</string>
+    <string msgid="3776614319388053784" name="preferences_signature_summary_not_set">"පිහිටුවා නැත"</string>
+    <string msgid="2318034745474929902" name="preferences_signature_title">"අත්සන"</string>
+    <string msgid="2268482117730576123" name="preferences_vacation_responder_title">"නිවාඩු ප්‍රතිචාරකය"</string>
+    <string msgid="6265457626086113833" name="preview_attachment">"පූර්ව දර්ශනය"</string>
+    <string msgid="8985379053279804274" name="previous">"පෙර"</string>
+    <string msgid="7987949243936577207" name="print">"මුද්‍රණ කරන්න"</string>
+    <string msgid="4011022762279519941" name="print_all">"සියල්ල මුද්‍රණය කරන්න"</string>
+    <string msgid="8895536548487605661" name="print_dialog">"මුද්‍රණ කරන්න..."</string>
+    <string msgid="212094623396418302" name="privacy_policy">"පෞද්ගලිකත්ව ප්‍රතිපත්තිය"</string>
+    <string msgid="1596701148051980218" name="provider_note_t_online">"මෙම ඊ-තැපැල් ගිණුම සැකසීමට පෙර, T-Online වෙබ් අඩවිය වෙත ගොස් POP3 ඊ-තැපැල් පිව්සුම සඳහා මුරපදයක් සාදන්න."</string>
+    <string msgid="9130521670178673190" name="quick_1">"ස්තුතියි!"</string>
+    <string msgid="8611591278119481491" name="quick_2">"මට හොඳ යැයි දැනෙයි!"</string>
+    <string msgid="8070999183033184986" name="quick_3">"මම මෙය පසුව කියවා ආපසු ඔබට පිළිතුරු දෙන්නම්."</string>
+    <string msgid="216066940197616025" name="quick_4">"මෙය සාකච්ඡා කිරීමට රැස්වීමක් සුදානම් කරමු."</string>
+    <string msgid="3394094315357455290" name="quick_responses_empty_view">"ක්ෂණික ප්‍රතිචාර නොමැත."</string>
+    <string msgid="977782904293216533" name="quoted_text">"ගෙන හැර දක්වූ පාඨ ඇතුලත් කරන්න"</string>
+    <string msgid="5256754205675159141" name="quoted_text_hidden_print">"උදෘත පෙළ සඟවා ඇත"</string>
+    <string msgid="2296807722849923934" name="quoted_text_label">"පෙළ ගෙන හැර දක්වන්න"</string>
+    <string msgid="5495929677508576520" name="read_string">"සංවාදය කියවයි"</string>
+    <string msgid="8943134955788867702" name="recent_folders_heading">"මෑත කාලින ෆෝල්ඩර"</string>
+    <string msgid="319816879398937214" name="recipient_needed">"අඩු තරමේ එක් ලබන්නෙක් එක් කරන්න."</string>
+    <string msgid="1533748989749277511" name="refresh">"නැවුම් කරන්න"</string>
+    <string msgid="1478445871170879140" name="remove_attachment_desc">"<ns1:g id="ATTACHMENTNAME">%s</ns1:g> ඇමිණුම ඉවත් කරන්න"</string>
+    <string msgid="2379905457788576297" name="remove_folder">"<ns1:g id="FOLDERNAME">%1$s</ns1:g> ගෙන් ඉවත් කරන්න"</string>
+    <string msgid="9126690774161840733" name="remove_star">"තරුව ඉවත් කරන්න"</string>
+    <string msgid="8337757482824207118" name="reply">"පිළිතුරු දෙන්න"</string>
+    <string msgid="5366796103758360957" name="reply_all">"සියල්ලන්ටම ප්‍රතිඋත්තර යවන්න"</string>
+    <string msgid="1114972798797833259" name="reply_attribution">"<ns1:g id="DATE">%s</ns1:g> දින, <ns1:g id="PERSON">%s</ns1:g> ලියන ලදි:"</string>
+    <string msgid="6260338807944002651" name="reply_choice_frowning_face">":("</string>
+    <string msgid="6054314968043050748" name="reply_choice_hehe">"හා හා"</string>
+    <string msgid="2496652737796884298" name="reply_choice_i_agree">"මම එකඟයි"</string>
+    <string msgid="4629219072859486413" name="reply_choice_later">"හරි, මම ඔබ වෙත පැමිණෙන්නම්"</string>
+    <string msgid="4465894941302838676" name="reply_choice_nice">"හොඳයි"</string>
+    <string msgid="7068775605915475207" name="reply_choice_no">"නැත"</string>
+    <string msgid="7881073621845053152" name="reply_choice_ok">"හරි"</string>
+    <string msgid="1772253938506548631" name="reply_choice_smiling_face">":)"</string>
+    <string msgid="4978961954288364694" name="reply_choice_thanks">"ස්තූතියි"</string>
+    <string msgid="3327633032975373220" name="reply_choice_yes">"ඔව්"</string>
+    <string msgid="5645003971107444269" name="reply_on_my_way">"මම එන ගමන්"</string>
+    <string msgid="8275255318292059079" name="replyto_heading">"පිළිතුරු යවන්නේ"</string>
+    <string msgid="4318141326014579036" name="report">"වාර්තාව"</string>
+    <string msgid="8454666464488413739" name="report_phishing">"තතුබෑම වාර්තා කරන්න"</string>
+    <string msgid="4106897677959987340" name="report_spam">"අයාචිත තැපැල් ලෙස වාර්තා කරන්න"</string>
+    <string msgid="6609746292081928078" name="respond_inline">"පේළිගතව පිළිතුරු සපයන්න"</string>
+    <string msgid="1272723181782570649" name="resume_draft">"සංස්කරණය කරන්න"</string>
+    <string msgid="916102442074217293" name="retry">"නැවත උත්සාහ කරන්න"</string>
+    <string msgid="5740359453077441466" name="save_action">"සුරකින්න"</string>
+    <string msgid="375685179032130033" name="save_attachment">"සුරකින්න"</string>
+    <string msgid="2669523480789672118" name="save_draft">"ක‍ටු සටහන සුරකින්න"</string>
+    <string msgid="161536102236967534" name="saved">"<ns1:g id="SIZE">%s</ns1:g>, සුරකින ලදි"</string>
+    <string msgid="6274238733828387433" name="saving">"සුරැකේ...."</string>
+    <string msgid="8038224690392783652" name="search_back_desc">"සෙවීම වසන්න"</string>
+    <string msgid="3044261775183044862" name="search_clear_desc">"සෙවීම් පෙළ හිස් කරන්න"</string>
+    <string msgid="7060626585689391003" name="search_hint">"සෙවීම"</string>
+    <string msgid="1461946302763342640" name="search_history_cleared">"සෙවුම් ඉතිහාසය හිස් කෙරුණි."</string>
+    <string msgid="1529438451150580188" name="search_results_header">"ප්‍රතිඵල"</string>
+    <string msgid="4165491276003825492" name="search_suggestion_desc">"යෝජනාව: <ns1:g id="SUGGESTION">%s</ns1:g>"</string>
+    <string msgid="2873920566477359177" name="search_unsupported">"මෙම ගිණුම සෙවුමට සහය නොදෙයි."</string>
+    <string msgid="9103854398344077204" name="search_voice_desc">"හඬ සෙවීම අරඹන්න"</string>
+    <string msgid="3823930420292838192" name="security_changed_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" ගිණුම එහි ආරක්‍ෂිත සැකසීම් වෙනස් කර ඇත; කිසිම පරිශීලක ක්‍රියාවක් අවශ්‍ය නැත."</string>
+    <string msgid="6619955920101834286" name="security_hold_required_text">"<ns1:g id="EMAIL_ADDRESS">%1$s</ns1:g> සඳහා ආරක්ෂණ යාවත්කාලීනයක් අවශ්‍යයි"</string>
+    <string msgid="7099561996532829229" name="security_needed_ticker_fmt">"\"<ns1:g id="ACCOUNT">%s</ns1:g>\" ගිණුමට ආරක්‍ෂිත සැකසීම් යාවත්කාලීනය අවශ්‍යය."</string>
+    <string msgid="615639963487448183" name="security_notification_content_change_title">"ආරක්ෂක ප්‍රතිපත්ති වෙනස්වී ඇත"</string>
+    <string msgid="6494791400431198228" name="security_notification_content_unsupported_title">"ආරක්‍ෂිත ප්‍රතිපත්ති වෙත ලඟාවීමට නොහැක"</string>
+    <string msgid="6321099538307807621" name="security_notification_content_update_title">"ආරක්ෂක යාවත්කාලීන අවශ්‍යය"</string>
+    <string msgid="3249185558872836884" name="security_unsupported_ticker_fmt">"ආරක්ෂක අවශ්‍යතා නිසා \"<ns1:g id="ACCOUNT">%s</ns1:g>\" ගිණුම සමමුහුර්ත කළ නොහැක."</string>
+    <string msgid="353236686616663062" name="select_attachment_type">"ඇමුණුම් වර්ගය තෝරන්න"</string>
+    <string msgid="4269810089682120826" name="send">"යවන්න"</string>
+    <string msgid="2727576121007079643" name="send_anyway">"කෙසේ වුවත් යවන්න"</string>
+    <string msgid="2186285547449865010" name="send_failed">"පණිවිඩය නොයවන ලදි."</string>
+    <string msgid="124432913980620545" name="send_to_contacts_text">"මගේ සම්බන්ධතාවලට පමණක් යවන්න"</string>
+    <string msgid="5064559546745918393" name="send_to_domain_text">"<ns1:g id="DOMAIN">%1$s</ns1:g> වෙත පමණක් යවන්න"</string>
+    <string msgid="2490984995927904030" name="sender_whitelist_cleared">"පින්තූර ස්වයංක්‍රීයව නොපෙන්වනු ඇත."</string>
+    <string msgid="6549228851819460081" name="senders_split_token">", "</string>
+    <string msgid="5600034886763930499" name="sending">"යවමින්..."</string>
+    <string msgid="2487846954946637084" name="sending_message">"පණිවිඩය යවමින්..."</string>
+    <string msgid="9207482909822072856" name="sent_folder_selection_title">"<ns1:g id="ACCOUNT">%s</ns1:g> සඳහා සේවාදායකය යැවුම් අයිතම තෝරන්න"</string>
+    <string msgid="7543009262788808443" name="set_end_date_dialog_title">"අවසාන දිනය (විකල්ප)"</string>
+    <string msgid="1562534040126088628" name="shortcut_name_title">"ෆෝල්ඩරය කෙටිමග නම් කරන්න"</string>
+    <string msgid="2874876876336599985" name="show">"පෙන්වන්න"</string>
+    <string msgid="3456154624105704327" name="show_elided">"උදෘත පෙළ පෙන්වන්න"</string>
+    <string msgid="436044894053204084" name="show_images">"පින්තූර පෙන්වන්න"</string>
+    <string msgid="1005879825500056552" name="show_n_more_folders">"ෆෝල්ඩර <ns1:g id="NUMBER">%1$s</ns1:g> ක් පෙන්වන්න"</string>
+    <string msgid="5051852806423550830" name="sign_in_title">"පුරනය වන්න"</string>
+    <string msgid="1412668282326928102" name="sign_in_with_google">"Google සමගින් පුරනය වන්න"</string>
+    <string msgid="3172144541947408374" name="signature">\n\n"<ns1:g id="SIGNATURE">%s</ns1:g>"</string>
+    <string msgid="4282359206358453634" name="signed_in_with_service_label">"%s සමගින් පුරනය වන ලදි"</string>
+    <string msgid="4699091478139791244" name="signin">"පුරනය වන්න"</string>
+    <string msgid="1570794756474381886" name="silent_ringtone">"නිශ්ශබ්ද වන්න"</string>
+    <string msgid="2170154732664242904" name="single_new_message_notification_big_text">"<ns1:g id="SUBJECT">%1$s</ns1:g>\n<ns1:g id="SNIPPET">%2$s</ns1:g>"</string>
+    <string msgid="7954710563222504868" name="single_new_message_notification_title">"<ns1:g id="SENDER">%1$s</ns1:g>: <ns1:g id="SUBJECT">%2$s</ns1:g>"</string>
+    <string msgid="4783683938444150638" name="storage">"ආචයනය"</string>
+    <string msgid="2136470287303571827" name="subject_hint">"කාරණය"</string>
+    <string msgid="1795794969006241678" name="sync_error">"සමමුහුර්ත කළ නොහැක."</string>
+    <string msgid="4182644657243736635" name="sync_error_message">"ඔබගේ උපාංගයේ සමමුහුර්ත කිරීමට ඇති තරම් ආචනය ඉඩ නොමැත."</string>
+    <string msgid="2248313263003927725" name="system_account_create_failed">"ගිණුම සෑදිය නොහැක. නැවත උත්සහ කරන්න."</string>
+    <string msgid="818944260541160146" name="system_folders_sent_dlg">"ඔබගේ සේවාදායකයේ යවන අයිතම ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="4252740721870748375" name="system_folders_sent_summary">"ඔබගේ සේවාදායකයේ යැවූ අයිතම ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="8792934374188279309" name="system_folders_sent_title">"යවන අයිතම ෆෝල්ඩරය"</string>
+    <string msgid="7161311881709109736" name="system_folders_title">"පද්ධති ෆෝල්ඩර"</string>
+    <string msgid="353701568340939392" name="system_folders_trash_dlg">"ඔබගේ සේවාදායකයේ අපද්‍රව්‍ය ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="2583143581531897068" name="system_folders_trash_summary">"ඔබගේ සේවාදායකයේ අපද්‍රව්‍ය ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="3190927115504713123" name="system_folders_trash_title">"අපද්‍රව්‍ය ෆෝල්ඩරය"</string>
+    <string msgid="4593581125469224791" name="tablet">"ටැබ්ලට්"</string>
+    <string msgid="137172348280050643" name="tap_to_configure">"සකස් කිරීමට ස්පර්ශ කරන්න"</string>
+    <string msgid="3280434399275638071" name="tap_to_configure_folder_sync">"සමමුහුර්ත කිරීමේ ෆෝල්ඩරය"</string>
+    <string msgid="3971614275716830581" name="to">"වෙත"</string>
+    <string msgid="3495203282540398336" name="to_heading">"වෙත: "</string>
+    <string msgid="679167047628308670" name="to_heading_no_space">"වෙත:"</string>
+    <string msgid="3954385178027011919" name="to_message_header">"<ns1:g id="RECIPIENTS">%1$s</ns1:g> වෙත"</string>
+    <string msgid="1006469736520919028" name="toggle_read_unread">"කියවූ නොකියවූ ටොගල් කරන්න"</string>
+    <string msgid="4964155563465970480" name="too_large_to_attach_additional">"ගොනුව ඇමිණී නැත. <ns1:g id="MAXSIZE">%1$s</ns1:g> සීමාවට ළඟා විණි."</string>
+    <string msgid="1620163295709036343" name="too_large_to_attach_multiple">"ගොනුවක් හෝ කිහිපයක් අමුණ නැත. සිමාව <ns1:g id="MAXSIZE">%1$s</ns1:g>"</string>
+    <string msgid="2669897137966512530" name="too_large_to_attach_single">"<ns1:g id="MAXSIZE">%1$s</ns1:g> වඩා වැඩි ගොනු ඇමිණිය නොහැක."</string>
+    <string msgid="686039558899469073" name="trash_folder_selection_title">"<ns1:g id="ACCOUNT">%s</ns1:g> සඳහා සේවාදායක අපද්‍රව්‍ය ෆෝල්ඩරය තෝරන්න"</string>
+    <string msgid="614939812938149398" name="turn_auto_sync_on_dialog_body">"Gmail පමණක් නොව, සියලුම යෙදුම් සහ ගිණුම්වලට ඔබ කරන වෙනස්කම්, වෙබය, ඔබගේ අනෙකුත් උපාංග සහ ඔබගේ <ns1:g id="PHONE_OR_TABLET">%1$s</ns1:g> අතර සමමුහුර්ත වේ."</string>
+    <string msgid="7239160845196929866" name="turn_auto_sync_on_dialog_confirm_btn">"සක්‍රිය කරන්න"</string>
+    <string msgid="543412762396502297" name="turn_auto_sync_on_dialog_title">"ස්වයංක්‍රිය-සමමුහුර්ත වීම සක්‍රිය කරන්නද?"</string>
+    <string msgid="8256285267701059609" name="undo">"අස් කරන්න"</string>
+    <string msgid="7342558841698083381" name="unread_string">"සංවාදය නොකියවා ඇත"</string>
+    <string msgid="5509898665569695288" name="unseen_count">"අලුත් <ns1:g id="COUNT">%d</ns1:g>"</string>
+    <string msgid="146722891559469589" name="unsent_messages_in_outbox">"<ns1:g id="OUTBOX">%2$s</ns1:g> හි නොයැවූ <ns1:g id="NUMBER">%1$s</ns1:g> කි"</string>
+    <string msgid="3527335757205741077" name="update_security_text">"දැන් යාවත්කාලීන කරන්න"</string>
+    <string msgid="5570132559074523806" name="vacation_responder">"නිවාඩු ප්‍රතිචාරකය"</string>
+    <string msgid="9087613123105158494" name="vacation_responder_body_hint_text">"පණිවිඩය"</string>
+    <string msgid="21756037735539983" name="vacation_responder_changes_discarded">"නිවාඩු ප්‍රතිචාරක වෙනස් කිරීම් ඉවතලන ලදි"</string>
+    <string msgid="91448817268121249" name="vacation_responder_changes_saved">"නිවාඩු ප්‍රතිචාරක වෙනස් කිරීම් සුරකින ලදි"</string>
+    <string msgid="6233629618520852439" name="vacation_responder_empty_subject_and_body_warning">"මාතෘකාව හෝ පණිවිඩය එකතු කරන්න"</string>
+    <string msgid="4429909341193366667" name="vacation_responder_off">"අක්‍රියයි"</string>
+    <string msgid="4913238379320882449" name="vacation_responder_on">"<ns1:g id="DATE">%1$s</ns1:g> දින සිට, සක්‍රියයි"</string>
+    <string msgid="4360941815371475955" name="vacation_responder_on_with_end_date">"<ns1:g id="START_DATE">%1$s</ns1:g> දින සිට, <ns1:g id="END_DATE">%2$s</ns1:g> දක්වා සක්‍රියයි"</string>
+    <string msgid="2670378260196977266" name="veiled_address"/>
+    <string msgid="6343564357099807582" name="veiled_alternate_text"/>
+    <string msgid="6728323554307952217" name="veiled_alternate_text_unknown_person"/>
+    <string msgid="2122359944161241551" name="veiled_summary_unknown_person"/>
+    <string msgid="1161745345056656547" name="version">"<ns1:g id="APP_NAME">%1$s</ns1:g> <ns1:g id="VERSION">%2$s</ns1:g> අනුවාදය"</string>
+    <string msgid="537951148511529082" name="via_domain">"<ns1:g id="VIADOMAIN">%1$s</ns1:g> හරහා"</string>
+    <string msgid="3241990517052398927" name="view_app_page"/>
+    <string msgid="823281796655014454" name="view_entire_message">"සම්පූර්ණ පණිවිඩය පෙන්වන්න"</string>
+    <string msgid="8377920000247101901" name="view_more_conversations">"තවත් සංවාද පෙන්වන්න"</string>
+    <string msgid="8493517060419469738" name="voice_search_not_supported">"මෙම උපාංගය මත හඬ සෙවීම සහය නොදක්වයි."</string>
+    <string msgid="2823149409451003378" name="wait_for_manual_sync_body">"මෙම ගිණුම ස්වයංක්‍රියව සමමුහුර්ත කිරීමට සකසා නැත.\nතැපෑල එක වරක් සමමුහුර්ත කිරීමට "<b>"දැන් සමමුහුර්ත කිරීම"</b>", හෝ මෙම ගිණුම ස්වයංක්‍රිය සමමුහුර්ත කිරීම සැකසීමට "<b>"සමමුහුර්ත කිරීමේ සැකසීම් වෙනස් කිරීම"</b>" ස්පර්ශ කරන්න."</string>
+    <string msgid="4577632826912823075" name="wait_for_sync_title">"සමමුහුර්තය සඳහා රැඳීම"</string>
+    <string msgid="8699435859096455837" name="widget_large_unread_count">"%d+"</string>
+</resources>

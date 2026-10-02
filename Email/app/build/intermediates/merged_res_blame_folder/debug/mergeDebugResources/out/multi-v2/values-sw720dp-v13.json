@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.email.app-mergeDebugResources-24:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-sw720dp/dimen.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "721",
+                        "endColumns": "51",
+                        "endOffsets": "768"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                },
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-sw720dp/constants.xml",
+                    "from": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "968",
+                        "endColumns": "68",
+                        "endOffsets": "1032"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "107",
+                        "endColumns": "68",
+                        "endOffsets": "171"
+                    }
+                }
+            ]
+        }
+    ]
+}

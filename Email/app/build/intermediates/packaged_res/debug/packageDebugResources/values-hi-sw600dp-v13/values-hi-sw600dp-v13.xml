@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="2464329024392383408" name="add_bcc_label">"Bcc जोड़ें"</string>
+    <string msgid="5504248178750252553" name="add_cc_label">"Cc/Bcc जोड़ें"</string>
+    <string msgid="2575462565700103317" name="menu_manage_folders">"फ़ोल्‍डर प्रबंधित करें"</string>
+    <string msgid="6407854387225415499" name="preferences_default_reply_all_summary">"संदेश नोटिफिकेशन के जवाबों के लिए डिफ़ॉल्ट के रूप में उपयोग करें"</string>
+</resources>

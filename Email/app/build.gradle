@@ -35,11 +35,11 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ""
-            debuggable true
+            debuggable = true
         }
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled = true
+            shrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard.flags"
@@ -69,40 +69,38 @@ android {
     // relevante ao target Email — é um shim de desenvolvimento descartável
     // (confirmado pelo próprio UnifiedEmail/unified_src/README). Fica de fora.
     // ---------------------------------------------------------------------
+    // Caminhos RELATIVOS A app/ (projectDir). Layout do repo:
+    //   <repo>/Email/            <- raiz do projeto Gradle (settings.gradle)
+    //   <repo>/Email/app/        <- este módulo
+    //   <repo>/Email/src, provider_src, emailcommon, res, assets
+    //   <repo>/UnifiedEmail/     <- irmã de Email/
+    //
+    // Prioridade de resources igual ao AOSP (aapt -S: esquerda vence):
+    //   Email/res e emailcommon/res  >  UnifiedEmail/res
+    // Há 9 resources duplicados entre Email/res e UnifiedEmail/res (app_name,
+    // widget_info, etc). Dois dirs no MESMO sourceSet dariam "Duplicate
+    // resources", então UnifiedEmail/res fica no main (base) e Email/res
+    // entra como overlay nos buildTypes debug/release (que sobrepõem o main).
     sourceSets {
         main {
             manifest.srcFile("src/main/AndroidManifest.xml")
 
             java.srcDirs(
-                "../UnifiedEmail/src",                 // com.android.mail.*, org.apache.james.mime4j.*, etc
-                "../Email/src/com/android",             // com.android.email.* (UI, activities)
-                "../Email/provider_src/com/android",    // com.android.email.provider.*
-                "../Email/src/com/beetstra"             // com.beetstra.* (quoted-printable / utilidades)
+                "../../UnifiedEmail/src",
+                "../src",
+                "../provider_src",
+                "../emailcommon/src"
             )
+            aidl.srcDirs("../emailcommon/src")
 
-            // emailcommon é logicamente uma static library separada no
-            // Android.mk (com.android.emailcommon, com BUILD_STATIC_JAVA_LIBRARY),
-            // mas como este projeto produz um único APK, incorporamos o
-            // source diretamente como mais um sourceSet Java em vez de um
-            // módulo Gradle separado — evita um segundo artefato desnecessário.
-            java.srcDir("../Email/emailcommon/src/com/android/emailcommon")
-
-            // Os 3 arquivos específicos + org/ que o emailcommon/Android.mk
-            // importa de dentro de UnifiedEmail/src já estão cobertos acima
-            // (java.srcDirs inclui ../UnifiedEmail/src inteiro, que contém
-            // com/android/mail/utils/{LogTag,LogUtils}.java,
-            // com/android/mail/providers/UIProvider.java, src/org/** e
-            // com/android/emailcommon/** de dentro de UnifiedEmail/src).
-
-            res.srcDirs(
-                "../Email/res",
-                "../Email/emailcommon/res",
-                "../UnifiedEmail/res"
-            )
-
-            assets.srcDirs("../UnifiedEmail/assets")
-
-            aidl.srcDirs("../Email/emailcommon/src/com/android/emailcommon")
+            res.srcDirs("../../UnifiedEmail/res")
+            assets.srcDirs("../../UnifiedEmail/assets")
+        }
+        debug {
+            res.srcDirs("../res", "../emailcommon/res")
+        }
+        release {
+            res.srcDirs("../res", "../emailcommon/res")
         }
     }
 
@@ -135,7 +133,14 @@ android {
 }
 
 dependencies {
+    implementation(project(":chips"))
+    implementation(project(":photoviewer"))
+    implementation(project(":bitmap"))
+    implementation(project(":common"))
+
+    // Alinha kotlin-stdlib / jdk7 / jdk8 (corrige Duplicate class)
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.22"))
+
     // ------------------------------------------------------------------
     // Mapeamento das LOCAL_STATIC_ANDROID_LIBRARIES / LOCAL_STATIC_JAVA_LIBRARIES
     // do Android.mk original para equivalentes AndroidX modernos e Maven:

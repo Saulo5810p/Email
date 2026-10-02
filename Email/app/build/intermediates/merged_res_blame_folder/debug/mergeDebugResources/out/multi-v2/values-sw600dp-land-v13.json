@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.email.app-mergeDebugResources-24:/values-sw600dp-land-v13/values-sw600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-sw600dp-land/dimen.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "721",
+                        "endColumns": "68",
+                        "endOffsets": "785"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "104",
+                        "endColumns": "68",
+                        "endOffsets": "168"
+                    }
+                },
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-sw600dp-land/constants.xml",
+                    "from": {
+                        "startLines": "18,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "747,873",
+                        "endColumns": "48,55",
+                        "endOffsets": "791,924"
+                    },
+                    "to": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,173",
+                        "endColumns": "48,55",
+                        "endOffsets": "99,224"
+                    }
+                },
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-sw600dp-land/styles.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "721",
+                        "endLines": "22",
+                        "endColumns": "12",
+                        "endOffsets": "983"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "229",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "491"
+                    }
+                }
+            ]
+        }
+    ]
+}

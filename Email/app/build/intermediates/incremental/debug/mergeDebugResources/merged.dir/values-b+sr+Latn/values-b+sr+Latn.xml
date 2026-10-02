@@ -27,6 +27,9 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Delite pomoću"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Delite pomoću aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Skupi"</string>
+    <string msgid="91481373431329121" name="accessbility_suggestion_dropdown_closed">"Nema dostupnih predloga"</string>
+    <string msgid="9015267358421989409" name="accessbility_suggestion_dropdown_opened">"Predlozi za kontakte su otvoreni"</string>
+    <string msgid="7172664623795021857" name="action_label">"Return"</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"Odgovori"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"Odbij"</string>
@@ -34,6 +37,17 @@
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"Dolazni poziv"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Poziv je u toku"</string>
     <string msgid="59049573811482460" name="call_notification_screening_text">"Proverava se dolazni poziv"</string>
+    <string msgid="2582257014578396781" name="chips_action_cancel">"Otkaži"</string>
+    <string msgid="6984158516334578792" name="chips_action_copy">"Kopiraj"</string>
+    <string msgid="5601284803674008863" name="chips_permission_text">"Dozvolite predloge za kontakte"</string>
+    <string msgid="1084563757174121331" name="copy_email">"Kopiraj imejl adresu"</string>
+    <string msgid="8860802152973030914" name="copy_number">"Kopiraj broj telefona"</string>
+    <string msgid="4359394656487762022" name="dropdown_delete_button_desc">"Uklonite <ns1:g id="CONTACT">%s</ns1:g> iz primalaca"</string>
+    <string msgid="8338915262229269954" name="failed">"Nije moguće učitati sliku"</string>
+    <string msgid="643992135011109762" name="more_string">"+<ns1:g id="COUNT">%1$d</ns1:g>"</string>
+    <string msgid="3972196711827497300" name="photo_view_count">"<ns1:g id="CURRENT_POS">%1$d</ns1:g> od <ns1:g id="COUNT">%2$d</ns1:g>"</string>
+    <string msgid="3791698559547529232" name="retry">"Probaj ponovo"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Pretražite"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="3827868765772315200" name="titles">"<ns1:g id="TITLE_0">%1$s</ns1:g>, <ns1:g id="SUBTITLE">%2$s</ns1:g>"</string>
 </resources>

@@ -21,3 +21,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "AOSPEmailRevived"
 include(":app")
+
+// Bibliotecas AOSP vendorizadas (ver VENDORIZAR.md)
+include(":chips")
+project(":chips").projectDir = file("vendor/chips")
+include(":photoviewer")
+project(":photoviewer").projectDir = file("vendor/photoviewer")
+include(":bitmap")
+project(":bitmap").projectDir = file("vendor/bitmap")
+include(":common")
+project(":common").projectDir = file("vendor/common")

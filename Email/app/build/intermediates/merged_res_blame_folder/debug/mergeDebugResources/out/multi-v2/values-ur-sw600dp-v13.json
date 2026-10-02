@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.email.app-mergeDebugResources-24:/values-ur-sw600dp-v13/values-ur-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/res/values-ur-sw600dp/strings.xml",
+                    "from": {
+                        "startLines": "21,20,22,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "931,839,1016,1113",
+                        "endColumns": "84,91,96,156",
+                        "endOffsets": "1011,926,1108,1265"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,140,232,329",
+                        "endColumns": "84,91,96,156",
+                        "endOffsets": "135,227,324,481"
+                    }
+                }
+            ]
+        }
+    ]
+}

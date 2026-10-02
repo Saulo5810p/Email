@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+dimen placeholder_size
+dimen progress_bar_size
+integer bitmap_fade_animation_duration
+integer bitmap_placeholder_animation_duration
+integer bitmap_progress_animation_delay
+integer bitmap_progress_animation_duration

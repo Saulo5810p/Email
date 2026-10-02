@@ -4,6 +4,10 @@ ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/Androi
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:24:1-781:12
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:24:1-781:12
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:24:1-781:12
+MERGED from [:chips] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/chips/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:photoviewer] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/photoviewer/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:bitmap] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/bitmap/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:common] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/common/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.legacy:legacy-support-v13:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/e83c394dbdb8dd1db113a18bef0848b8/transformed/legacy-support-v13-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/9fea2d8a083672491f47eb298f1d0dd7/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.7.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/11b07f7ed40de41a636484f855f5b628/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -1014,6 +1018,14 @@ uses-sdk
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml
 INJECTED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml
+MERGED from [:chips] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/chips/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:chips] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/chips/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:photoviewer] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/photoviewer/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:photoviewer] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/photoviewer/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:bitmap] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/bitmap/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:bitmap] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/bitmap/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:common] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/common/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:common] /data/data/com.termux/files/home/AOSP-Email/Email/vendor/common/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-v13:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/e83c394dbdb8dd1db113a18bef0848b8/transformed/legacy-support-v13-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v13:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/e83c394dbdb8dd1db113a18bef0848b8/transformed/legacy-support-v13-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /data/data/com.termux/files/home/.gradle/caches/9.7.0/transforms/9fea2d8a083672491f47eb298f1d0dd7/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44

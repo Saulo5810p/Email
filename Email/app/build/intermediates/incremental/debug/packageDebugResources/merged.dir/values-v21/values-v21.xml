@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mini_drawer_activated_background_color">#e4e4e4</color>
+    <color name="text_color_undo_notification">@color/text_color_grey</color>
+    <color name="text_color_undo_notification_description">@color/text_color_black</color>
+    <dimen name="compose_button_margin_bottom">16dp</dimen>
+    <dimen name="compose_button_margin_side">16dp</dimen>
+    <dimen name="drawer_item_font_size">14sp</dimen>
+    <style name="AccountSetupDialogActivityTheme" parent="@android:style/Theme.Material.Light.Dialog.NoActionBar">
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="android:colorAccent">@color/accent_blue</item>
+    </style>
+    <style name="ActionBarOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow"/>
+    <style name="ActionBarShadow">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="ConversationListFadeBase" parent="android:Widget.Material.Light.ListView"/>
+    <style name="DrawerFontStyle">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="DrawerUnreadCount" parent="@style/UnreadCount">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="FloatingActionButtonBackgroundStyle" parent="AbstractFloatingActionButtonStyle">
+        <item name="android:background">@drawable/compose_button</item>
+        <item name="android:src">@drawable/ic_pencil_wht_24dp</item>
+        <item name="android:elevation">@dimen/compose_button_elevation</item>
+    </style>
+    <style name="FolderListItemStyle" parent="@style/FolderListItemStyleBase">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="MessageButtonStyleBase" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <style name="MinTimeProgressDialogStyleBase" parent="@android:style/Theme.Material.Light.Dialog"/>
+    <style name="MinTimeProgressViewStyle" parent="android:Widget.Material.Light.ProgressBar"/>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">@color/text_color_black</item>
+    </style>
+    <style name="NotificationSecondaryText">
+        <item name="android:textColor">@color/text_color_grey</item>
+    </style>
+    <style name="RecipientEditTextViewStyle" parent="@style/RecipientEditTextViewStyleBase">
+        <item name="android:popupElevation">0dp</item>
+    </style>
+    <style name="UnifiedEmailTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:actionModeBackground">@color/action_mode_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflowButtonStyle</item>
+        <item name="android:listViewWhiteStyle">@android:style/Widget.Material.Light.ListView</item>
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="android:colorAccent">@color/accent_blue</item>
+        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
+    </style>
+    <style name="WaitFragmentTitleBase" parent="android:Widget.Material.TextView"/>
+</resources>
