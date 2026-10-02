@@ -135,6 +135,7 @@ android {
 }
 
 dependencies {
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.22"))
     // ------------------------------------------------------------------
     // Mapeamento das LOCAL_STATIC_ANDROID_LIBRARIES / LOCAL_STATIC_JAVA_LIBRARIES
     // do Android.mk original para equivalentes AndroidX modernos e Maven:
