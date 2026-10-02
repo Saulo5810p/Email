@@ -29,7 +29,7 @@ import android.text.style.TextAppearanceSpan;
 import android.util.Log;
 import android.view.View;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.ConversationCursor;
 import com.android.mail.preferences.AccountPreferences;

@@ -60,7 +60,7 @@ import android.view.ViewParent;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.bitmap.CheckableContactFlipDrawable;
 import com.android.mail.bitmap.ContactDrawable;

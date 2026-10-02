@@ -21,7 +21,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 

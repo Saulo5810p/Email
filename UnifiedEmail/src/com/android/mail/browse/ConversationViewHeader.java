@@ -32,7 +32,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationViewAdapter.ConversationHeaderItem;
 import com.android.mail.providers.Conversation;
 import com.android.mail.providers.UIProvider;

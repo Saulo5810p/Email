@@ -27,7 +27,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * Procedurally-drawn version of a horizontal indeterminate progress bar. Draws faster and more

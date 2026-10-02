@@ -36,7 +36,7 @@ import android.os.RemoteException;
 import android.provider.BaseColumns;
 
 import com.android.emailcommon.Logging;
-import com.android.emailcommon.R;
+import com.android.email.R;
 import com.android.emailcommon.utility.TextUtilities;
 import com.android.emailcommon.utility.Utility;
 import com.android.mail.providers.UIProvider;

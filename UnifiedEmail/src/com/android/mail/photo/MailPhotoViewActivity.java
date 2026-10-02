@@ -23,7 +23,7 @@ import android.content.Intent;
 import com.android.ex.photo.Intents;
 import com.android.ex.photo.PhotoViewActivity;
 import com.android.ex.photo.PhotoViewController;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationMessage;
 import com.android.mail.providers.UIProvider;
 

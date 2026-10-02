@@ -32,7 +32,7 @@ import android.widget.BaseAdapter;
 import com.android.emailcommon.mail.Address;
 import com.android.mail.ContactInfoSource;
 import com.android.mail.FormattedDateBuilder;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationFooterView.ConversationFooterCallbacks;
 import com.android.mail.browse.ConversationViewHeader.ConversationViewHeaderCallbacks;
 import com.android.mail.browse.MessageFooterView.MessageFooterCallbacks;

@@ -25,7 +25,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 
 public class MessageHeaderContactBadge extends ImageView implements View.OnClickListener {

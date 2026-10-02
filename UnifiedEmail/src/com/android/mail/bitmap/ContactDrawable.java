@@ -24,7 +24,7 @@ import android.graphics.Paint.Align;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * A contact drawable with the default avatar as a letter tile.

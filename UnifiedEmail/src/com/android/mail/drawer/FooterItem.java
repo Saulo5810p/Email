@@ -21,7 +21,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Account;
 import com.android.mail.ui.ControllableActivity;
 import com.android.mail.ui.DrawerController;

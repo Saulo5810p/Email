@@ -22,7 +22,7 @@ import android.content.res.TypedArray;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * A fancy ListPreference that displays its summary from among the entries in the "entrySummaries"

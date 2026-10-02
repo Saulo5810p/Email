@@ -26,7 +26,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 import java.util.ArrayList;
 

@@ -21,7 +21,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 
 import com.android.bitmap.BitmapCache;
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * A contact drawable with a set default avatar.

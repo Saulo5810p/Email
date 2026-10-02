@@ -24,7 +24,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.ui.ControllableActivity;
 import com.android.mail.ui.ConversationUpdater;
 

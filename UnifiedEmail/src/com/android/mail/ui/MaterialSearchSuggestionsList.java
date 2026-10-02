@@ -33,7 +33,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.SearchRecentSuggestionsProvider;
 import com.google.common.collect.Lists;
 

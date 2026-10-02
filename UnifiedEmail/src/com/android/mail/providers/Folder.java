@@ -31,7 +31,7 @@ import android.util.StateSet;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.content.CursorCreator;
 import com.android.mail.content.ObjectCursorLoader;
 import com.android.mail.providers.UIProvider.FolderType;

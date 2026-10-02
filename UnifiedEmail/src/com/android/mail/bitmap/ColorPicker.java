@@ -19,7 +19,7 @@ package com.android.mail.bitmap;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 public interface ColorPicker {
     /**

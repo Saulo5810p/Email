@@ -32,7 +32,7 @@ import android.view.animation.PathInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.Utils;
 import com.android.mail.utils.ViewUtils;
 

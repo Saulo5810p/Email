@@ -21,7 +21,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.ui.AccountFeedbackActivity;
 import com.android.mail.utils.LogTag;

@@ -37,7 +37,7 @@ import com.android.mail.preferences.MailPrefs.PreferenceKeys;
 import com.android.mail.providers.SuggestionsProvider;
 import com.android.mail.providers.UIProvider.AutoAdvance;
 import com.android.mail.utils.LogUtils;
-import com.android.mail.R;
+import com.android.email.R;
 import com.google.common.annotations.VisibleForTesting;
 
 /**

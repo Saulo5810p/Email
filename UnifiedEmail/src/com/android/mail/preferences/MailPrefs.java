@@ -22,7 +22,7 @@ import android.content.SharedPreferences;
 import androidx.annotation.StringDef;
 import android.text.TextUtils;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.UIProvider;
 import com.android.mail.utils.LogUtils;

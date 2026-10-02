@@ -26,7 +26,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.Utils;
 
 /**

@@ -35,7 +35,7 @@ import com.android.ex.photo.ActionBarInterface;
 import com.android.ex.photo.PhotoViewController;
 import com.android.ex.photo.fragments.PhotoViewFragment;
 import com.android.ex.photo.views.ProgressBarWrapper;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.AttachmentActionHandler;
 import com.android.mail.print.PrintUtils;

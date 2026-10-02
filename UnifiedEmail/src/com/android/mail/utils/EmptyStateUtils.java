@@ -22,7 +22,7 @@ import androidx.core.text.BidiFormatter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Folder;
 
 /**

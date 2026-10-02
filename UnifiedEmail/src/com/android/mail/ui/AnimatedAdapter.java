@@ -37,7 +37,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Space;
 
 import com.android.bitmap.BitmapCache;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.bitmap.ContactResolver;
 import com.android.mail.browse.ConversationCursor;

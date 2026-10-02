@@ -203,3 +203,7 @@ dependencies {
     // org.apache.http.* no código e o plano de migração para
     // HttpURLConnection/OkHttp.
 }
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ["-Xmaxerrs", "2000"]
+}

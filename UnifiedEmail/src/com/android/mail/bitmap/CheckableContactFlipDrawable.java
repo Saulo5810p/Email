@@ -28,7 +28,7 @@ import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * Custom FlipDrawable which has a {@link ContactDrawable} on the front,

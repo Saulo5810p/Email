@@ -26,7 +26,7 @@ import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.text.TextUtils;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.bitmap.ColorPicker;
 import com.android.mail.ui.ImageCanvas.Dimensions;
 import com.android.mail.utils.BitmapUtil;

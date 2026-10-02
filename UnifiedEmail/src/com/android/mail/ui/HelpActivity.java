@@ -21,7 +21,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 

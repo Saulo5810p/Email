@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 /**
  * An image view that respects a custom drawable state (state_starred)

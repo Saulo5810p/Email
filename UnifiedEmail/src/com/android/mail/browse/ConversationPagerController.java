@@ -28,7 +28,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.graphics.PageMarginDrawable;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.Conversation;

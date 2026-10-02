@@ -24,7 +24,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.preferences.MailPrefs;
 
 public class ClearPictureApprovalsDialogFragment extends DialogFragment implements OnClickListener {

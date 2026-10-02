@@ -24,7 +24,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 public class MailPreferenceFragment extends PreferenceFragment {
 

@@ -20,7 +20,7 @@ package com.android.mail.print;
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Conversation;
 import com.android.mail.ui.AbstractHtmlTemplates;
 import com.android.mail.utils.LogTag;

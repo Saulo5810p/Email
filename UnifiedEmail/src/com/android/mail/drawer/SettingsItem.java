@@ -16,7 +16,7 @@
 
 package com.android.mail.drawer;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.providers.Account;
 import com.android.mail.ui.ControllableActivity;

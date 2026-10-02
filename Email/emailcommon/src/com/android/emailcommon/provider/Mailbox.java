@@ -35,7 +35,7 @@ import android.text.TextUtils;
 import android.util.SparseBooleanArray;
 
 import com.android.emailcommon.Logging;
-import com.android.emailcommon.R;
+import com.android.email.R;
 import com.android.emailcommon.utility.Utility;
 import com.android.mail.utils.LogUtils;
 

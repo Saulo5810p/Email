@@ -32,7 +32,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.ex.photo.util.ImageUtils;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Attachment;
 import com.android.mail.utils.AttachmentUtils;
 import com.android.mail.utils.LogTag;

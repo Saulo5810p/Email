@@ -33,7 +33,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.android.bitmap.BitmapCache;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.bitmap.ContactResolver;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.Folder;

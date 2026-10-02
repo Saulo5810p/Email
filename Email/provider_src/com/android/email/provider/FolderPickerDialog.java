@@ -29,7 +29,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Folder;
 import com.android.mail.providers.UIProvider;
 import com.android.mail.ui.FolderSelectorAdapter;

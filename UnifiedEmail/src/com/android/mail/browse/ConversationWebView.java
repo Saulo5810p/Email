@@ -24,7 +24,7 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 

@@ -31,7 +31,7 @@ import com.android.bitmap.BitmapCache;
 import com.android.bitmap.RequestKey;
 import com.android.bitmap.ReusableBitmap;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.bitmap.ContactResolver.ContactDrawableInterface;
 
 /**

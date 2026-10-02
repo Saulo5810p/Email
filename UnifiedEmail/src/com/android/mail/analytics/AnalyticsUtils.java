@@ -17,7 +17,7 @@
 
 package com.android.mail.analytics;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 public class AnalyticsUtils {
     // individual apps should chain this method call with their own lookup tables if they have

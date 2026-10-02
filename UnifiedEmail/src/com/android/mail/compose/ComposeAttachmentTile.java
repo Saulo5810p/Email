@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Attachment;
 import com.android.mail.ui.AttachmentTile;
 

@@ -23,7 +23,7 @@ import android.view.LayoutInflater;
 
 import com.android.mail.providers.Account;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 import java.util.ArrayList;
 

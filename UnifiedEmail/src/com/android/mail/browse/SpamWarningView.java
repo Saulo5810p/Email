@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 import com.android.emailcommon.mail.Address;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Message;
 import com.android.mail.providers.UIProvider;
 import com.android.mail.utils.Utils;

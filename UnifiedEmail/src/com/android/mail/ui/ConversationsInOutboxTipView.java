@@ -27,7 +27,7 @@ import android.text.Spanned;
 import android.text.style.TextAppearanceSpan;
 import android.view.View;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationCursor;
 import com.android.mail.content.ObjectCursor;
 import com.android.mail.content.ObjectCursorLoader;

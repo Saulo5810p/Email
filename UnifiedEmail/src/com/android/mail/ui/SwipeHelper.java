@@ -30,7 +30,7 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.Utils;
 

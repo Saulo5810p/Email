@@ -27,7 +27,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.MatrixCursorWithCachedColumns;
 
 import java.util.ArrayList;

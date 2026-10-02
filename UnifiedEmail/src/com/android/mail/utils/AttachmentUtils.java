@@ -26,7 +26,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.SystemClock;
 import android.text.TextUtils;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.providers.Attachment;
 import com.google.common.collect.ImmutableMap;
 

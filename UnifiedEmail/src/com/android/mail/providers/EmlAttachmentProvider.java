@@ -33,7 +33,7 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 
 import com.android.ex.photo.provider.PhotoContract;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.LogTag;
 import com.android.mail.utils.LogUtils;
 import com.android.mail.utils.MimeType;

@@ -15,6 +15,8 @@
  */
 package com.android.mail;
 
+import com.android.email.R;
+
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;

@@ -31,7 +31,7 @@ import android.text.style.ReplacementSpan;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationViewHeader.ConversationViewHeaderCallbacks;
 import com.android.mail.providers.Account;
 import com.android.mail.providers.Conversation;

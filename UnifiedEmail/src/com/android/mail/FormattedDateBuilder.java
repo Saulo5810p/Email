@@ -16,6 +16,8 @@
  */
 package com.android.mail;
 
+import com.android.email.R;
+
 import android.content.Context;
 import android.text.format.DateUtils;
 

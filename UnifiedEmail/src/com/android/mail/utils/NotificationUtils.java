@@ -46,7 +46,7 @@ import android.util.SparseArray;
 import com.android.emailcommon.mail.Address;
 import com.android.mail.EmailAddress;
 import com.android.mail.MailIntentService;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.analytics.Analytics;
 import com.android.mail.browse.ConversationItemView;
 import com.android.mail.browse.MessageCursor;

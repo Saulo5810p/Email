@@ -39,7 +39,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.android.mail.R;
+import com.android.email.R;
 
 import java.util.Calendar;
 

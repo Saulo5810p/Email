@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationAccountController;
 import com.android.mail.content.ObjectCursor;
 import com.android.mail.providers.Account;

@@ -52,7 +52,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.android.emailcommon.mail.Address;
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ConversationCursor;
 import com.android.mail.compose.ComposeActivity;
 import com.android.mail.perf.SimpleTimer;

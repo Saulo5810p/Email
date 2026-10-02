@@ -33,7 +33,7 @@ import android.webkit.WebView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.browse.ScrollNotifier.ScrollListener;
 import com.android.mail.providers.UIProvider;
 import com.android.mail.ui.ConversationViewFragment;

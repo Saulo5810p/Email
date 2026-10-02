@@ -30,7 +30,7 @@ import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.android.mail.R;
+import com.android.email.R;
 import com.android.mail.utils.Utils;
 import com.android.mail.utils.ViewUtils;
 import com.google.common.base.Objects;
