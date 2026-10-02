@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Política de rede padrão: cleartext NEGADO globalmente.
+
+    IMAP/POP3/SMTP/EAS devem sempre negociar para TLS validado (TLS direto ou
+    STARTTLS que efetivamente termina em TLS). Não há exceção de domínio
+    aqui — não criamos allowlist global de cleartext (regra 49 do briefing).
+
+    Se o usuário precisar conectar a um servidor que só oferece modo
+    inseguro, a decisão é feita em runtime por conta/HostAuth através do
+    fluxo de confirmação explícita (hostname + porta + fingerprint do
+    certificado) já existente em SSLUtils/HostAuth, nunca por uma exceção
+    estática neste arquivo.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
