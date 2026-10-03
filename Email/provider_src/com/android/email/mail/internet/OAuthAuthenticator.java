@@ -10,23 +10,23 @@ import com.android.emailcommon.mail.AuthenticationFailedException;
 import com.android.emailcommon.mail.MessagingException;
 import com.android.mail.utils.LogUtils;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
+import org.apache.hc.client5.http.classic.methods.HttpPost;
+import org.apache.hc.client5.http.config.ConnectionConfig;
+import org.apache.hc.client5.http.entity.UrlEncodedFormEntity;
+import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
+import org.apache.hc.client5.http.impl.classic.HttpClients;
+import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager;
+import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder;
+import org.apache.hc.core5.http.ClassicHttpResponse;
+import org.apache.hc.core5.http.HttpStatus;
+import org.apache.hc.core5.http.message.BasicNameValuePair;
+import org.apache.hc.core5.util.Timeout;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class OAuthAuthenticator {
     private static final long CONNECTION_TIMEOUT = 20 * DateUtils.SECOND_IN_MILLIS;
     private static final long COMMAND_TIMEOUT = 30 * DateUtils.SECOND_IN_MILLIS;
 
-    final HttpClient mClient;
+    final CloseableHttpClient mClient;
 
     public static class AuthenticationResult {
         public AuthenticationResult(final String accessToken, final String refreshToken,
@@ -71,11 +71,18 @@ public class OAuthAuthenticator {
     }
 
     public OAuthAuthenticator() {
-        final HttpParams params = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(params, (int)(CONNECTION_TIMEOUT));
-        HttpConnectionParams.setSoTimeout(params, (int)(COMMAND_TIMEOUT));
-        HttpConnectionParams.setSocketBufferSize(params, 8192);
-        mClient = new DefaultHttpClient(params);
+        // Apache HttpClient 5.x: timeouts ficam no ConnectionConfig do pool de conexões.
+        final ConnectionConfig connectionConfig = ConnectionConfig.custom()
+                .setConnectTimeout(Timeout.ofMilliseconds(CONNECTION_TIMEOUT))
+                .setSocketTimeout(Timeout.ofMilliseconds(COMMAND_TIMEOUT))
+                .build();
+        final PoolingHttpClientConnectionManager connectionManager =
+                PoolingHttpClientConnectionManagerBuilder.create()
+                        .setDefaultConnectionConfig(connectionConfig)
+                        .build();
+        mClient = HttpClients.custom()
+                .setConnectionManager(connectionManager)
+                .build();
     }
 
     public AuthenticationResult requestAccess(final Context context, final String providerId,
@@ -96,14 +103,7 @@ public class OAuthAuthenticator {
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_REDIRECT_URI, provider.redirectUri));
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "authorization_code"));
-        try {
-            post.setEntity(new UrlEncodedFormEntity(nvp));
-        } catch (UnsupportedEncodingException e) {
-            LogUtils.e(TAG, e, "unsupported encoding");
-            // This shouldn't happen, but if it does, it's a fatal. Throw an authentication failed
-            // exception, this will at least give the user a heads up to set up their account again.
-            throw new AuthenticationFailedException("Unsupported encoding", e);
-        }
+        post.setEntity(new UrlEncodedFormEntity(nvp));
 
         return doRequest(post);
     }
@@ -124,38 +124,32 @@ public class OAuthAuthenticator {
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_ID, provider.clientId));
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
         nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "refresh_token"));
-        try {
-            post.setEntity(new UrlEncodedFormEntity(nvp));
-        } catch (UnsupportedEncodingException e) {
-            LogUtils.e(TAG, e, "unsupported encoding");
-            // This shouldn't happen, but if it does, it's a fatal. Throw an authentication failed
-            // exception, this will at least give the user a heads up to set up their account again.
-            throw new AuthenticationFailedException("Unsuported encoding", e);
-        }
+        post.setEntity(new UrlEncodedFormEntity(nvp));
 
         return doRequest(post);
     }
 
     private AuthenticationResult doRequest(HttpPost post) throws MessagingException,
             IOException {
-        final HttpResponse response;
-        response = mClient.execute(post);
-        final int status = response.getStatusLine().getStatusCode();
-        if (status == HttpStatus.SC_OK) {
-            return parseResponse(response);
-        } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
-                status == HttpStatus.SC_BAD_REQUEST) {
-            LogUtils.e(TAG, "HTTP Authentication error getting oauth tokens %d", status);
-            // This is fatal, and we probably should clear our tokens after this.
-            throw new AuthenticationFailedException("Auth error getting auth token");
-        } else {
-            LogUtils.e(TAG, "HTTP Error %d getting oauth tokens", status);
-            // This is probably a transient error, we can try again later.
-            throw new MessagingException("HTTPError " + status + " getting oauth token");
+        // executeOpen devolve a resposta aberta; o try-with-resources a fecha.
+        try (final ClassicHttpResponse response = mClient.executeOpen(null, post, null)) {
+            final int status = response.getCode();
+            if (status == HttpStatus.SC_OK) {
+                return parseResponse(response);
+            } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
+                    status == HttpStatus.SC_BAD_REQUEST) {
+                LogUtils.e(TAG, "HTTP Authentication error getting oauth tokens %d", status);
+                // This is fatal, and we probably should clear our tokens after this.
+                throw new AuthenticationFailedException("Auth error getting auth token");
+            } else {
+                LogUtils.e(TAG, "HTTP Error %d getting oauth tokens", status);
+                // This is probably a transient error, we can try again later.
+                throw new MessagingException("HTTPError " + status + " getting oauth token");
+            }
         }
     }
 
-    private AuthenticationResult parseResponse(HttpResponse response) throws IOException,
+    private AuthenticationResult parseResponse(ClassicHttpResponse response) throws IOException,
             MessagingException {
         final BufferedReader reader = new BufferedReader(new InputStreamReader(
                 response.getEntity().getContent(), "UTF-8"));

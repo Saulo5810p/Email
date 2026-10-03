@@ -10,6 +10,10 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        aidl = true
+    }
+
     namespace = "com.android.email"
     compileSdk = 34
 
@@ -128,11 +132,14 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
             excludes += "META-INF/LICENSE*"
             excludes += "META-INF/NOTICE*"
+            excludes += "META-INF/DEPENDENCIES"
         }
     }
 }
 
 dependencies {
+    implementation("org.apache.httpcomponents.client5:httpclient5:5.6.2")
+
     implementation(project(":chips"))
     implementation(project(":photoviewer"))
     implementation(project(":bitmap"))

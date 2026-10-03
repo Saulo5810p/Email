@@ -7,23 +7,23 @@ Warning: Unable to set daemon's environment variables to match the client becaus
 WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termux/files/usr/bin/aapt2' is experimental.
 
 > Task :chips:preBuild UP-TO-DATE
+> Task :chips:preDebugBuild UP-TO-DATE
 > Task :bitmap:preBuild UP-TO-DATE
 > Task :photoviewer:preBuild UP-TO-DATE
 > Task :common:preBuild UP-TO-DATE
-> Task :photoviewer:preDebugBuild UP-TO-DATE
-> Task :bitmap:preDebugBuild UP-TO-DATE
 > Task :common:preDebugBuild UP-TO-DATE
-> Task :chips:preDebugBuild UP-TO-DATE
-> Task :photoviewer:writeDebugAarMetadata UP-TO-DATE
+> Task :bitmap:preDebugBuild UP-TO-DATE
+> Task :common:writeDebugAarMetadata UP-TO-DATE
+> Task :photoviewer:preDebugBuild UP-TO-DATE
 > Task :bitmap:writeDebugAarMetadata UP-TO-DATE
 > Task :chips:writeDebugAarMetadata UP-TO-DATE
-> Task :common:writeDebugAarMetadata UP-TO-DATE
-> Task :common:generateDebugResValues UP-TO-DATE
 > Task :chips:generateDebugResValues UP-TO-DATE
+> Task :photoviewer:writeDebugAarMetadata UP-TO-DATE
 > Task :bitmap:generateDebugResValues UP-TO-DATE
-> Task :bitmap:generateDebugResources UP-TO-DATE
-> Task :common:generateDebugResources UP-TO-DATE
+> Task :common:generateDebugResValues UP-TO-DATE
 > Task :photoviewer:generateDebugResValues UP-TO-DATE
+> Task :common:generateDebugResources UP-TO-DATE
+> Task :bitmap:generateDebugResources UP-TO-DATE
 > Task :common:packageDebugResources UP-TO-DATE
 > Task :common:extractDeepLinksDebug UP-TO-DATE
 > Task :common:processDebugManifest UP-TO-DATE
@@ -38,118 +38,119 @@ WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termu
 > Task :bitmap:compileDebugLibraryResources UP-TO-DATE
 > Task :photoviewer:generateDebugResources UP-TO-DATE
 > Task :bitmap:parseDebugLocalResources UP-TO-DATE
-> Task :bitmap:generateDebugRFile UP-TO-DATE
-> Task :bitmap:javaPreCompileDebug UP-TO-DATE
 > Task :common:compileDebugJavaWithJavac UP-TO-DATE
 > Task :common:bundleLibCompileToJarDebug UP-TO-DATE
-> Task :app:preBuild UP-TO-DATE
+> Task :bitmap:generateDebugRFile UP-TO-DATE
+> Task :bitmap:javaPreCompileDebug UP-TO-DATE
 > Task :common:mergeDebugShaders UP-TO-DATE
-> Task :app:preDebugBuild UP-TO-DATE
 > Task :common:compileDebugShaders NO-SOURCE
-> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :common:generateDebugAssets UP-TO-DATE
 > Task :common:packageDebugAssets UP-TO-DATE
 > Task :common:bundleLibRuntimeToJarDebug UP-TO-DATE
 > Task :common:processDebugJavaRes NO-SOURCE
-> Task :app:javaPreCompileDebug UP-TO-DATE
 > Task :common:mergeDebugJniLibFolders UP-TO-DATE
 > Task :common:mergeDebugNativeLibs NO-SOURCE
+> Task :chips:packageDebugResources UP-TO-DATE
 > Task :common:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :chips:extractDeepLinksDebug UP-TO-DATE
 > Task :common:stripDebugDebugSymbols NO-SOURCE
 > Task :common:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :chips:processDebugManifest UP-TO-DATE
+> Task :chips:compileDebugLibraryResources UP-TO-DATE
+> Task :photoviewer:packageDebugResources UP-TO-DATE
+> Task :photoviewer:extractDeepLinksDebug UP-TO-DATE
 > Task :bitmap:compileDebugJavaWithJavac UP-TO-DATE
+> Task :chips:parseDebugLocalResources UP-TO-DATE
 > Task :bitmap:bundleLibCompileToJarDebug UP-TO-DATE
 > Task :bitmap:mergeDebugShaders UP-TO-DATE
+> Task :photoviewer:processDebugManifest UP-TO-DATE
+> Task :chips:generateDebugRFile UP-TO-DATE
+> Task :photoviewer:compileDebugLibraryResources UP-TO-DATE
 > Task :bitmap:compileDebugShaders NO-SOURCE
 > Task :bitmap:generateDebugAssets UP-TO-DATE
-> Task :bitmap:packageDebugAssets UP-TO-DATE
-> Task :photoviewer:packageDebugResources UP-TO-DATE
-> Task :bitmap:bundleLibRuntimeToJarDebug UP-TO-DATE
-> Task :photoviewer:extractDeepLinksDebug UP-TO-DATE
-> Task :bitmap:processDebugJavaRes NO-SOURCE
-> Task :bitmap:mergeDebugJniLibFolders UP-TO-DATE
-> Task :bitmap:mergeDebugNativeLibs NO-SOURCE
-> Task :bitmap:copyDebugJniLibsProjectOnly UP-TO-DATE
-> Task :photoviewer:processDebugManifest UP-TO-DATE
-> Task :photoviewer:compileDebugLibraryResources UP-TO-DATE
-> Task :bitmap:stripDebugDebugSymbols NO-SOURCE
-> Task :chips:packageDebugResources UP-TO-DATE
-> Task :chips:extractDeepLinksDebug UP-TO-DATE
-> Task :photoviewer:parseDebugLocalResources UP-TO-DATE
-> Task :chips:processDebugManifest UP-TO-DATE
-> Task :photoviewer:generateDebugRFile UP-TO-DATE
-> Task :chips:compileDebugLibraryResources UP-TO-DATE
-> Task :photoviewer:javaPreCompileDebug UP-TO-DATE
-> Task :chips:parseDebugLocalResources UP-TO-DATE
-> Task :bitmap:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
-> Task :common:extractDebugAnnotations UP-TO-DATE
-> Task :chips:generateDebugRFile UP-TO-DATE
-> Task :common:extractDeepLinksForAarDebug UP-TO-DATE
-> Task :common:mergeDebugGeneratedProguardFiles UP-TO-DATE
-> Task :common:mergeDebugConsumerProguardFiles UP-TO-DATE
 > Task :chips:javaPreCompileDebug UP-TO-DATE
-> Task :bitmap:extractDebugAnnotations UP-TO-DATE
+> Task :common:extractDebugAnnotations UP-TO-DATE
+> Task :bitmap:packageDebugAssets UP-TO-DATE
+> Task :common:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :photoviewer:parseDebugLocalResources UP-TO-DATE
+> Task :common:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :bitmap:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :photoviewer:generateDebugRFile UP-TO-DATE
+> Task :bitmap:processDebugJavaRes NO-SOURCE
+> Task :common:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoviewer:javaPreCompileDebug UP-TO-DATE
+> Task :bitmap:mergeDebugJniLibFolders UP-TO-DATE
 > Task :common:prepareDebugArtProfile UP-TO-DATE
+> Task :bitmap:mergeDebugNativeLibs NO-SOURCE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :bitmap:copyDebugJniLibsProjectOnly UP-TO-DATE
 > Task :common:prepareLintJarForPublish UP-TO-DATE
+> Task :bitmap:stripDebugDebugSymbols NO-SOURCE
+> Task :bitmap:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :common:mergeDebugJavaResource UP-TO-DATE
+> Task :common:syncDebugLibJars UP-TO-DATE
+> Task :bitmap:extractDebugAnnotations UP-TO-DATE
 > Task :bitmap:extractDeepLinksForAarDebug UP-TO-DATE
 > Task :bitmap:mergeDebugGeneratedProguardFiles UP-TO-DATE
-> Task :common:mergeDebugJavaResource UP-TO-DATE
 > Task :bitmap:mergeDebugConsumerProguardFiles UP-TO-DATE
-> Task :common:syncDebugLibJars UP-TO-DATE
-> Task :bitmap:prepareDebugArtProfile UP-TO-DATE
-> Task :bitmap:prepareLintJarForPublish UP-TO-DATE
 > Task :common:bundleDebugAar UP-TO-DATE
 > Task :common:assembleDebug UP-TO-DATE
+> Task :bitmap:prepareDebugArtProfile UP-TO-DATE
+> Task :bitmap:prepareLintJarForPublish UP-TO-DATE
 > Task :bitmap:mergeDebugJavaResource UP-TO-DATE
 > Task :bitmap:syncDebugLibJars UP-TO-DATE
 > Task :bitmap:bundleDebugAar UP-TO-DATE
 > Task :bitmap:assembleDebug UP-TO-DATE
 > Task :chips:compileDebugJavaWithJavac UP-TO-DATE
 > Task :chips:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :photoviewer:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoviewer:bundleLibCompileToJarDebug UP-TO-DATE
 > Task :chips:mergeDebugShaders UP-TO-DATE
 > Task :chips:compileDebugShaders NO-SOURCE
-> Task :chips:generateDebugAssets UP-TO-DATE
-> Task :photoviewer:compileDebugJavaWithJavac UP-TO-DATE
-> Task :chips:packageDebugAssets UP-TO-DATE
-> Task :photoviewer:bundleLibCompileToJarDebug UP-TO-DATE
-> Task :chips:bundleLibRuntimeToJarDebug UP-TO-DATE
 > Task :photoviewer:mergeDebugShaders UP-TO-DATE
+> Task :chips:generateDebugAssets UP-TO-DATE
 > Task :photoviewer:compileDebugShaders NO-SOURCE
-> Task :chips:processDebugJavaRes NO-SOURCE
 > Task :photoviewer:generateDebugAssets UP-TO-DATE
-> Task :chips:mergeDebugJniLibFolders UP-TO-DATE
 > Task :photoviewer:packageDebugAssets UP-TO-DATE
-> Task :chips:mergeDebugNativeLibs NO-SOURCE
+> Task :chips:packageDebugAssets UP-TO-DATE
+> Task :chips:bundleLibRuntimeToJarDebug UP-TO-DATE
 > Task :photoviewer:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :chips:processDebugJavaRes NO-SOURCE
 > Task :photoviewer:processDebugJavaRes NO-SOURCE
-> Task :chips:copyDebugJniLibsProjectOnly UP-TO-DATE
 > Task :photoviewer:mergeDebugJniLibFolders UP-TO-DATE
-> Task :chips:stripDebugDebugSymbols NO-SOURCE
+> Task :chips:mergeDebugJniLibFolders UP-TO-DATE
+> Task :chips:mergeDebugNativeLibs NO-SOURCE
 > Task :photoviewer:mergeDebugNativeLibs NO-SOURCE
-> Task :chips:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :photoviewer:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :chips:copyDebugJniLibsProjectOnly UP-TO-DATE
 > Task :photoviewer:stripDebugDebugSymbols NO-SOURCE
+> Task :chips:stripDebugDebugSymbols NO-SOURCE
 > Task :photoviewer:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
-> Task :chips:extractDebugAnnotations UP-TO-DATE
-> Task :chips:extractDeepLinksForAarDebug UP-TO-DATE
-> Task :chips:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :chips:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :photoviewer:extractDebugAnnotations UP-TO-DATE
-> Task :chips:mergeDebugConsumerProguardFiles UP-TO-DATE
-> Task :chips:prepareDebugArtProfile UP-TO-DATE
 > Task :photoviewer:extractDeepLinksForAarDebug UP-TO-DATE
-> Task :chips:prepareLintJarForPublish UP-TO-DATE
 > Task :photoviewer:mergeDebugGeneratedProguardFiles UP-TO-DATE
 > Task :photoviewer:mergeDebugConsumerProguardFiles UP-TO-DATE
-> Task :chips:mergeDebugJavaResource UP-TO-DATE
 > Task :photoviewer:prepareDebugArtProfile UP-TO-DATE
 > Task :photoviewer:prepareLintJarForPublish UP-TO-DATE
-> Task :chips:syncDebugLibJars UP-TO-DATE
 > Task :photoviewer:mergeDebugJavaResource UP-TO-DATE
-> Task :chips:bundleDebugAar UP-TO-DATE
-> Task :chips:assembleDebug UP-TO-DATE
+> Task :chips:extractDebugAnnotations UP-TO-DATE
 > Task :photoviewer:syncDebugLibJars UP-TO-DATE
+> Task :chips:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :chips:mergeDebugGeneratedProguardFiles UP-TO-DATE
 > Task :photoviewer:bundleDebugAar UP-TO-DATE
 > Task :photoviewer:assembleDebug UP-TO-DATE
+> Task :chips:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :chips:prepareDebugArtProfile UP-TO-DATE
+> Task :chips:prepareLintJarForPublish UP-TO-DATE
+> Task :chips:mergeDebugJavaResource UP-TO-DATE
+> Task :chips:syncDebugLibJars UP-TO-DATE
+> Task :chips:bundleDebugAar UP-TO-DATE
+> Task :chips:assembleDebug UP-TO-DATE
+> Task :app:compileDebugAidl UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
 > Task :app:checkDebugAarMetadata UP-TO-DATE
 > Task :app:generateDebugResValues UP-TO-DATE
 > Task :app:mapDebugSourceSetPaths UP-TO-DATE
@@ -165,202 +166,6 @@ WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termu
 > Task :app:processDebugResources UP-TO-DATE
 
 > Task :app:compileDebugJavaWithJavac
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:63: error: cannot find symbol
-import com.android.emailcommon.service.IEmailService;
-                                      ^
-  symbol:   class IEmailService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:64: error: cannot find symbol
-import com.android.emailcommon.service.IEmailServiceCallback;
-                                      ^
-  symbol:   class IEmailServiceCallback
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:49: error: cannot find symbol
-public class EmailServiceProxy extends ServiceProxy implements IEmailService {
-                                                               ^
-  symbol: class IEmailService
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:64: error: cannot find symbol
-    private IEmailService mService;
-            ^
-  symbol:   class IEmailService
-  location: class EmailServiceProxy
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:117: error: cannot find symbol
-    public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                     ^
-  symbol:   class IEmailServiceCallback
-  location: class EmailServiceProxy
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:13: error: package org.apache.http does not exist
-import org.apache.http.HttpResponse;
-                      ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:14: error: package org.apache.http does not exist
-import org.apache.http.HttpStatus;
-                      ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:15: error: package org.apache.http.client does not exist
-import org.apache.http.client.HttpClient;
-                             ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:16: error: package org.apache.http.client.entity does not exist
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-                                    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:17: error: package org.apache.http.client.methods does not exist
-import org.apache.http.client.methods.HttpPost;
-                                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:18: error: package org.apache.http.impl.client does not exist
-import org.apache.http.impl.client.DefaultHttpClient;
-                                  ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:19: error: package org.apache.http.message does not exist
-import org.apache.http.message.BasicNameValuePair;
-                              ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:20: error: cannot find symbol
-import org.apache.http.params.BasicHttpParams;
-                             ^
-  symbol:   class BasicHttpParams
-  location: package org.apache.http.params
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:51: error: cannot find symbol
-    final HttpClient mClient;
-          ^
-  symbol:   class HttpClient
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:139: error: cannot find symbol
-    private AuthenticationResult doRequest(HttpPost post) throws MessagingException,
-                                           ^
-  symbol:   class HttpPost
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:158: error: cannot find symbol
-    private AuthenticationResult parseResponse(HttpResponse response) throws IOException,
-                                               ^
-  symbol:   class HttpResponse
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:30: error: cannot find symbol
-import com.android.emailcommon.service.IEmailService;
-                                      ^
-  symbol:   class IEmailService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:53: error: cannot find symbol
-    private IEmailService getService() {
-            ^
-  symbol:   class IEmailService
-  location: class ServiceStore
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/provider/EmailProvider.java:105: error: cannot find symbol
-import com.android.emailcommon.service.IEmailService;
-                                      ^
-  symbol:   class IEmailService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:30: error: cannot find symbol
-import com.android.emailcommon.service.IAccountService;
-                                      ^
-  symbol:   class IAccountService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:40: error: package IAccountService does not exist
-    private final IAccountService.Stub mBinder = new IAccountService.Stub() {
-                                 ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:46: error: cannot find symbol
-import com.android.emailcommon.service.IEmailServiceCallback;
-                                      ^
-  symbol:   class IEmailServiceCallback
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:501: error: package IEmailServiceCallback does not exist
-    class ServiceCallback extends IEmailServiceCallback.Stub {
-                                                       ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:58: error: cannot find symbol
-import com.android.emailcommon.service.IEmailService;
-                                      ^
-  symbol:   class IEmailService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:59: error: cannot find symbol
-import com.android.emailcommon.service.IEmailServiceCallback;
-                                      ^
-  symbol:   class IEmailServiceCallback
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:74: error: package IEmailService does not exist
-public abstract class EmailServiceStub extends IEmailService.Stub implements IEmailService {
-                                                            ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:74: error: cannot find symbol
-public abstract class EmailServiceStub extends IEmailService.Stub implements IEmailService {
-                                                                             ^
-  symbol: class IEmailService
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:123: error: cannot find symbol
-    public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                     ^
-  symbol:   class IEmailServiceCallback
-  location: class EmailServiceStub
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:259: error: cannot find symbol
-        private final IEmailServiceCallback mCallback;
-                      ^
-  symbol:   class IEmailServiceCallback
-  location: class EmailServiceStub.MessageRetrievalListenerBridge
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:263: error: cannot find symbol
-                final IEmailServiceCallback callback) {
-                      ^
-  symbol:   class IEmailServiceCallback
-  location: class EmailServiceStub.MessageRetrievalListenerBridge
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:689: error: cannot find symbol
-    class NullService implements IEmailService {
-                                 ^
-  symbol:   class IEmailService
-  location: class EmailServiceUtils
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:701: error: cannot find symbol
-        public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                         ^
-  symbol:   class IEmailServiceCallback
-  location: class EmailServiceUtils.NullService
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:29: error: cannot find symbol
-import com.android.emailcommon.service.IPolicyService;
-                                      ^
-  symbol:   class IPolicyService
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:39: error: package IPolicyService does not exist
-    private final IPolicyService.Stub mBinder = new IPolicyService.Stub() {
-                                ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:53: error: cannot find symbol
-import com.android.emailcommon.service.IEmailServiceCallback;
-                                      ^
-  symbol:   class IEmailServiceCallback
-  location: package com.android.emailcommon.service
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:24: error: cannot find symbol
-public class AccountServiceProxy extends ServiceProxy implements IAccountService {
-                                                                 ^
-  symbol: class IAccountService
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:28: error: cannot find symbol
-    private IAccountService mService = null;
-            ^
-  symbol:   class IAccountService
-  location: class AccountServiceProxy
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:27: error: cannot find symbol
-public class PolicyServiceProxy extends ServiceProxy implements IPolicyService {
-                                                                ^
-  symbol: class IPolicyService
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:31: error: cannot find symbol
-    private IPolicyService mService = null;
-            ^
-  symbol:   class IPolicyService
-  location: class PolicyServiceProxy
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:29: error: cannot find symbol
-import org.apache.http.conn.scheme.PlainSocketFactory;
-                                  ^
-  symbol:   class PlainSocketFactory
-  location: package org.apache.http.conn.scheme
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:30: error: cannot find symbol
-import org.apache.http.conn.scheme.Scheme;
-                                  ^
-  symbol:   class Scheme
-  location: package org.apache.http.conn.scheme
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:31: error: cannot find symbol
-import org.apache.http.conn.scheme.SchemeRegistry;
-                                  ^
-  symbol:   class SchemeRegistry
-  location: package org.apache.http.conn.scheme
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:32: error: package org.apache.http.impl.conn.tsccm does not exist
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-                                      ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:43: error: cannot find symbol
-public class EmailClientConnectionManager extends ThreadSafeClientConnManager {
-                                                  ^
-  symbol: class ThreadSafeClientConnManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:58: error: cannot find symbol
-            HttpParams params, SchemeRegistry registry, TrackingKeyManager keyManager) {
-                               ^
-  symbol:   class SchemeRegistry
-  location: class EmailClientConnectionManager
 /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/analytics/Analytics.java:46: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public static final int CD_INDEX_ATTACHMENT_PREVIEWS_ENABLED = 4;
                             ^
@@ -369,435 +174,17 @@ public class EmailClientConnectionManager extends ThreadSafeClientConnManager {
                                                                   ^
   symbol:   variable ic_contact_picture
   location: class drawable
-/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/ui/MailActivity.java:204: error: cannot find symbol
-            nfcAdapter.setNdefPushMessageCallback(mNdefHandler, this);
-                      ^
-  symbol:   method setNdefPushMessageCallback(NdefMessageMaker,MailActivity)
-  location: variable nfcAdapter of type NfcAdapter
 /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:99: warning: [dep-ann] deprecated item is not annotated with @Deprecated
         public static final String EXPERIMENT_AP_PARALLAX_SPEED_ALTERNATIVE = "ap-parallax-speed";
                                    ^
 /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:102: warning: [dep-ann] deprecated item is not annotated with @Deprecated
         public static final String EXPERIMENT_AP_PARALLAX_DIRECTION_ALTERNATIVE
                                    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:690: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:695: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:700: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:705: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:708: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:712: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:717: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:721: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:725: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:731: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:735: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:739: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:97: error: package IEmailService does not exist
-        mService = IEmailService.Stub.asInterface(binder);
-                                ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:116: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:149: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:180: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:207: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:223: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:239: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:258: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:286: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:308: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:323: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:333: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:351: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:90: error: constant expression required
-            case R.id.debug_logging:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:94: error: constant expression required
-            case R.id.exchange_logging:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:98: error: constant expression required
-            case R.id.file_logging:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:102: error: constant expression required
-            case R.id.debug_enable_strict_mode:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:114: error: constant expression required
-            case R.id.clear_webview_cache:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:117: error: constant expression required
-            case R.id.clear_migration_state:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/EmailPreferenceActivity.java:184: error: constant expression required
-            case R.id.feedback_menu_item:
-                     ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:74: error: cannot find symbol
-        final HttpParams params = new BasicHttpParams();
-                                      ^
-  symbol:   class BasicHttpParams
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:78: error: cannot find symbol
-        mClient = new DefaultHttpClient(params);
-                      ^
-  symbol:   class DefaultHttpClient
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:91: error: cannot find symbol
-        final HttpPost post = new HttpPost(provider.tokenEndpoint);
-              ^
-  symbol:   class HttpPost
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:91: error: cannot find symbol
-        final HttpPost post = new HttpPost(provider.tokenEndpoint);
-                                  ^
-  symbol:   class HttpPost
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:93: error: cannot find symbol
-        final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                   ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:93: error: cannot find symbol
-        final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                                                           ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:94: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CODE, code));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:95: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_ID, provider.clientId));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:96: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:97: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_REDIRECT_URI, provider.redirectUri));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:98: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "authorization_code"));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:100: error: cannot find symbol
-            post.setEntity(new UrlEncodedFormEntity(nvp));
-                               ^
-  symbol:   class UrlEncodedFormEntity
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:120: error: cannot find symbol
-        final HttpPost post = new HttpPost(provider.refreshEndpoint);
-              ^
-  symbol:   class HttpPost
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:120: error: cannot find symbol
-        final HttpPost post = new HttpPost(provider.refreshEndpoint);
-                                  ^
-  symbol:   class HttpPost
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:122: error: cannot find symbol
-        final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                   ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:122: error: cannot find symbol
-        final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                                                           ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:123: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_REFRESH_TOKEN, refreshToken));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:124: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_ID, provider.clientId));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:125: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:126: error: cannot find symbol
-        nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "refresh_token"));
-                    ^
-  symbol:   class BasicNameValuePair
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:128: error: cannot find symbol
-            post.setEntity(new UrlEncodedFormEntity(nvp));
-                               ^
-  symbol:   class UrlEncodedFormEntity
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:141: error: cannot find symbol
-        final HttpResponse response;
-              ^
-  symbol:   class HttpResponse
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:144: error: cannot find symbol
-        if (status == HttpStatus.SC_OK) {
-                      ^
-  symbol:   variable HttpStatus
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:146: error: cannot find symbol
-        } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
-                             ^
-  symbol:   variable HttpStatus
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:146: error: cannot find symbol
-        } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
-                                                                  ^
-  symbol:   variable HttpStatus
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:147: error: cannot find symbol
-                status == HttpStatus.SC_BAD_REQUEST) {
-                          ^
-  symbol:   variable HttpStatus
-  location: class OAuthAuthenticator
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:64: error: cannot find symbol
-            IEmailService svc = getService();
-            ^
-  symbol:   class IEmailService
-  location: class ServiceStore
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/provider/EmailProvider.java:6122: error: cannot find symbol
-            final IEmailService service =
-                  ^
-  symbol:   class IEmailService
-  location: class EmailProvider
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:40: error: package IAccountService does not exist
-    private final IAccountService.Stub mBinder = new IAccountService.Stub() {
-                                                                    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:42: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:47: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:55: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:524: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:93: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:122: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:284: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:381: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:386: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:393: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:399: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:404: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:412: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:417: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:423: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/ImapService.java:154: error: incompatible types: EmailServiceStub cannot be converted to IBinder
-        return mBinder;
-               ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:39: error: package IPolicyService does not exist
-    private final IPolicyService.Stub mBinder = new IPolicyService.Stub() {
-                                                                  ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:40: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:52: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:57: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:69: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:74: error: method does not override or implement a method from a supertype
-        @Override
-        ^
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:80: error: cannot find symbol
-        public void loadAttachment(final IEmailServiceCallback callback, final long accountId,
-                                         ^
-  symbol: class IEmailServiceCallback
-/data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:94: error: incompatible types: EmailServiceStub cannot be converted to IBinder
-        return mBinder;
-               ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:37: error: package IAccountService does not exist
-        mService = IAccountService.Stub.asInterface(binder);
-                                  ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:40: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:46: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:63: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:80: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:40: error: package IPolicyService does not exist
-        mService = IPolicyService.Stub.asInterface(binder);
-                                 ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:43: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:48: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:70: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:76: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:106: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:116: error: method does not override or implement a method from a supertype
-    @Override
-    ^
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:70: error: cannot find symbol
-        SchemeRegistry registry = new SchemeRegistry();
-        ^
-  symbol:   class SchemeRegistry
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:70: error: cannot find symbol
-        SchemeRegistry registry = new SchemeRegistry();
-                                      ^
-  symbol:   class SchemeRegistry
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:71: error: cannot find symbol
-        registry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(),
-                              ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:71: error: cannot find symbol
-        registry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(),
-                                             ^
-  symbol:   variable PlainSocketFactory
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:74: error: cannot find symbol
-        registry.register(new Scheme("https",
-                              ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:78: error: cannot find symbol
-        registry.register(new Scheme("httpts",
-                              ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:97: error: cannot find symbol
-        SchemeRegistry registry = getSchemeRegistry();
-        ^
-  symbol:   class SchemeRegistry
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:97: error: cannot find symbol
-        SchemeRegistry registry = getSchemeRegistry();
-                                  ^
-  symbol:   method getSchemeRegistry()
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:100: error: cannot find symbol
-        Scheme existing = registry.get(schemeName);
-        ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:111: error: cannot find symbol
-            registry.register(new Scheme(schemeName, ssf, hostAuth.mPort));
-                                  ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:122: error: cannot find symbol
-        SchemeRegistry registry = getSchemeRegistry();
-        ^
-  symbol:   class SchemeRegistry
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:122: error: cannot find symbol
-        SchemeRegistry registry = getSchemeRegistry();
-                                  ^
-  symbol:   method getSchemeRegistry()
-  location: class EmailClientConnectionManager
-/data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:124: error: cannot find symbol
-        Scheme existing = registry.get(schemeName);
-        ^
-  symbol:   class Scheme
-  location: class EmailClientConnectionManager
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-157 errors
+1 error
 3 warnings
 
 > Task :app:compileDebugJavaWithJavac FAILED
@@ -809,27 +196,6 @@ FAILURE: Build failed with an exception.
 * What went wrong:
 Execution failed for task ':app:compileDebugJavaWithJavac' (registered by plugin 'com.android.internal.application').
 > Compilation failed; see the compiler output below.
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:90: error: constant expression required
-              case R.id.debug_logging:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:94: error: constant expression required
-              case R.id.exchange_logging:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:98: error: constant expression required
-              case R.id.file_logging:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:102: error: constant expression required
-              case R.id.debug_enable_strict_mode:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:114: error: constant expression required
-              case R.id.clear_webview_cache:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/DebugFragment.java:117: error: constant expression required
-              case R.id.clear_migration_state:
-                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/src/com/android/email/activity/setup/EmailPreferenceActivity.java:184: error: constant expression required
-              case R.id.feedback_menu_item:
-                       ^
   Note: Recompile with -Xlint:deprecation for details.
   /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/analytics/Analytics.java:46: warning: [dep-ann] deprecated item is not annotated with @Deprecated
       public static final int CD_INDEX_ATTACHMENT_PREVIEWS_ENABLED = 4;
@@ -840,608 +206,15 @@ Execution failed for task ':app:compileDebugJavaWithJavac' (registered by plugin
   /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:102: warning: [dep-ann] deprecated item is not annotated with @Deprecated
           public static final String EXPERIMENT_AP_PARALLAX_DIRECTION_ALTERNATIVE
                                      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/ImapService.java:154: error: incompatible types: EmailServiceStub cannot be converted to IBinder
-          return mBinder;
-                 ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:94: error: incompatible types: EmailServiceStub cannot be converted to IBinder
-          return mBinder;
-                 ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:63: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailService;
-                                        ^
-    symbol:   class IEmailService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:64: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailServiceCallback;
-                                        ^
-    symbol:   class IEmailServiceCallback
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:64: error: cannot find symbol
-      private IEmailService mService;
-              ^
-    symbol:   class IEmailService
-    location: class EmailServiceProxy
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:117: error: cannot find symbol
-      public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                       ^
-    symbol:   class IEmailServiceCallback
-    location: class EmailServiceProxy
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:20: error: cannot find symbol
-  import org.apache.http.params.BasicHttpParams;
-                               ^
-    symbol:   class BasicHttpParams
-    location: package org.apache.http.params
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:51: error: cannot find symbol
-      final HttpClient mClient;
-            ^
-    symbol:   class HttpClient
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:139: error: cannot find symbol
-      private AuthenticationResult doRequest(HttpPost post) throws MessagingException,
-                                             ^
-    symbol:   class HttpPost
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:158: error: cannot find symbol
-      private AuthenticationResult parseResponse(HttpResponse response) throws IOException,
-                                                 ^
-    symbol:   class HttpResponse
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:30: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailService;
-                                        ^
-    symbol:   class IEmailService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:53: error: cannot find symbol
-      private IEmailService getService() {
-              ^
-    symbol:   class IEmailService
-    location: class ServiceStore
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/provider/EmailProvider.java:105: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailService;
-                                        ^
-    symbol:   class IEmailService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:30: error: cannot find symbol
-  import com.android.emailcommon.service.IAccountService;
-                                        ^
-    symbol:   class IAccountService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:46: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailServiceCallback;
-                                        ^
-    symbol:   class IEmailServiceCallback
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:58: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailService;
-                                        ^
-    symbol:   class IEmailService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:59: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailServiceCallback;
-                                        ^
-    symbol:   class IEmailServiceCallback
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:123: error: cannot find symbol
-      public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                       ^
-    symbol:   class IEmailServiceCallback
-    location: class EmailServiceStub
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:259: error: cannot find symbol
-          private final IEmailServiceCallback mCallback;
-                        ^
-    symbol:   class IEmailServiceCallback
-    location: class EmailServiceStub.MessageRetrievalListenerBridge
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:263: error: cannot find symbol
-                  final IEmailServiceCallback callback) {
-                        ^
-    symbol:   class IEmailServiceCallback
-    location: class EmailServiceStub.MessageRetrievalListenerBridge
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:689: error: cannot find symbol
-      class NullService implements IEmailService {
-                                   ^
-    symbol:   class IEmailService
-    location: class EmailServiceUtils
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:701: error: cannot find symbol
-          public void loadAttachment(final IEmailServiceCallback cb, final long accountId,
-                                           ^
-    symbol:   class IEmailServiceCallback
-    location: class EmailServiceUtils.NullService
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:29: error: cannot find symbol
-  import com.android.emailcommon.service.IPolicyService;
-                                        ^
-    symbol:   class IPolicyService
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:53: error: cannot find symbol
-  import com.android.emailcommon.service.IEmailServiceCallback;
-                                        ^
-    symbol:   class IEmailServiceCallback
-    location: package com.android.emailcommon.service
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:28: error: cannot find symbol
-      private IAccountService mService = null;
-              ^
-    symbol:   class IAccountService
-    location: class AccountServiceProxy
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:31: error: cannot find symbol
-      private IPolicyService mService = null;
-              ^
-    symbol:   class IPolicyService
-    location: class PolicyServiceProxy
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:29: error: cannot find symbol
-  import org.apache.http.conn.scheme.PlainSocketFactory;
-                                    ^
-    symbol:   class PlainSocketFactory
-    location: package org.apache.http.conn.scheme
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:30: error: cannot find symbol
-  import org.apache.http.conn.scheme.Scheme;
-                                    ^
-    symbol:   class Scheme
-    location: package org.apache.http.conn.scheme
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:31: error: cannot find symbol
-  import org.apache.http.conn.scheme.SchemeRegistry;
-                                    ^
-    symbol:   class SchemeRegistry
-    location: package org.apache.http.conn.scheme
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:58: error: cannot find symbol
-              HttpParams params, SchemeRegistry registry, TrackingKeyManager keyManager) {
-                                 ^
-    symbol:   class SchemeRegistry
-    location: class EmailClientConnectionManager
   /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/browse/MessageHeaderContactBadge.java:61: error: cannot find symbol
               mDefaultAvatar = getResources().getDrawable(R.drawable.ic_contact_picture);
                                                                     ^
     symbol:   variable ic_contact_picture
     location: class drawable
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:74: error: cannot find symbol
-          final HttpParams params = new BasicHttpParams();
-                                        ^
-    symbol:   class BasicHttpParams
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:78: error: cannot find symbol
-          mClient = new DefaultHttpClient(params);
-                        ^
-    symbol:   class DefaultHttpClient
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:91: error: cannot find symbol
-          final HttpPost post = new HttpPost(provider.tokenEndpoint);
-                ^
-    symbol:   class HttpPost
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:91: error: cannot find symbol
-          final HttpPost post = new HttpPost(provider.tokenEndpoint);
-                                    ^
-    symbol:   class HttpPost
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:93: error: cannot find symbol
-          final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                     ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:93: error: cannot find symbol
-          final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                                                             ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:94: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CODE, code));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:95: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_ID, provider.clientId));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:96: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:97: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_REDIRECT_URI, provider.redirectUri));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:98: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "authorization_code"));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:100: error: cannot find symbol
-              post.setEntity(new UrlEncodedFormEntity(nvp));
-                                 ^
-    symbol:   class UrlEncodedFormEntity
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:120: error: cannot find symbol
-          final HttpPost post = new HttpPost(provider.refreshEndpoint);
-                ^
-    symbol:   class HttpPost
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:120: error: cannot find symbol
-          final HttpPost post = new HttpPost(provider.refreshEndpoint);
-                                    ^
-    symbol:   class HttpPost
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:122: error: cannot find symbol
-          final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                     ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:122: error: cannot find symbol
-          final List<BasicNameValuePair> nvp = new ArrayList<BasicNameValuePair>();
-                                                             ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:123: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_REFRESH_TOKEN, refreshToken));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:124: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_ID, provider.clientId));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:125: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_CLIENT_SECRET, provider.clientSecret));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:126: error: cannot find symbol
-          nvp.add(new BasicNameValuePair(OAUTH_REQUEST_GRANT_TYPE, "refresh_token"));
-                      ^
-    symbol:   class BasicNameValuePair
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:128: error: cannot find symbol
-              post.setEntity(new UrlEncodedFormEntity(nvp));
-                                 ^
-    symbol:   class UrlEncodedFormEntity
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:141: error: cannot find symbol
-          final HttpResponse response;
-                ^
-    symbol:   class HttpResponse
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:144: error: cannot find symbol
-          if (status == HttpStatus.SC_OK) {
-                        ^
-    symbol:   variable HttpStatus
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:146: error: cannot find symbol
-          } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
-                               ^
-    symbol:   variable HttpStatus
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:146: error: cannot find symbol
-          } else if (status == HttpStatus.SC_FORBIDDEN || status == HttpStatus.SC_UNAUTHORIZED ||
-                                                                    ^
-    symbol:   variable HttpStatus
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:147: error: cannot find symbol
-                  status == HttpStatus.SC_BAD_REQUEST) {
-                            ^
-    symbol:   variable HttpStatus
-    location: class OAuthAuthenticator
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/store/ServiceStore.java:64: error: cannot find symbol
-              IEmailService svc = getService();
-              ^
-    symbol:   class IEmailService
-    location: class ServiceStore
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/provider/EmailProvider.java:6122: error: cannot find symbol
-              final IEmailService service =
-                    ^
-    symbol:   class IEmailService
-    location: class EmailProvider
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:70: error: cannot find symbol
-          SchemeRegistry registry = new SchemeRegistry();
-          ^
-    symbol:   class SchemeRegistry
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:70: error: cannot find symbol
-          SchemeRegistry registry = new SchemeRegistry();
-                                        ^
-    symbol:   class SchemeRegistry
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:71: error: cannot find symbol
-          registry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(),
-                                ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:71: error: cannot find symbol
-          registry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(),
-                                               ^
-    symbol:   variable PlainSocketFactory
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:74: error: cannot find symbol
-          registry.register(new Scheme("https",
-                                ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:78: error: cannot find symbol
-          registry.register(new Scheme("httpts",
-                                ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:97: error: cannot find symbol
-          SchemeRegistry registry = getSchemeRegistry();
-          ^
-    symbol:   class SchemeRegistry
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:100: error: cannot find symbol
-          Scheme existing = registry.get(schemeName);
-          ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:111: error: cannot find symbol
-              registry.register(new Scheme(schemeName, ssf, hostAuth.mPort));
-                                    ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:122: error: cannot find symbol
-          SchemeRegistry registry = getSchemeRegistry();
-          ^
-    symbol:   class SchemeRegistry
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:124: error: cannot find symbol
-          Scheme existing = registry.get(schemeName);
-          ^
-    symbol:   class Scheme
-    location: class EmailClientConnectionManager
   Note: Recompile with -Xlint:unchecked for details.
   Note: Some input files use or override a deprecated API.
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:690: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:695: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:700: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:705: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:708: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:712: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:717: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:721: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:725: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:731: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:735: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceUtils.java:739: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:116: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:149: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:180: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:207: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:223: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:239: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:258: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:286: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:308: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:323: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:333: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:351: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:42: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:47: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:55: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:524: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:93: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:122: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:284: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:381: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:386: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:393: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:399: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:404: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:412: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:417: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:423: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:40: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:52: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:57: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:69: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:74: error: method does not override or implement a method from a supertype
-          @Override
-          ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:40: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:46: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:63: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:80: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:43: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:48: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:70: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:76: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:106: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:116: error: method does not override or implement a method from a supertype
-      @Override
-      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:49: error: cannot find symbol
-  public class EmailServiceProxy extends ServiceProxy implements IEmailService {
-                                                                 ^
-    symbol: class IEmailService
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:74: error: cannot find symbol
-  public abstract class EmailServiceStub extends IEmailService.Stub implements IEmailService {
-                                                                               ^
-    symbol: class IEmailService
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:24: error: cannot find symbol
-  public class AccountServiceProxy extends ServiceProxy implements IAccountService {
-                                                                   ^
-    symbol: class IAccountService
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:27: error: cannot find symbol
-  public class PolicyServiceProxy extends ServiceProxy implements IPolicyService {
-                                                                  ^
-    symbol: class IPolicyService
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:43: error: cannot find symbol
-  public class EmailClientConnectionManager extends ThreadSafeClientConnManager {
-                                                    ^
-    symbol: class ThreadSafeClientConnManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/Pop3Service.java:80: error: cannot find symbol
-          public void loadAttachment(final IEmailServiceCallback callback, final long accountId,
-                                           ^
-    symbol: class IEmailServiceCallback
   Note: Some input files use unchecked or unsafe operations.
-  /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/ui/MailActivity.java:204: error: cannot find symbol
-              nfcAdapter.setNdefPushMessageCallback(mNdefHandler, this);
-                        ^
-    symbol:   method setNdefPushMessageCallback(NdefMessageMaker,MailActivity)
-    location: variable nfcAdapter of type NfcAdapter
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:97: error: cannot find symbol
-          SchemeRegistry registry = getSchemeRegistry();
-                                    ^
-    symbol:   method getSchemeRegistry()
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:122: error: cannot find symbol
-          SchemeRegistry registry = getSchemeRegistry();
-                                    ^
-    symbol:   method getSchemeRegistry()
-    location: class EmailClientConnectionManager
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:13: error: package org.apache.http does not exist
-  import org.apache.http.HttpResponse;
-                        ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:14: error: package org.apache.http does not exist
-  import org.apache.http.HttpStatus;
-                        ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:15: error: package org.apache.http.client does not exist
-  import org.apache.http.client.HttpClient;
-                               ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:16: error: package org.apache.http.client.entity does not exist
-  import org.apache.http.client.entity.UrlEncodedFormEntity;
-                                      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:17: error: package org.apache.http.client.methods does not exist
-  import org.apache.http.client.methods.HttpPost;
-                                       ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:18: error: package org.apache.http.impl.client does not exist
-  import org.apache.http.impl.client.DefaultHttpClient;
-                                    ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/mail/internet/OAuthAuthenticator.java:19: error: package org.apache.http.message does not exist
-  import org.apache.http.message.BasicNameValuePair;
-                                ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:40: error: package IAccountService does not exist
-      private final IAccountService.Stub mBinder = new IAccountService.Stub() {
-                                   ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AttachmentService.java:501: error: package IEmailServiceCallback does not exist
-      class ServiceCallback extends IEmailServiceCallback.Stub {
-                                                         ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/EmailServiceStub.java:74: error: package IEmailService does not exist
-  public abstract class EmailServiceStub extends IEmailService.Stub implements IEmailService {
-                                                              ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:39: error: package IPolicyService does not exist
-      private final IPolicyService.Stub mBinder = new IPolicyService.Stub() {
-                                  ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/utility/EmailClientConnectionManager.java:32: error: package org.apache.http.impl.conn.tsccm does not exist
-  import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-                                        ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/EmailServiceProxy.java:97: error: package IEmailService does not exist
-          mService = IEmailService.Stub.asInterface(binder);
-                                  ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/AccountService.java:40: error: package IAccountService does not exist
-      private final IAccountService.Stub mBinder = new IAccountService.Stub() {
-                                                                      ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/provider_src/com/android/email/service/PolicyService.java:39: error: package IPolicyService does not exist
-      private final IPolicyService.Stub mBinder = new IPolicyService.Stub() {
-                                                                    ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/AccountServiceProxy.java:37: error: package IAccountService does not exist
-          mService = IAccountService.Stub.asInterface(binder);
-                                    ^
-  /data/data/com.termux/files/home/AOSP-Email/Email/emailcommon/src/com/android/emailcommon/service/PolicyServiceProxy.java:40: error: package IPolicyService does not exist
-          mService = IPolicyService.Stub.asInterface(binder);
-                                   ^
-  157 errors
+  1 error
   3 warnings
 
 * Try:
@@ -1454,5 +227,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 8s
-123 actionable tasks: 1 executed, 122 up-to-date
+BUILD FAILED in 12s
+124 actionable tasks: 1 executed, 123 up-to-date

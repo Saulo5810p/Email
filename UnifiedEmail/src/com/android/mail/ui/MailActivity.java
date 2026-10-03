@@ -199,10 +199,6 @@ public class MailActivity extends AbstractMailActivity implements ControllableAc
         mAccessibilityManager =
                 (AccessibilityManager) getSystemService(Context.ACCESSIBILITY_SERVICE);
         mAccessibilityEnabled = mAccessibilityManager.isEnabled();
-        final NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this);
-        if (nfcAdapter != null) {
-            nfcAdapter.setNdefPushMessageCallback(mNdefHandler, this);
-        }
 
         // Detect presence of hardware keyboard and log it on Analytics
         final int hardKeyboardHidden = getResources().getConfiguration().hardKeyboardHidden;

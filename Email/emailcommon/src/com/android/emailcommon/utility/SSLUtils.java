@@ -192,20 +192,6 @@ public class SSLUtils {
         return null;
     }
 
-    /**
-     * Returns a com.android.emailcommon.utility.SSLSocketFactory
-     */
-    public static SSLSocketFactory getHttpSocketFactory(Context context, HostAuth hostAuth,
-            KeyManager keyManager, boolean insecure) {
-        javax.net.ssl.SSLSocketFactory underlying = getSSLSocketFactory(context, hostAuth,
-                keyManager, insecure);
-        SSLSocketFactory wrapped = new SSLSocketFactory(underlying);
-        if (insecure) {
-            wrapped.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-        }
-        return wrapped;
-    }
-
     // Character.isLetter() is locale-specific, and will potentially return true for characters
     // outside of ascii a-z,A-Z
     private static boolean isAsciiLetter(char c) {
