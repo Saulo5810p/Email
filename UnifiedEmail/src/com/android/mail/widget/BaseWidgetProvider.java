@@ -356,7 +356,7 @@ public abstract class BaseWidgetProvider extends AppWidgetProvider {
             configureIntent.setData(Uri.parse(configureIntent.toUri(Intent.URI_INTENT_SCHEME)));
             configureIntent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
             PendingIntent clickIntent = PendingIntent.getActivity(context, 0, configureIntent,
-                    PendingIntent.FLAG_UPDATE_CURRENT);
+                    PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             remoteViews.setOnClickPendingIntent(R.id.widget_configuration, clickIntent);
         } else {
             // Set folder to a space here to avoid flicker.

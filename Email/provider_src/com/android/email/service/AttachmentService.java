@@ -408,7 +408,7 @@ public class AttachmentService extends Service implements Runnable {
                 Intent intent = new Intent(context, AttachmentWatchdog.class);
                 intent.putExtra(EXTRA_CALLBACK_TIMEOUT, callbackTimeout);
                 mWatchdogPendingIntent =
-                        PendingIntent.getBroadcast(context, 0, intent, 0);
+                        PendingIntent.getBroadcast(context, 0, intent, (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             }
             // Set the alarm
             final AlarmManager am = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);

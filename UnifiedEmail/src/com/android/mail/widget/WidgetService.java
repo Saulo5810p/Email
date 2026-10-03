@@ -155,7 +155,7 @@ public class WidgetService extends RemoteViewsService {
         final Intent mailIntent = Utils.createViewFolderIntent(context, folderUri, account);
         mailIntent.setPackage(context.getPackageName());
         PendingIntent clickIntent = PendingIntent.getActivity(context, 0, mailIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         remoteViews.setOnClickPendingIntent(R.id.widget_header, clickIntent);
 
         // On click intent for Compose
@@ -182,7 +182,7 @@ public class WidgetService extends RemoteViewsService {
         conversationIntent.setPackage(context.getPackageName());
         conversationIntent.setAction(Intent.ACTION_VIEW);
         clickIntent = PendingIntent.getActivity(context, 0, conversationIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 31 ? PendingIntent.FLAG_MUTABLE : 0));
         remoteViews.setPendingIntentTemplate(R.id.conversation_list, clickIntent);
     }
 

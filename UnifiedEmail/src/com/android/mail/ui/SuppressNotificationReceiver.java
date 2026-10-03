@@ -31,6 +31,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentFilter.MalformedMimeTypeException;
+import android.os.Build;
 import android.text.TextUtils;
 
 
@@ -71,7 +72,11 @@ public class SuppressNotificationReceiver extends BroadcastReceiver {
             // internal state of the receiver to match what the caller requested.
             LogUtils.d(LOG_TAG, "Registering receiver with no mime type");
         }
-        context.registerReceiver(this, filter);
+        if (Build.VERSION.SDK_INT >= 33) {
+            context.registerReceiver(this, filter, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            context.registerReceiver(this, filter);
+        }
 
         return true;
     }

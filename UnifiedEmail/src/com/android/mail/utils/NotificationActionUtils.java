@@ -395,7 +395,7 @@ public class NotificationActionUtils {
                 putNotificationActionExtra(intent, notificationAction);
 
                 return PendingIntent.getService(
-                        context, notificationId, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                        context, notificationId, intent, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             } case DELETE: {
                 final String intentAction = NotificationActionIntentService.ACTION_DELETE;
 
@@ -405,7 +405,7 @@ public class NotificationActionUtils {
                 putNotificationActionExtra(intent, notificationAction);
 
                 return PendingIntent.getService(
-                        context, notificationId, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                        context, notificationId, intent, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             }
         }
 
@@ -456,7 +456,7 @@ public class NotificationActionUtils {
                 putNotificationActionExtra(intent, notificationAction);
 
                 return PendingIntent.getService(context, notificationId, intent,
-                        PendingIntent.FLAG_UPDATE_CURRENT);
+                        PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             }
         }
 
@@ -649,7 +649,7 @@ public class NotificationActionUtils {
         clickIntent.setData(notificationAction.mConversation.uri);
         putNotificationActionExtra(clickIntent, notificationAction);
         final PendingIntent clickPendingIntent = PendingIntent.getService(context, notificationId,
-                clickIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                clickIntent, PendingIntent.FLAG_CANCEL_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
 
         undoView.setOnClickPendingIntent(R.id.status_bar_latest_event_content, clickPendingIntent);
 
@@ -661,7 +661,7 @@ public class NotificationActionUtils {
         deleteIntent.setData(notificationAction.mConversation.uri);
         putNotificationActionExtra(deleteIntent, notificationAction);
         final PendingIntent deletePendingIntent = PendingIntent.getService(context,
-                notificationId, deleteIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                notificationId, deleteIntent, PendingIntent.FLAG_CANCEL_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         builder.setDeleteIntent(deletePendingIntent);
 
         final Notification notification = builder.build();
@@ -727,7 +727,7 @@ public class NotificationActionUtils {
         final int requestCode = notificationAction.getAccount().hashCode()
                 ^ notificationAction.getFolder().hashCode();
         final PendingIntent pendingIntent =
-                PendingIntent.getService(context, requestCode, intent, 0);
+                PendingIntent.getService(context, requestCode, intent, (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
 
         return pendingIntent;
     }

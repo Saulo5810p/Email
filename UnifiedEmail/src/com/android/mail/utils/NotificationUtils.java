@@ -668,7 +668,7 @@ public class NotificationUtils {
             cancelNotificationIntent.putExtra(Utils.EXTRA_FOLDER, folder);
 
             notification.setDeleteIntent(PendingIntent.getService(
-                    context, notificationId, cancelNotificationIntent, 0));
+                    context, notificationId, cancelNotificationIntent, (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0)));
 
             // Ensure that the notification is cleared when the user selects it
             notification.setAutoCancel(true);
@@ -908,7 +908,7 @@ public class NotificationUtils {
         // 3. main activity launches, gets FROM_NOTIFICATION hint in intent
         notificationIntent.putExtra(Utils.EXTRA_FROM_NOTIFICATION, true);
         PendingIntent clickIntent = PendingIntent.getActivity(context, -1, notificationIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         notificationIntent.removeExtra(Utils.EXTRA_FROM_NOTIFICATION);
         return clickIntent;
     }

@@ -135,7 +135,7 @@ public class EmailNotificationController implements NotificationController {
         PendingIntent pending = null;
         if (intent != null) {
             pending = PendingIntent.getActivity(
-                    mContext, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    mContext, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         }
 
         // NOTE: the ticker is not shown for notifications in the Holo UX
