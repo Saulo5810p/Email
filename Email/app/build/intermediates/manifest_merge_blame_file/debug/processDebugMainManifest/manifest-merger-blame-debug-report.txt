@@ -1279,8 +1279,8 @@
 723-->/data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:698:9-706:20
 724            android:name="com.android.email.provider.EmailProvider"
 724-->/data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:699:13-51
-725            android:authorities="com.android.email.provider;com.android.email.notifier"
-725-->/data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:700:13-88
+725            android:authorities="com.android.email.provider;com.android.email.notifier;com.android.email.uinotifications"
+725-->/data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:700:13-122
 726            android:exported="true"
 726-->/data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:701:13-36
 727            android:grantUriPermissions="true"

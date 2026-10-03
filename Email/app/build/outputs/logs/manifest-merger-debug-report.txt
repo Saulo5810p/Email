@@ -909,7 +909,7 @@ ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/Androi
 	android:grantUriPermissions
 		ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:704:13-47
 	android:authorities
-		ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:700:13-88
+		ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:700:13-122
 	android:label
 		ADDED from /data/data/com.termux/files/home/AOSP-Email/Email/app/src/main/AndroidManifest.xml:703:13-45
 	android:exported

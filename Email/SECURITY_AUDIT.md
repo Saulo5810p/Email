@@ -22,3 +22,4 @@ identificado nesta rodada de auditoria (parcial — ver itens `REVIEW
 REQUIRED` acima, que cobrem as áreas de maior risco ainda não auditadas:
 WebView/HTML e SQL injection em providers).
 | SEC-013 | INFO | `app/src/main/AndroidManifest.xml` | `<permission READ_ATTACHMENT>` com `permissionGroup="android.permission-group.MESSAGES"`: grupo inexistente no Android moderno, o PackageManager rejeita a instalacao | Atributo removido (so cosmetico para UI de permissao; `protectionLevel=signature` nao usa grupo) | Falha de instalacao | CORRIGIDO |
+| SEC-014 | INFO | `app/src/main/AndroidManifest.xml` | `EmailProvider` notifica/observa URIs em `com.android.email.uinotifications`, authority nao declarada; Android moderno exige provider valido em `registerContentObserver` e o app crashava no `onCreate` | Authority adicionada a `EmailProvider` (mesma protecao `ACCESS_PROVIDER` signature, igual a `.notifier`) | Crash na inicializacao | CORRIGIDO |
