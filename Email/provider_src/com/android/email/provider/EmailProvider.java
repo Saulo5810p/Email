@@ -1302,6 +1302,10 @@ public class EmailProvider extends ContentProvider
         SQLiteDatabase db = getDatabase(context);
         int table = match >> BASE_SHIFT;
         String limit = uri.getQueryParameter(EmailContent.PARAMETER_LIMIT);
+        // SEC-010: LIMIT e concatenado no SQL; aceita apenas "N" ou "N,M" numericos.
+        if (limit != null && !limit.matches("\\d{1,9}(\\s*,\\s*\\d{1,9})?")) {
+            throw new IllegalArgumentException("Invalid limit: " + limit);
+        }
         String id;
 
         String tableName = TABLE_NAMES.valueAt(table);
@@ -4042,7 +4046,9 @@ public class EmailProvider extends ContentProvider
                 final String contentType = contentTypeQueryParameters.get(i);
                 sb.append(AttachmentColumns.MIME_TYPE)
                         .append(" LIKE '")
-                        .append(contentType)
+                        // SEC-010: valor vem de parametro de URI (nao confiavel);
+                        // aspas simples sao duplicadas para nao fechar o literal SQL.
+                        .append(contentType == null ? "" : contentType.replace("'", "''"))
                         .append("%'");
 
                 if (i != size - 1) {

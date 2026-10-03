@@ -476,13 +476,53 @@ public class Utility {
      *
      * @return a new File object, or null if one could not be created
      */
+    /**
+     * SEC-011: neutraliza nomes de arquivo hostis vindos de e-mail. Mantem apenas o
+     * ultimo componente do caminho, remove NUL/controle e troca nomes vazios, "." e
+     * ".." por um nome seguro.
+     */
+    public static String sanitizeAttachmentFileName(String name) {
+        if (name == null) {
+            return "attachment";
+        }
+        String n = name.replace('\\', '/');
+        final int slash = n.lastIndexOf('/');
+        if (slash >= 0) {
+            n = n.substring(slash + 1);
+        }
+        final StringBuilder sb = new StringBuilder(n.length());
+        for (int i = 0; i < n.length(); i++) {
+            final char c = n.charAt(i);
+            if (c >= 0x20 && c != 0x7f) {
+                sb.append(c);
+            }
+        }
+        n = sb.toString().trim();
+        if (n.length() == 0 || n.equals(".") || n.equals("..")) {
+            return "attachment";
+        }
+        return n;
+    }
+
+    /** SEC-011: confirma que {@code child} fica diretamente dentro de {@code directory}. */
+    private static boolean isDirectChild(File directory, File child) throws IOException {
+        final File parent = child.getCanonicalFile().getParentFile();
+        return parent != null && parent.equals(directory.getCanonicalFile());
+    }
+
     public static File createUniqueFile(File directory, String filename) throws IOException {
         return createUniqueFileInternal(NewFileCreator.DEFAULT, directory, filename);
     }
 
     /* package */ static File createUniqueFileInternal(final NewFileCreator nfc,
-            final File directory, final String filename) throws IOException {
+            final File directory, final String rawFilename) throws IOException {
+        // SEC-011: o nome vem do remetente (nao confiavel). Remove componentes de
+        // caminho (../, /, \\), NUL e nomes reservados antes de tocar no disco.
+        final String filename = sanitizeAttachmentFileName(rawFilename);
         final File file = new File(directory, filename);
+        if (!isDirectChild(directory, file)) {
+            throw new IOException("Nome de arquivo invalido (path traversal bloqueado)");
+        }
         if (nfc.createNewFile(file)) {
             return file;
         }
@@ -501,6 +541,9 @@ public class Utility {
         for (int i = 2; i < Integer.MAX_VALUE; i++) {
             final File numberedFile =
                     new File(directory, name + "-" + Integer.toString(i) + extension);
+            if (!isDirectChild(directory, numberedFile)) {
+                throw new IOException("Nome de arquivo invalido (path traversal bloqueado)");
+            }
             if (nfc.createNewFile(numberedFile)) {
                 return numberedFile;
             }

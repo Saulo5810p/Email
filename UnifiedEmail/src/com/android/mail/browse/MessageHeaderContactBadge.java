@@ -58,7 +58,8 @@ public class MessageHeaderContactBadge extends ImageView implements View.OnClick
 
     public void setImageToDefault() {
         if (mDefaultAvatar == null) {
-            mDefaultAvatar = getResources().getDrawable(R.drawable.ic_contact_picture);
+            mDefaultAvatar = getResources().getDrawable(
+                    com.android.ex.chips.R.drawable.ic_contact_picture);
         }
         setImageDrawable(mDefaultAvatar);
     }

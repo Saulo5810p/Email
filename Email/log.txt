@@ -11,17 +11,17 @@ WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termu
 > Task :bitmap:preBuild UP-TO-DATE
 > Task :photoviewer:preBuild UP-TO-DATE
 > Task :common:preBuild UP-TO-DATE
-> Task :common:preDebugBuild UP-TO-DATE
 > Task :bitmap:preDebugBuild UP-TO-DATE
-> Task :common:writeDebugAarMetadata UP-TO-DATE
 > Task :photoviewer:preDebugBuild UP-TO-DATE
-> Task :bitmap:writeDebugAarMetadata UP-TO-DATE
-> Task :chips:writeDebugAarMetadata UP-TO-DATE
-> Task :chips:generateDebugResValues UP-TO-DATE
+> Task :common:preDebugBuild UP-TO-DATE
 > Task :photoviewer:writeDebugAarMetadata UP-TO-DATE
-> Task :bitmap:generateDebugResValues UP-TO-DATE
-> Task :common:generateDebugResValues UP-TO-DATE
+> Task :chips:writeDebugAarMetadata UP-TO-DATE
+> Task :bitmap:writeDebugAarMetadata UP-TO-DATE
+> Task :common:writeDebugAarMetadata UP-TO-DATE
 > Task :photoviewer:generateDebugResValues UP-TO-DATE
+> Task :bitmap:generateDebugResValues UP-TO-DATE
+> Task :chips:generateDebugResValues UP-TO-DATE
+> Task :common:generateDebugResValues UP-TO-DATE
 > Task :common:generateDebugResources UP-TO-DATE
 > Task :bitmap:generateDebugResources UP-TO-DATE
 > Task :common:packageDebugResources UP-TO-DATE
@@ -30,118 +30,118 @@ WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termu
 > Task :common:compileDebugLibraryResources UP-TO-DATE
 > Task :common:parseDebugLocalResources UP-TO-DATE
 > Task :common:generateDebugRFile UP-TO-DATE
-> Task :chips:generateDebugResources UP-TO-DATE
 > Task :common:javaPreCompileDebug UP-TO-DATE
+> Task :chips:generateDebugResources UP-TO-DATE
 > Task :bitmap:packageDebugResources UP-TO-DATE
 > Task :bitmap:extractDeepLinksDebug UP-TO-DATE
+> Task :photoviewer:generateDebugResources UP-TO-DATE
 > Task :bitmap:processDebugManifest UP-TO-DATE
 > Task :bitmap:compileDebugLibraryResources UP-TO-DATE
-> Task :photoviewer:generateDebugResources UP-TO-DATE
 > Task :bitmap:parseDebugLocalResources UP-TO-DATE
 > Task :common:compileDebugJavaWithJavac UP-TO-DATE
 > Task :common:bundleLibCompileToJarDebug UP-TO-DATE
-> Task :bitmap:generateDebugRFile UP-TO-DATE
-> Task :bitmap:javaPreCompileDebug UP-TO-DATE
 > Task :common:mergeDebugShaders UP-TO-DATE
 > Task :common:compileDebugShaders NO-SOURCE
 > Task :common:generateDebugAssets UP-TO-DATE
+> Task :bitmap:generateDebugRFile UP-TO-DATE
 > Task :common:packageDebugAssets UP-TO-DATE
 > Task :common:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :bitmap:javaPreCompileDebug UP-TO-DATE
 > Task :common:processDebugJavaRes NO-SOURCE
 > Task :common:mergeDebugJniLibFolders UP-TO-DATE
 > Task :common:mergeDebugNativeLibs NO-SOURCE
-> Task :chips:packageDebugResources UP-TO-DATE
 > Task :common:copyDebugJniLibsProjectOnly UP-TO-DATE
-> Task :chips:extractDeepLinksDebug UP-TO-DATE
 > Task :common:stripDebugDebugSymbols NO-SOURCE
 > Task :common:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
-> Task :chips:processDebugManifest UP-TO-DATE
-> Task :chips:compileDebugLibraryResources UP-TO-DATE
 > Task :photoviewer:packageDebugResources UP-TO-DATE
 > Task :photoviewer:extractDeepLinksDebug UP-TO-DATE
-> Task :bitmap:compileDebugJavaWithJavac UP-TO-DATE
-> Task :chips:parseDebugLocalResources UP-TO-DATE
-> Task :bitmap:bundleLibCompileToJarDebug UP-TO-DATE
-> Task :bitmap:mergeDebugShaders UP-TO-DATE
+> Task :chips:packageDebugResources UP-TO-DATE
 > Task :photoviewer:processDebugManifest UP-TO-DATE
-> Task :chips:generateDebugRFile UP-TO-DATE
+> Task :chips:extractDeepLinksDebug UP-TO-DATE
+> Task :bitmap:compileDebugJavaWithJavac UP-TO-DATE
+> Task :bitmap:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :chips:processDebugManifest UP-TO-DATE
 > Task :photoviewer:compileDebugLibraryResources UP-TO-DATE
+> Task :bitmap:mergeDebugShaders UP-TO-DATE
 > Task :bitmap:compileDebugShaders NO-SOURCE
 > Task :bitmap:generateDebugAssets UP-TO-DATE
-> Task :chips:javaPreCompileDebug UP-TO-DATE
-> Task :common:extractDebugAnnotations UP-TO-DATE
+> Task :chips:compileDebugLibraryResources UP-TO-DATE
 > Task :bitmap:packageDebugAssets UP-TO-DATE
-> Task :common:extractDeepLinksForAarDebug UP-TO-DATE
 > Task :photoviewer:parseDebugLocalResources UP-TO-DATE
-> Task :common:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :chips:parseDebugLocalResources UP-TO-DATE
 > Task :bitmap:bundleLibRuntimeToJarDebug UP-TO-DATE
-> Task :photoviewer:generateDebugRFile UP-TO-DATE
 > Task :bitmap:processDebugJavaRes NO-SOURCE
-> Task :common:mergeDebugConsumerProguardFiles UP-TO-DATE
-> Task :photoviewer:javaPreCompileDebug UP-TO-DATE
+> Task :chips:generateDebugRFile UP-TO-DATE
+> Task :photoviewer:generateDebugRFile UP-TO-DATE
+> Task :chips:javaPreCompileDebug UP-TO-DATE
 > Task :bitmap:mergeDebugJniLibFolders UP-TO-DATE
-> Task :common:prepareDebugArtProfile UP-TO-DATE
+> Task :photoviewer:javaPreCompileDebug UP-TO-DATE
 > Task :bitmap:mergeDebugNativeLibs NO-SOURCE
+> Task :bitmap:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :bitmap:stripDebugDebugSymbols NO-SOURCE
+> Task :bitmap:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :common:extractDebugAnnotations UP-TO-DATE
+> Task :bitmap:extractDebugAnnotations UP-TO-DATE
+> Task :bitmap:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :common:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :bitmap:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :bitmap:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :common:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :bitmap:prepareDebugArtProfile UP-TO-DATE
+> Task :common:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :bitmap:prepareLintJarForPublish UP-TO-DATE
+> Task :common:prepareDebugArtProfile UP-TO-DATE
+> Task :bitmap:mergeDebugJavaResource UP-TO-DATE
+> Task :bitmap:syncDebugLibJars UP-TO-DATE
+> Task :common:prepareLintJarForPublish UP-TO-DATE
+> Task :bitmap:bundleDebugAar UP-TO-DATE
+> Task :bitmap:assembleDebug UP-TO-DATE
+> Task :common:mergeDebugJavaResource UP-TO-DATE
+> Task :common:syncDebugLibJars UP-TO-DATE
+> Task :common:bundleDebugAar UP-TO-DATE
+> Task :common:assembleDebug UP-TO-DATE
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
-> Task :bitmap:copyDebugJniLibsProjectOnly UP-TO-DATE
-> Task :common:prepareLintJarForPublish UP-TO-DATE
-> Task :bitmap:stripDebugDebugSymbols NO-SOURCE
-> Task :bitmap:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
-> Task :common:mergeDebugJavaResource UP-TO-DATE
-> Task :common:syncDebugLibJars UP-TO-DATE
-> Task :bitmap:extractDebugAnnotations UP-TO-DATE
-> Task :bitmap:extractDeepLinksForAarDebug UP-TO-DATE
-> Task :bitmap:mergeDebugGeneratedProguardFiles UP-TO-DATE
-> Task :bitmap:mergeDebugConsumerProguardFiles UP-TO-DATE
-> Task :common:bundleDebugAar UP-TO-DATE
-> Task :common:assembleDebug UP-TO-DATE
-> Task :bitmap:prepareDebugArtProfile UP-TO-DATE
-> Task :bitmap:prepareLintJarForPublish UP-TO-DATE
-> Task :bitmap:mergeDebugJavaResource UP-TO-DATE
-> Task :bitmap:syncDebugLibJars UP-TO-DATE
-> Task :bitmap:bundleDebugAar UP-TO-DATE
-> Task :bitmap:assembleDebug UP-TO-DATE
 > Task :chips:compileDebugJavaWithJavac UP-TO-DATE
-> Task :chips:bundleLibCompileToJarDebug UP-TO-DATE
 > Task :photoviewer:compileDebugJavaWithJavac UP-TO-DATE
+> Task :chips:bundleLibCompileToJarDebug UP-TO-DATE
 > Task :photoviewer:bundleLibCompileToJarDebug UP-TO-DATE
-> Task :chips:mergeDebugShaders UP-TO-DATE
-> Task :chips:compileDebugShaders NO-SOURCE
 > Task :photoviewer:mergeDebugShaders UP-TO-DATE
-> Task :chips:generateDebugAssets UP-TO-DATE
+> Task :chips:mergeDebugShaders UP-TO-DATE
 > Task :photoviewer:compileDebugShaders NO-SOURCE
 > Task :photoviewer:generateDebugAssets UP-TO-DATE
+> Task :chips:compileDebugShaders NO-SOURCE
+> Task :chips:generateDebugAssets UP-TO-DATE
 > Task :photoviewer:packageDebugAssets UP-TO-DATE
-> Task :chips:packageDebugAssets UP-TO-DATE
-> Task :chips:bundleLibRuntimeToJarDebug UP-TO-DATE
 > Task :photoviewer:bundleLibRuntimeToJarDebug UP-TO-DATE
-> Task :chips:processDebugJavaRes NO-SOURCE
+> Task :chips:packageDebugAssets UP-TO-DATE
 > Task :photoviewer:processDebugJavaRes NO-SOURCE
+> Task :chips:bundleLibRuntimeToJarDebug UP-TO-DATE
 > Task :photoviewer:mergeDebugJniLibFolders UP-TO-DATE
-> Task :chips:mergeDebugJniLibFolders UP-TO-DATE
-> Task :chips:mergeDebugNativeLibs NO-SOURCE
 > Task :photoviewer:mergeDebugNativeLibs NO-SOURCE
+> Task :chips:processDebugJavaRes NO-SOURCE
 > Task :photoviewer:copyDebugJniLibsProjectOnly UP-TO-DATE
-> Task :chips:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :chips:mergeDebugJniLibFolders UP-TO-DATE
 > Task :photoviewer:stripDebugDebugSymbols NO-SOURCE
-> Task :chips:stripDebugDebugSymbols NO-SOURCE
+> Task :chips:mergeDebugNativeLibs NO-SOURCE
 > Task :photoviewer:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
-> Task :chips:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :chips:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :chips:stripDebugDebugSymbols NO-SOURCE
 > Task :photoviewer:extractDebugAnnotations UP-TO-DATE
 > Task :photoviewer:extractDeepLinksForAarDebug UP-TO-DATE
 > Task :photoviewer:mergeDebugGeneratedProguardFiles UP-TO-DATE
 > Task :photoviewer:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :chips:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :photoviewer:prepareDebugArtProfile UP-TO-DATE
 > Task :photoviewer:prepareLintJarForPublish UP-TO-DATE
 > Task :photoviewer:mergeDebugJavaResource UP-TO-DATE
-> Task :chips:extractDebugAnnotations UP-TO-DATE
 > Task :photoviewer:syncDebugLibJars UP-TO-DATE
+> Task :chips:extractDebugAnnotations UP-TO-DATE
 > Task :chips:extractDeepLinksForAarDebug UP-TO-DATE
-> Task :chips:mergeDebugGeneratedProguardFiles UP-TO-DATE
 > Task :photoviewer:bundleDebugAar UP-TO-DATE
 > Task :photoviewer:assembleDebug UP-TO-DATE
+> Task :chips:mergeDebugGeneratedProguardFiles UP-TO-DATE
 > Task :chips:mergeDebugConsumerProguardFiles UP-TO-DATE
 > Task :chips:prepareDebugArtProfile UP-TO-DATE
 > Task :chips:prepareLintJarForPublish UP-TO-DATE
@@ -169,11 +169,6 @@ WARNING: The option setting 'android.aapt2FromMavenOverride=/data/data/com.termu
 /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/analytics/Analytics.java:46: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public static final int CD_INDEX_ATTACHMENT_PREVIEWS_ENABLED = 4;
                             ^
-/data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/browse/MessageHeaderContactBadge.java:61: error: cannot find symbol
-            mDefaultAvatar = getResources().getDrawable(R.drawable.ic_contact_picture);
-                                                                  ^
-  symbol:   variable ic_contact_picture
-  location: class drawable
 /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:99: warning: [dep-ann] deprecated item is not annotated with @Deprecated
         public static final String EXPERIMENT_AP_PARALLAX_SPEED_ALTERNATIVE = "ap-parallax-speed";
                                    ^
@@ -184,42 +179,33 @@ Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-1 error
 3 warnings
 
-> Task :app:compileDebugJavaWithJavac FAILED
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
 
 [Incubating] Problems report is available at: file:///data/data/com.termux/files/home/AOSP-Email/Email/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':app:compileDebugJavaWithJavac' (registered by plugin 'com.android.internal.application').
-> Compilation failed; see the compiler output below.
-  Note: Recompile with -Xlint:deprecation for details.
-  /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/analytics/Analytics.java:46: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-      public static final int CD_INDEX_ATTACHMENT_PREVIEWS_ENABLED = 4;
-                              ^
-  /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:99: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-          public static final String EXPERIMENT_AP_PARALLAX_SPEED_ALTERNATIVE = "ap-parallax-speed";
-                                     ^
-  /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/preferences/MailPrefs.java:102: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-          public static final String EXPERIMENT_AP_PARALLAX_DIRECTION_ALTERNATIVE
-                                     ^
-  /data/data/com.termux/files/home/AOSP-Email/UnifiedEmail/src/com/android/mail/browse/MessageHeaderContactBadge.java:61: error: cannot find symbol
-              mDefaultAvatar = getResources().getDrawable(R.drawable.ic_contact_picture);
-                                                                    ^
-    symbol:   variable ic_contact_picture
-    location: class drawable
-  Note: Recompile with -Xlint:unchecked for details.
-  Note: Some input files use or override a deprecated API.
-  Note: Some input files use unchecked or unsafe operations.
-  1 error
-  3 warnings
-
-* Try:
-> Check your code and dependencies to fix the compilation error(s)
-> Run with --scan to get full insights from a Build Scan (powered by Develocity).
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
 
@@ -227,5 +213,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 12s
-124 actionable tasks: 1 executed, 123 up-to-date
+BUILD SUCCESSFUL in 37s
+141 actionable tasks: 6 executed, 135 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.7.0/userguide/configuration_cache_enabling.html

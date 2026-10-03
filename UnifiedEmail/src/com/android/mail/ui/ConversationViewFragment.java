@@ -442,6 +442,17 @@ public class ConversationViewFragment extends AbstractConversationViewFragment i
 
         settings.setJavaScriptEnabled(true);
 
+        // SEC-009: conteudo de e-mail nao pode ler arquivos locais/content:// via
+        // WebView, nem misturar conteudo http em pagina https.
+        settings.setAllowFileAccess(false);
+        settings.setAllowContentAccess(false);
+        settings.setAllowFileAccessFromFileURLs(false);
+        settings.setAllowUniversalAccessFromFileURLs(false);
+        settings.setSavePassword(false);
+        settings.setSaveFormData(false);
+        settings.setGeolocationEnabled(false);
+        settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+
         ConversationViewUtils.setTextZoom(getResources(), settings);
 
         if (Utils.isRunningLOrLater()) {

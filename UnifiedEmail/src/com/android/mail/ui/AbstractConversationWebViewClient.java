@@ -137,6 +137,18 @@ public class AbstractConversationWebViewClient extends WebViewClient {
         }
 
         final Uri uri = Uri.parse(url);
+
+        // SEC-009: link vindo de e-mail e nao confiavel. Somente esquemas seguros
+        // sao encaminhados; javascript:, file:, content:, intent:, android-app:,
+        // data: etc. sao consumidos (bloqueados) sem abrir nada.
+        final String scheme = uri.getScheme();
+        final String s = scheme == null ? "" : scheme.toLowerCase(java.util.Locale.US);
+        if (!(s.equals("http") || s.equals("https") || s.equals("mailto")
+                || s.equals("tel") || s.equals("sms") || s.equals("smsto")
+                || s.equals("geo"))) {
+            return true;
+        }
+
         if (Utils.divertMailtoUri(mActivity, uri, mAccount)) {
             return true;
         }
