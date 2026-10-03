@@ -21,3 +21,4 @@
 identificado nesta rodada de auditoria (parcial — ver itens `REVIEW
 REQUIRED` acima, que cobrem as áreas de maior risco ainda não auditadas:
 WebView/HTML e SQL injection em providers).
+| SEC-013 | INFO | `app/src/main/AndroidManifest.xml` | `<permission READ_ATTACHMENT>` com `permissionGroup="android.permission-group.MESSAGES"`: grupo inexistente no Android moderno, o PackageManager rejeita a instalacao | Atributo removido (so cosmetico para UI de permissao; `protectionLevel=signature` nao usa grupo) | Falha de instalacao | CORRIGIDO |

@@ -60,7 +60,6 @@
          componentes internos que ainda a referenciam. -->
     <permission
         android:name="com.android.email.permission.READ_ATTACHMENT"
-        android:permissionGroup="android.permission-group.MESSAGES"
         android:protectionLevel="signature"
         android:label="@string/permission_read_attachment_label"
         android:description="@string/permission_read_attachment_desc"/>
