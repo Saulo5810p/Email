@@ -18,4 +18,5 @@
     <string name="xl_channel_alerts_desc">Sign-in failures, sync errors and security notices</string>
     <string name="xl_channel_actions_name">Quick actions</string>
     <string name="xl_channel_actions_desc">Undo bar after archiving or deleting from a notification</string>
+    <string name="xl_print_unavailable">Printing is not available on this device</string>
 </resources>

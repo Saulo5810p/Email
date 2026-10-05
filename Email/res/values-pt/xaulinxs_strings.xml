@@ -18,4 +18,5 @@
     <string name="xl_channel_alerts_desc">Falhas de login, erros de sincronização e avisos de segurança</string>
     <string name="xl_channel_actions_name">Ações rápidas</string>
     <string name="xl_channel_actions_desc">Barra de desfazer após arquivar ou excluir pela notificação</string>
+    <string name="xl_print_unavailable">A impressão não está disponível neste aparelho</string>
 </resources>
