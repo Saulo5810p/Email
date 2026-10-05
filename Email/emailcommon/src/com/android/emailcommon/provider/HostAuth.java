@@ -26,6 +26,7 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 
 import com.android.emailcommon.utility.SSLUtils;
+import com.android.emailcommon.utility.SecretStore;
 import com.android.mail.utils.LogUtils;
 import com.google.common.annotations.VisibleForTesting;
 
@@ -227,7 +228,7 @@ public class HostAuth extends EmailContent implements Parcelable {
         mPort = cursor.getInt(CONTENT_PORT_COLUMN);
         mFlags = cursor.getInt(CONTENT_FLAGS_COLUMN);
         mLogin = cursor.getString(CONTENT_LOGIN_COLUMN);
-        mPassword = cursor.getString(CONTENT_PASSWORD_COLUMN);
+        mPassword = SecretStore.decrypt(cursor.getString(CONTENT_PASSWORD_COLUMN));
         mDomain = cursor.getString(CONTENT_DOMAIN_COLUMN);
         mClientCertAlias = cursor.getString(CONTENT_CLIENT_CERT_ALIAS_COLUMN);
         mCredentialKey = cursor.getLong(CONTENT_CREDENTIAL_KEY_COLUMN);
@@ -244,7 +245,7 @@ public class HostAuth extends EmailContent implements Parcelable {
         values.put(HostAuthColumns.PORT, mPort);
         values.put(HostAuthColumns.FLAGS, mFlags);
         values.put(HostAuthColumns.LOGIN, mLogin);
-        values.put(HostAuthColumns.PASSWORD, mPassword);
+        values.put(HostAuthColumns.PASSWORD, SecretStore.encrypt(mPassword));
         values.put(HostAuthColumns.DOMAIN, mDomain);
         values.put(HostAuthColumns.CLIENT_CERT_ALIAS, mClientCertAlias);
         values.put(HostAuthColumns.CREDENTIAL_KEY, mCredentialKey);
@@ -261,7 +262,7 @@ public class HostAuth extends EmailContent implements Parcelable {
             json.put(HostAuthColumns.PORT, mPort);
             json.put(HostAuthColumns.FLAGS, mFlags);
             json.put(HostAuthColumns.LOGIN, mLogin);
-            json.putOpt(HostAuthColumns.PASSWORD, mPassword);
+            json.putOpt(HostAuthColumns.PASSWORD, SecretStore.encrypt(mPassword));
             json.putOpt(HostAuthColumns.DOMAIN, mDomain);
             json.putOpt(HostAuthColumns.CLIENT_CERT_ALIAS, mClientCertAlias);
             if (mCredential != null) {
@@ -282,7 +283,7 @@ public class HostAuth extends EmailContent implements Parcelable {
             h.mPort = json.getInt(HostAuthColumns.PORT);
             h.mFlags = json.getInt(HostAuthColumns.FLAGS);
             h.mLogin = json.getString(HostAuthColumns.LOGIN);
-            h.mPassword = json.optString(HostAuthColumns.PASSWORD);
+            h.mPassword = SecretStore.decrypt(json.optString(HostAuthColumns.PASSWORD));
             h.mDomain = json.optString(HostAuthColumns.DOMAIN);
             h.mClientCertAlias = json.optString(HostAuthColumns.CLIENT_CERT_ALIAS);
             final JSONObject credJson = json.optJSONObject(JSON_TAG_CREDENTIAL);

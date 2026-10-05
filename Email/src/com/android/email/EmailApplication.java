@@ -80,5 +80,6 @@ public class EmailApplication extends Application {
         // Tem que rodar antes de qualquer WebView existir (processo principal).
         EmbeddedWebView.init(this);
         ThemeApplier.install(this);
+        com.android.mail.utils.NotificationChannels.ensureCreated(this);
     }
 }

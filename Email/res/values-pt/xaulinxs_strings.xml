@@ -12,4 +12,10 @@
     <string name="xl_theme_invalid">Cor inválida. Use #RRGGBB</string>
     <string name="xl_theme_saved">Salvo. As cores valem ao reabrir as telas.</string>
     <string name="xl_theme_note">Só o destaque e os fundos lisos são alterados. A cor do texto não muda sozinha; evite fundos muito escuros.</string>
+    <string name="xl_channel_mail_name">Novos e-mails</string>
+    <string name="xl_channel_mail_desc">Notificações de mensagens recém-recebidas</string>
+    <string name="xl_channel_alerts_name">Avisos da conta</string>
+    <string name="xl_channel_alerts_desc">Falhas de login, erros de sincronização e avisos de segurança</string>
+    <string name="xl_channel_actions_name">Ações rápidas</string>
+    <string name="xl_channel_actions_desc">Barra de desfazer após arquivar ou excluir pela notificação</string>
 </resources>

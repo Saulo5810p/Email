@@ -621,7 +621,7 @@ public class NotificationUtils {
             // We now have all we need to create the notification and the pending intent
             PendingIntent clickIntent = null;
 
-            NotificationCompat.Builder notification = new NotificationCompat.Builder(context);
+            NotificationCompat.Builder notification = new NotificationCompat.Builder(context, NotificationChannels.MAIL);
             NotificationCompat.WearableExtender wearableExtender =
                     new NotificationCompat.WearableExtender();
             Map<Integer, NotificationBuilders> msgNotifications =
@@ -853,7 +853,7 @@ public class NotificationUtils {
             Folder folder, long when, int unseenCount, int unreadCount, PendingIntent clickIntent) {
         final boolean multipleUnseen = unseenCount > 1;
 
-        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context, NotificationChannels.MAIL)
                 .setContentTitle(createTitle(context, unseenCount))
                 .setContentText(account.getDisplayName())
                 .setContentIntent(clickIntent)
@@ -1072,7 +1072,7 @@ public class NotificationUtils {
 
                             // Adding conversation notification for Wear.
                             NotificationCompat.Builder conversationNotif =
-                                    new NotificationCompat.Builder(context);
+                                    new NotificationCompat.Builder(context, NotificationChannels.MAIL);
                             conversationNotif.setCategory(NotificationCompat.CATEGORY_EMAIL);
 
                             conversationNotif.setSmallIcon(

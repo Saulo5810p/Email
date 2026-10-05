@@ -631,7 +631,7 @@ public class NotificationActionUtils {
         LogUtils.i(LOG_TAG, "createUndoNotification for %s",
                 notificationAction.getNotificationActionType());
 
-        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context, NotificationChannels.ACTIONS);
 
         builder.setSmallIcon(R.drawable.ic_notification_mail_24dp);
         builder.setWhen(notificationAction.getWhen());

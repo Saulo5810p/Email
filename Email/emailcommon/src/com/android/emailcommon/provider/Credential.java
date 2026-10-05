@@ -9,6 +9,7 @@ import android.os.Parcelable;
 import android.provider.BaseColumns;
 import android.text.TextUtils;
 
+import com.android.emailcommon.utility.SecretStore;
 import com.android.mail.utils.LogUtils;
 import com.google.common.base.Objects;
 
@@ -88,8 +89,8 @@ public class Credential extends EmailContent implements Parcelable, BaseColumns 
        mBaseUri = CONTENT_URI;
        mId = cursor.getLong(CredentialQuery.ID_COLUMN_INDEX);
        mProviderId = cursor.getString(CredentialQuery.PROVIDER_COLUMN_INDEX);
-       mAccessToken = cursor.getString(CredentialQuery.ACCESS_TOKEN_COLUMN_INDEX);
-       mRefreshToken = cursor.getString(CredentialQuery.REFRESH_TOKEN_COLUMN_INDEX);
+       mAccessToken = SecretStore.decrypt(cursor.getString(CredentialQuery.ACCESS_TOKEN_COLUMN_INDEX));
+       mRefreshToken = SecretStore.decrypt(cursor.getString(CredentialQuery.REFRESH_TOKEN_COLUMN_INDEX));
        mExpiration = cursor.getInt(CredentialQuery.EXPIRATION_COLUMN_INDEX);
    }
 
@@ -163,8 +164,8 @@ public class Credential extends EmailContent implements Parcelable, BaseColumns 
            LogUtils.wtf(LogUtils.TAG, "Credential being saved with no provider");
        }
        values.put(PROVIDER_COLUMN, mProviderId);
-       values.put(ACCESS_TOKEN_COLUMN, mAccessToken);
-       values.put(REFRESH_TOKEN_COLUMN, mRefreshToken);
+       values.put(ACCESS_TOKEN_COLUMN, SecretStore.encrypt(mAccessToken));
+       values.put(REFRESH_TOKEN_COLUMN, SecretStore.encrypt(mRefreshToken));
        values.put(EXPIRATION_COLUMN, mExpiration);
        return values;
    }
@@ -173,8 +174,8 @@ public class Credential extends EmailContent implements Parcelable, BaseColumns 
         try {
             final JSONObject json = new JSONObject();
             json.put(PROVIDER_COLUMN, mProviderId);
-            json.putOpt(ACCESS_TOKEN_COLUMN, mAccessToken);
-            json.putOpt(REFRESH_TOKEN_COLUMN, mRefreshToken);
+            json.putOpt(ACCESS_TOKEN_COLUMN, SecretStore.encrypt(mAccessToken));
+            json.putOpt(REFRESH_TOKEN_COLUMN, SecretStore.encrypt(mRefreshToken));
             json.put(EXPIRATION_COLUMN, mExpiration);
             return json;
         } catch (final JSONException e) {
@@ -187,8 +188,8 @@ public class Credential extends EmailContent implements Parcelable, BaseColumns 
         try {
             final Credential c = new Credential();
             c.mProviderId = json.getString(PROVIDER_COLUMN);
-            c.mAccessToken = json.optString(ACCESS_TOKEN_COLUMN);
-            c.mRefreshToken = json.optString(REFRESH_TOKEN_COLUMN);
+            c.mAccessToken = SecretStore.decrypt(json.optString(ACCESS_TOKEN_COLUMN));
+            c.mRefreshToken = SecretStore.decrypt(json.optString(REFRESH_TOKEN_COLUMN));
             c.mExpiration = json.optInt(EXPIRATION_COLUMN, 0);
             return c;
         } catch (final JSONException e) {

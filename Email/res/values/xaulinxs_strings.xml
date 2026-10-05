@@ -12,4 +12,10 @@
     <string name="xl_theme_invalid">Invalid color. Use #RRGGBB</string>
     <string name="xl_theme_saved">Saved. Colors apply as screens are reopened.</string>
     <string name="xl_theme_note">Only the accent and plain backgrounds are changed. Text colors are not adjusted automatically, so avoid very dark backgrounds.</string>
+    <string name="xl_channel_mail_name">New mail</string>
+    <string name="xl_channel_mail_desc">Notifications for newly received messages</string>
+    <string name="xl_channel_alerts_name">Account alerts</string>
+    <string name="xl_channel_alerts_desc">Sign-in failures, sync errors and security notices</string>
+    <string name="xl_channel_actions_name">Quick actions</string>
+    <string name="xl_channel_actions_desc">Undo bar after archiving or deleting from a notification</string>
 </resources>

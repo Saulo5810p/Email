@@ -139,7 +139,7 @@ public class EmailNotificationController implements NotificationController {
         }
 
         // NOTE: the ticker is not shown for notifications in the Holo UX
-        final NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext)
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext, com.android.mail.utils.NotificationChannels.ALERTS)
                 .setContentTitle(title)
                 .setContentText(contentText)
                 .setContentIntent(pending)

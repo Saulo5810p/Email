@@ -50,6 +50,7 @@ import com.android.emailcommon.provider.EmailContent.PolicyColumns;
 import com.android.emailcommon.provider.EmailContent.QuickResponseColumns;
 import com.android.emailcommon.provider.EmailContent.SyncColumns;
 import com.android.emailcommon.provider.HostAuth;
+import com.android.emailcommon.utility.SecretStore;
 import com.android.emailcommon.provider.Mailbox;
 import com.android.emailcommon.provider.MessageChangeLogTable;
 import com.android.emailcommon.provider.MessageMove;
@@ -1483,6 +1484,47 @@ public final class DBHelper {
                 // Shouldn't be needed unless we're debugging and interrupt the process
                 LogUtils.e(TAG, e, "Exception cleaning EmailProvider.db");
             }
+            encryptLegacySecrets(db);
+        }
+    }
+
+    /**
+     * Migra senhas/tokens que ainda estao em texto puro para o formato cifrado (SecretStore).
+     * Roda a cada abertura do banco, mas so toca linhas sem o prefixo "enc1:", entao depois
+     * da primeira vez nao faz nada. Qualquer falha e registrada e ignorada (o app segue
+     * lendo o legado em texto puro e tenta de novo na proxima abertura).
+     */
+    static void encryptLegacySecrets(SQLiteDatabase db) {
+        if (!SecretStore.isSupported()) return;
+        try {
+            db.beginTransaction();
+            try {
+                encryptColumn(db, HostAuth.TABLE_NAME, HostAuthColumns.PASSWORD);
+                encryptColumn(db, Credential.TABLE_NAME, Credential.ACCESS_TOKEN_COLUMN);
+                encryptColumn(db, Credential.TABLE_NAME, Credential.REFRESH_TOKEN_COLUMN);
+                db.setTransactionSuccessful();
+            } finally {
+                db.endTransaction();
+            }
+        } catch (Exception e) {
+            LogUtils.e(TAG, e, "Falha ao cifrar segredos legados em EmailProvider.db");
+        }
+    }
+
+    private static void encryptColumn(SQLiteDatabase db, String table, String column) {
+        final Cursor c = db.query(table, new String[] {BaseColumns._ID, column},
+                column + " IS NOT NULL AND " + column + " != '' AND " + column
+                        + " NOT LIKE '" + SecretStore.PREFIX + "%'",
+                null, null, null, null);
+        try {
+            while (c.moveToNext()) {
+                final ContentValues cv = new ContentValues();
+                cv.put(column, SecretStore.encrypt(c.getString(1)));
+                db.update(table, cv, BaseColumns._ID + "=?",
+                        new String[] {Long.toString(c.getLong(0))});
+            }
+        } finally {
+            c.close();
         }
     }
 

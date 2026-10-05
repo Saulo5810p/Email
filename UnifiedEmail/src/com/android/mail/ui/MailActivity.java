@@ -200,6 +200,9 @@ public class MailActivity extends AbstractMailActivity implements ControllableAc
                 (AccessibilityManager) getSystemService(Context.ACCESSIBILITY_SERVICE);
         mAccessibilityEnabled = mAccessibilityManager.isEnabled();
 
+        // Android 13+: POST_NOTIFICATIONS e permissao em tempo de execucao (pede uma vez).
+        com.android.mail.utils.NotificationPermission.requestOnce(this);
+
         // Detect presence of hardware keyboard and log it on Analytics
         final int hardKeyboardHidden = getResources().getConfiguration().hardKeyboardHidden;
         if (hardKeyboardHidden == Configuration.HARDKEYBOARDHIDDEN_NO) {
