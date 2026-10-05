@@ -370,7 +370,7 @@ public class NotificationActionUtils {
                 taskStackBuilder.addNextIntent(notificationIntent).addNextIntent(intent);
 
                 return taskStackBuilder.getPendingIntent(
-                        notificationId, PendingIntent.FLAG_UPDATE_CURRENT);
+                        notificationId, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             } case REPLY_ALL: {
                 // Build a task stack that forces the conversation view on the stack before the
                 // reply activity.
@@ -384,7 +384,7 @@ public class NotificationActionUtils {
                 taskStackBuilder.addNextIntent(notificationIntent).addNextIntent(intent);
 
                 return taskStackBuilder.getPendingIntent(
-                        notificationId, PendingIntent.FLAG_UPDATE_CURRENT);
+                        notificationId, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             } case ARCHIVE_REMOVE_LABEL: {
                 final String intentAction =
                         NotificationActionIntentService.ACTION_ARCHIVE_REMOVE_LABEL;
@@ -442,7 +442,7 @@ public class NotificationActionUtils {
                 taskStackBuilder.addNextIntent(notificationIntent).addNextIntent(intent);
 
                 return taskStackBuilder.getPendingIntent(notificationId,
-                        PendingIntent.FLAG_UPDATE_CURRENT);
+                        PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
             }
             case ARCHIVE_REMOVE_LABEL:
             case DELETE: {

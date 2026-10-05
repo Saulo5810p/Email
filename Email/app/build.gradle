@@ -98,7 +98,7 @@ android {
             aidl.srcDirs("../emailcommon/src")
 
             res.srcDirs("../../UnifiedEmail/res")
-            assets.srcDirs("../../UnifiedEmail/assets")
+            assets.srcDirs("../../UnifiedEmail/assets", "src/main/assets")
         }
         debug {
             res.srcDirs("../res", "../emailcommon/res")
@@ -117,6 +117,11 @@ android {
         // com.android.mail / com.android.email / com.android.emailcommon)
         // são resolvidos via android.nonTransitiveRClass=false por módulo se
         // necessário — ver NOTAS_MIGRACAO.md caso apareçam R não resolvidos.
+    }
+
+    // O WebViewUpgrade precisa ler assets/aosp_webview.apk como bloco contiguo.
+    androidResources {
+        noCompress 'apk'
     }
 
     lint {

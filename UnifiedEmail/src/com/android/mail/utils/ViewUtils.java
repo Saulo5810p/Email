@@ -99,7 +99,12 @@ public class ViewUtils {
         if (Utils.isRunningLOrLater() && activity != null) {
             final Window window = activity.getWindow();
             if (window != null) {
-                window.setStatusBarColor(activity.getResources().getColor(colorId));
+                int color = activity.getResources().getColor(colorId);
+                if (color == com.android.email.theme.ThemeColors.DEFAULT_ACCENT_DARK
+                        && com.android.email.theme.ThemeColors.isCustomized(activity)) {
+                    color = com.android.email.theme.ThemeColors.accentDark(activity);
+                }
+                window.setStatusBarColor(color);
             }
         }
     }

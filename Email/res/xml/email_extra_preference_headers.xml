@@ -21,4 +21,12 @@
     <header android:id="@+id/add_account_header"
             android:title="@string/add_account" />
 
+    <header android:id="@+id/theme_colors_header"
+            android:title="@string/xl_theme_colors_title"
+            android:summary="@string/xl_theme_colors_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.email"
+                android:targetClass="com.android.email.activity.setup.ThemeColorsActivity" />
+    </header>
+
 </preference-headers>

@@ -25,6 +25,7 @@ import android.print.PrintManager;
 import android.text.TextUtils;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import com.android.email.webview.GatedWebView;
 
 import com.android.emailcommon.mail.Address;
 import com.android.mail.FormattedDateBuilder;
@@ -88,7 +89,7 @@ public class PrintUtils {
     @SuppressLint({"NewApi", "SetJavaScriptEnabled"})
     private static void printHtml(Context context, String html,
             String baseUri, String subject, boolean useJavascript) {
-        final WebView webView = new WebView(context);
+        final WebView webView = new com.android.email.webview.GatedWebView(context);
         final WebSettings settings = webView.getSettings();
         settings.setBlockNetworkImage(false);
         settings.setJavaScriptEnabled(useJavascript);

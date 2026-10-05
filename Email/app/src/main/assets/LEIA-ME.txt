@@ -1,0 +1,11 @@
+Copie aqui o APK do WebView AOSP (qualquer versao, nova ou antiga)
+renomeado exatamente para:
+
+    aosp_webview.apk
+
+Caminho completo esperado:
+    Email/app/src/main/assets/aosp_webview.apk
+
+O .apk NAO vai para o GitHub (esta no .gitignore - arquivo grande demais).
+Sem ele o app NAO usa o WebView do sistema: abrir um e-mail falha de
+proposito (modo fail-closed). Veja EmbeddedWebView.java.

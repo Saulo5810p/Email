@@ -1,0 +1,50 @@
+# --- xaulinxs-gitignore ---
+# Build e cache de build
+build/
+**/build/
+.gradle/
+**/.gradle/
+.cxx/
+.externalNativeBuild/
+captures/
+*.class
+*.dex
+*.ap_
+*.aab
+*.apk
+*.hprof
+# (o APK do WebView AOSP fica so local: assets/aosp_webview.apk, grande demais pro GitHub)
+
+# Informacoes sensiveis / chaves
+local.properties
+keystore.properties
+secrets.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+google-services.json
+.env
+.env.*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.settings/
+.classpath
+
+# Logs, pacotes de correcao e lixo
+*.log
+log.txt
+logcat*.txt
+*.zip
+*.tar.gz
+*.tar
+.DS_Store
+Thumbs.db
+*.swp
+*~

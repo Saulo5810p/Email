@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xl_webview_footer_format">Motor WebView: %1$s %2$s  •  %3$s</string>
+    <string name="xl_webview_footer_unavailable">Motor WebView: WebView AOSP não carregado (aosp_webview.apk ausente ou com falha)</string>
+    <string name="xl_theme_colors_title">Cores</string>
+    <string name="xl_theme_colors_summary">Cor de destaque e fundo (hex)</string>
+    <string name="xl_theme_accent_label">Cor de destaque (laranja)</string>
+    <string name="xl_theme_bg_label">Cor de fundo (branco)</string>
+    <string name="xl_theme_hex_hint">#RRGGBB</string>
+    <string name="xl_theme_save">Salvar</string>
+    <string name="xl_theme_reset">Restaurar padrão</string>
+    <string name="xl_theme_invalid">Cor inválida. Use #RRGGBB</string>
+    <string name="xl_theme_saved">Salvo. As cores valem ao reabrir as telas.</string>
+    <string name="xl_theme_note">Só o destaque e os fundos lisos são alterados. A cor do texto não muda sozinha; evite fundos muito escuros.</string>
+</resources>

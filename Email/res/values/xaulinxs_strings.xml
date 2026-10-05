@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xl_webview_footer_format">WebView engine: %1$s %2$s  •  %3$s</string>
+    <string name="xl_webview_footer_unavailable">WebView engine: AOSP WebView not loaded (aosp_webview.apk missing or failed)</string>
+    <string name="xl_theme_colors_title">Colors</string>
+    <string name="xl_theme_colors_summary">Accent color and background (hex)</string>
+    <string name="xl_theme_accent_label">Accent color (orange)</string>
+    <string name="xl_theme_bg_label">Background color (white)</string>
+    <string name="xl_theme_hex_hint">#RRGGBB</string>
+    <string name="xl_theme_save">Save</string>
+    <string name="xl_theme_reset">Restore defaults</string>
+    <string name="xl_theme_invalid">Invalid color. Use #RRGGBB</string>
+    <string name="xl_theme_saved">Saved. Colors apply as screens are reopened.</string>
+    <string name="xl_theme_note">Only the accent and plain backgrounds are changed. Text colors are not adjusted automatically, so avoid very dark backgrounds.</string>
+</resources>

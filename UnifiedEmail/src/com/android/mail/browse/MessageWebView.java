@@ -23,6 +23,7 @@ import android.os.Looper;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.webkit.WebView;
+import com.android.email.webview.GatedWebView;
 
 import com.android.mail.utils.Clock;
 import com.android.mail.utils.LogTag;
@@ -32,7 +33,7 @@ import com.android.mail.utils.Throttle;
 /**
  * A WebView designed to live within a {@link MessageScrollView}.
  */
-public class MessageWebView extends WebView implements MessageScrollView.Touchable {
+public class MessageWebView extends GatedWebView implements MessageScrollView.Touchable {
 
     private static final String LOG_TAG = LogTag.getLogTag();
 

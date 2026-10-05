@@ -25,9 +25,11 @@ import androidx.annotation.NonNull;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.android.email.R;
 import com.android.email.setup.AuthenticatorSetupIntentHelper;
+import com.android.email.webview.EmbeddedWebView;
 import com.android.emailcommon.utility.IntentUtilities;
 import com.android.mail.providers.UIProvider.EditSettingsExtras;
 import com.android.mail.ui.settings.MailPreferenceActivity;
@@ -131,6 +133,19 @@ public class EmailPreferenceActivity extends MailPreferenceActivity {
         }
 
         mFeedbackUri = Utils.getValidUri(getString(R.string.email_feedback_uri));
+
+        // Rodape: versao do WebView AOSP embutido.
+        try {
+            final TextView footer = new TextView(this);
+            footer.setText(EmbeddedWebView.describe(this));
+            footer.setTextSize(12);
+            footer.setAlpha(0.7f);
+            final int pad = (int) (16 * getResources().getDisplayMetrics().density);
+            footer.setPadding(pad, pad, pad, pad);
+            setListFooter(footer);
+        } catch (RuntimeException ignored) {
+            // layout sem list_footer: sem rodape
+        }
     }
 
     /**

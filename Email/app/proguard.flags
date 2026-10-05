@@ -1,0 +1,3 @@
+# WebView AOSP embutido (WebViewUpgrade usa reflexao e Proxy)
+-keep class com.norman.webviewup.** { *; }
+-dontwarn com.norman.webviewup.**

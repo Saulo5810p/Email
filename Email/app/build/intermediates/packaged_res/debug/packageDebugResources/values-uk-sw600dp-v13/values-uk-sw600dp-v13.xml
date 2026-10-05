@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="2464329024392383408" name="add_bcc_label">"+ Прихована копія"</string>
-    <string msgid="5504248178750252553" name="add_cc_label">"+ Копія/прихована"</string>
-    <string msgid="2575462565700103317" name="menu_manage_folders">"Керувати папками"</string>
-    <string msgid="6407854387225415499" name="preferences_default_reply_all_summary">"Використ. за умовчанням для відповідей на сповіщення про повідомлення"</string>
-</resources>

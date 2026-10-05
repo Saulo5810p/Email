@@ -77,6 +77,9 @@
         android:label="@string/permission_update_widget_label"
         android:description="@string/permission_update_widget_desc"/>
 
+    <uses-permission
+        android:name="com.android.email.permission.GET_WIDGET_UPDATE"/>
+
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission
         android:name="com.android.email.permission.ACCESS_PROVIDER"
@@ -773,6 +776,34 @@
         <service android:name="com.android.mail.MailLogService">
         </service>
         <service android:name="com.android.mail.browse.EmlTempFileDeletionService" />
+
+        <!-- Processos sandbox usados pela lib WebViewUpgrade (WebView AOSP embutido) -->
+        <service
+            android:name="com.norman.webviewup.lib.sandbox.stub.StubSandboxedProcessService0"
+            android:exported="false"
+            android:process=":sandboxed_process0" />
+        <service
+            android:name="com.norman.webviewup.lib.sandbox.stub.StubSandboxedProcessService1"
+            android:exported="false"
+            android:process=":sandboxed_process1" />
+        <service
+            android:name="com.norman.webviewup.lib.sandbox.stub.StubSandboxedProcessService2"
+            android:exported="false"
+            android:process=":sandboxed_process2" />
+        <service
+            android:name="com.norman.webviewup.lib.sandbox.stub.StubSandboxedProcessService3"
+            android:exported="false"
+            android:process=":sandboxed_process3" />
+        <service
+            android:name="com.norman.webviewup.lib.sandbox.stub.StubSandboxedProcessService4"
+            android:exported="false"
+            android:process=":sandboxed_process4" />
+
+        <activity
+            android:name="com.android.email.activity.setup.ThemeColorsActivity"
+            android:label="@string/xl_theme_colors_title"
+            android:exported="false"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" />
     </application>
 
     <!-- Legacy permissions, etc. can go here -->

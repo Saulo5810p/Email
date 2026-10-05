@@ -157,6 +157,10 @@ public class WidgetService extends RemoteViewsService {
         PendingIntent clickIntent = PendingIntent.getActivity(context, 0, mailIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         remoteViews.setOnClickPendingIntent(R.id.widget_header, clickIntent);
+        if (com.android.email.theme.ThemeColors.isCustomized(context)) {
+            remoteViews.setInt(R.id.widget_header, "setBackgroundColor",
+                    com.android.email.theme.ThemeColors.accent(context));
+        }
 
         // On click intent for Compose
         final Intent composeIntent = new Intent();
@@ -174,7 +178,7 @@ public class WidgetService extends RemoteViewsService {
         final TaskStackBuilder taskStackBuilder = TaskStackBuilder.create(context);
         clickIntent = taskStackBuilder.addNextIntent(mailIntent)
                 .addNextIntent(composeIntent)
-                .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+                .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT | (android.os.Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0));
         remoteViews.setOnClickPendingIntent(R.id.widget_compose, clickIntent);
 
         // On click intent for Conversation

@@ -22,6 +22,8 @@ import android.content.Intent;
 
 import com.android.email.activity.setup.EmailPreferenceActivity;
 import com.android.email.preferences.EmailPreferenceMigrator;
+import com.android.email.theme.ThemeApplier;
+import com.android.email.webview.EmbeddedWebView;
 import com.android.mail.browse.ConversationMessage;
 import com.android.mail.browse.InlineAttachmentViewIntentBuilder;
 import com.android.mail.browse.InlineAttachmentViewIntentBuilderCreator;
@@ -70,5 +72,13 @@ public class EmailApplication extends Application {
                         return EmailNotificationController.getInstance(context);
                     }
                 });
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // Tem que rodar antes de qualquer WebView existir (processo principal).
+        EmbeddedWebView.init(this);
+        ThemeApplier.install(this);
     }
 }

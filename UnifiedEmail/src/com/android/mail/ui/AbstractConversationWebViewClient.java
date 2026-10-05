@@ -131,6 +131,13 @@ public class AbstractConversationWebViewClient extends WebViewClient {
     }
 
     @Override
+    @android.annotation.TargetApi(26)
+    public boolean onRenderProcessGone(WebView view, android.webkit.RenderProcessGoneDetail detail) {
+        // Processo de renderizacao morreu (ou foi morto): evita derrubar o app inteiro.
+        return true;
+    }
+
+    @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         if (mActivity == null) {
             return false;

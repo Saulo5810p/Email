@@ -23,6 +23,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import com.android.email.webview.GatedWebView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
@@ -121,7 +122,7 @@ public class DebugFragment extends Fragment implements OnCheckedChangeListener,
     }
 
     private void clearWebViewCache() {
-        WebView webview = new WebView(getActivity());
+        WebView webview = new com.android.email.webview.GatedWebView(getActivity());
         try {
             webview.clearCache(true);
             LogUtils.w(Logging.LOG_TAG, "Cleard WebView cache.");

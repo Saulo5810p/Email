@@ -1,6 +1,0 @@
-int dimen placeholder_size 0x0
-int dimen progress_bar_size 0x0
-int integer bitmap_fade_animation_duration 0x0
-int integer bitmap_placeholder_animation_duration 0x0
-int integer bitmap_progress_animation_delay 0x0
-int integer bitmap_progress_animation_duration 0x0

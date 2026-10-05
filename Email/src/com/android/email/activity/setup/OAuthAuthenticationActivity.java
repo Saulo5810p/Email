@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
+import com.android.email.webview.GatedWebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
@@ -102,7 +103,7 @@ public class OAuthAuthenticationActivity extends Activity implements
         CookieManager cm = CookieManager.getInstance();
         cm.removeAllCookie();
 
-        mWv = new WebView(this);
+        mWv = new com.android.email.webview.GatedWebView(this);
         mWv.setWebViewClient(new MyWebViewClient());
         mWv.getSettings().setJavaScriptEnabled(true);
         setContentView(mWv);
